@@ -1,0 +1,147 @@
+.container-for-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start !important;
+  flex-wrap: wrap;
+}
+
+.section {
+  /* background-color: #e69a00; */
+  height: fit-content;
+  max-height: fit-content !important;
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.section-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sub-item {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: #d8d8d7;
+}
+
+.button-for-footer {
+  padding: 6px 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 17px;
+  margin-left: 20px;
+}
+
+.footer svg {
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+  width: 27px !important;
+}
+#download-all {
+  border-radius: 500px !important;
+  background-color: #fcb44a;
+}
+
+.sub-item {
+  padding: 3px 0;
+}
+label {
+  margin-top: -5px;
+  font-weight: 700;
+  font-size: 17pt;
+}
+.section-header-div {
+  padding: 5px 0;
+}
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-left: 5px;
+  cursor: pointer;
+  outline: none !important;
+}
+
+input[type="checkbox"].custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #c1c1c1;
+  border-radius: 0px;
+  background-color: #d9d9d9;
+}
+
+input[type="checkbox"].custom-checkbox:checked {
+  appearance: auto;
+}
+
+.section-header {
+}
+
+.custom-checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.custom-checkbox input:checked + .custom-checkbox::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.sub-item,
+.section-header-div {
+  display: flex;
+  align-items: center;
+  gap: 5px 10px !important;
+  /* background-color:firebrick; */
+}
+.sub-item {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  color: #746d6d;
+}
+#download-selected {
+  color: black;
+  background-color: transparent;
+}
+#download-all {
+  color: black;
+  border-radius: 25px;
+}
+@media (max-width: 768px) {
+  .section {
+    width: 95%;
+  }
+  .footer {
+    display: grid;
+  }
+}
+
+input[type="checkbox"] {
+  accent-color: #fcb44a;
+}

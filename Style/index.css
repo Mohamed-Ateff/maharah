@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #ebeff8dd !important;
+  z-index: 9;
+  line-height: 1.4;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+section {
+  padding-top: 100px;
+}
+
+body[lang="en"] {
+  .delete-for-english {
+    display: none;
+  }
+}
+
+/* tow-titles */
+
+.tow-titles h1 {
+  color: #3a73a8;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.tow-titles h3 {
+  color: #c6822a;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* tow-titles Ends */
+
+/* Title */
+
+.title1 {
+  font-weight: 700 !important;
+  margin: 30px auto;
+  font-size: 30px;
+  text-align: justify !important;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    width: 90%;
+    font-weight: 100 !important;
+    margin: 30px auto !important;
+    font-size: 28px;
+    text-align: justify;
+  }
+}
+
+/* Title Ends */
+
+/* Some P under each other */
+
+.Some-p-under-each-other {
+  margin-top: 50px;
+}
+
+.Some-p-under-each-other p {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin: 30px 0 0 0;
+  color: #333333;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: justify !important;
+}
+.Some-p-under-each-other h2 {
+  color: #6b95bd;
+}
+
+/* Some P under each other Ends */
+
+/* Title with arrow  */
+
+.flex-row {
+  position: relative;
+  width: 251.518px;
+  height: 56px;
+  margin: 50px 0 0 0px;
+}
+.title-with-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 100%;
+  top: 2px;
+  right: 15%;
+  color: #6b95bd;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 56px;
+  width: 150%;
+}
+.intersect {
+  position: absolute;
+  width: 6.47%;
+  height: 40.05%;
+  top: 39.1%;
+  left: 93.53%;
+  background: url(../images/Icons/arrow-for-title.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+/* Title with arrow Ends */

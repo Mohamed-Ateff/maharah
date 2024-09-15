@@ -1,0 +1,20 @@
+header {
+  background-color: white;
+}
+header .one-buttons-for-header .span-for-icon-button {
+  background-color: #f6f6f6;
+}
+header .one-buttons-for-header:nth-child(2) .span-for-icon-button {
+  background-color: #d9a867;
+  color: white;
+}
+header .one-buttons-for-header:nth-child(2) {
+  transition: 0.3s ease;
+
+  background-color: #c6822a1a;
+  color: #c6822a;
+}
+header .one-buttons-for-header:nth-child(2) .span-for-icon-button {
+  transition: 0.3s ease;
+  background-color: #ffffff;
+}

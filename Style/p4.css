@@ -6,20 +6,17 @@
     gap: 20px;
     align-items: stretch;
     background-color: #f0f4fa;
-    margin-top: 200px;
+    padding-top: 200px;
+    margin-bottom: 100px;
     flex-wrap: wrap;
 }
 
 .card {
     background-color: white;
-   
-    padding-top: 60px; /* Adjust to give space for the icon */
+    padding-top: 80px; /* Adjust to give space for the icon */
     position: relative;
-    border: 1px solid #e0e0e0;
-    /* border-radius: 10px; */
     text-align: center;
-    width: 30%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 32%;
     flex-grow: 1; 
     display: flex;
     flex-direction: column;
@@ -28,7 +25,7 @@
 }
 
 .card-content {
-    padding: 0 30px 30px 30px; 
+    padding: 0 40px 40px 40px; 
     text-align: right
 }
 
@@ -36,7 +33,7 @@
     position: absolute;
     top: -50px; 
     background-color: #3A73A8; 
-    padding: 20px;
+    padding: 25px;
    
 }
 
@@ -44,27 +41,27 @@
     position: absolute;
     top: -50px;  
     background-color: #062E4A; 
-    padding: 20px;
+    padding: 25px;
    
 }
 .icon-wrapper-3 {
     position: absolute;
     top: -50px;  /* Moves the icon upwards */
     background-color: #D9A867; 
-    padding: 20px;
+    padding: 25px;
 }
 
 .icon-wrapper-1 img {
-    width: 50px;   /* may adjust later kareem*/
-    height: 50px;
+    width: 60px;   /* may adjust later kareem*/
+    height: 60px;
 }
 .icon-wrapper-2 img {
-    width: 50px;   /* may adjust later kareem*/
-    height: 50px;
+    width: 60px;   /* may adjust later kareem*/
+    height: 60px;
 }
 .icon-wrapper-3 img {
-    width: 50px;   /* may adjust later kareem*/
-    height: 50px;
+    width: 60px;   /* may adjust later kareem*/
+    height: 60px;
 }
 
 .card h2 {
@@ -73,13 +70,13 @@
     font-weight: 700;
     line-height: 3.514rem;
     margin-top: 10px; 
-   
 }
 
 .card p {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
     color: #666;
+    margin-top: 10px;
     line-height: 1.875rem;
     align-items: right;
 }
@@ -112,10 +109,11 @@
     background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
-    width: 48%;
+    width: 49.5%;
+    margin-bottom: 5px;
     height: 320px;
     position: relative;
-    padding: 2rem; 
+    padding: 2.5rem 3rem; 
     color: black;
     text-align: right;
     display: flex;
@@ -154,8 +152,8 @@
     color: #3A73A8;
     font-weight: 700;
     line-height: 3.514rem;
-    margin-top: 10px;
     z-index: 2; 
+    margin-bottom: 5px;
 }
 
 .card-four ul {
@@ -169,13 +167,13 @@
     font-size: 1rem;
     line-height: 1.875rem;
     list-style-type: square;
-    
+    margin-right: 20px;
 }
 
 .number {
     position: absolute;
-    left: 3.5rem;
-    bottom: 10px;
+    left: 3.6rem;
+    bottom: 15px;
     font-size: 3.125rem;
     color: white;
     font-weight: 700;
@@ -186,8 +184,14 @@
 .aligncenter{
     text-align: center;
 }
+.diff-style{
+    font-size: 20px !important;
+    color: #333333;
+    padding-bottom: 20px;
+}
 .threeadjust{
-    margin-top: 50px;
+    padding-top: 0px;
+    margin-top: 70px;
 }
 
 .icon-wrapper {
@@ -196,13 +200,15 @@
     background-color: #C6822A; 
     width: 115px;
     height: 94.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-wrapper p {
     color: white;
     font-weight: 700;
     font-size: 3.125rem;
-    line-height: 5.856rem;
 }
 /* Adjust Three Cards */
 
@@ -212,10 +218,11 @@
     align-items: center;
     gap: 20px;
     background-color: #f0f4fa;
-    padding: 20px;
+    padding: 0px 20px;
     border-radius: 10px;
     height: 100%; /* Make sure the content is aligned evenly */
     background-color: #B5CADD;
+    margin-top: 15px;
 }
 
 .left-side, .middle-side, .right-side {

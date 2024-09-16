@@ -206,6 +206,87 @@
 }
 /* Adjust Three Cards */
 
+.new-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f4fa;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%; /* Make sure the content is aligned evenly */
+    background-color: #B5CADD;
+}
+/* .sides{
+    background-color: #B5CADD;
+} */
+.left-side, .middle-side, .right-side {
+    width: 33.33%; /* Divide into three equal parts */
+   text-align: center;
+   
+}
+.middle-side{
+    text-align: right; /* Align text to the right */
+    flex-direction: column;
+    gap: 30px;
+    text-align: right; /
+}
+.middle-side h2{
+    font-size: 22px;
+    color: #3A73A8;
+    font-weight: 700;
+    line-height: 41.23px;
+}
+.middle-side p{
+    font-size: 14px;
+    color: #666666;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px; /* Space between circle and text */
+    justify-content: flex-start; /* Ensures the text flows right to left */
+    margin-top: 30px;
+}
+
+.left-side h1 {
+    font-size: 60px;
+    color: #3A73A8;
+    margin: 0;
+    line-height: 72.18px;
+}
+
+.left-side h2 {
+    font-size: 20px;
+    color:#C6822A;
+    margin-bottom: 10px;
+    line-height: 24.06px;
+}
+
+.middle-side span {
+    font-size: 1.125rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+}
+
+.circle {
+    width: 32.65px;
+    height: 32.65px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.right-side img {
+    width: 100%; /* Ensures the image takes up the full container width */
+    max-width: 300px;
+}
 
 
 @media (max-width: 768px) {
@@ -256,6 +337,19 @@
         font-weight: 700;
         font-size: 1rem;
         line-height:1rem;
+    }
+    .new-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-side, .middle-side, .right-side {
+        width: 100%; /* Full width on small screens */
+        text-align: center;
+    }
+
+    .right-side img {
+        max-width: 100%;
     }
     @media (max-width: 1200px) {
         .card {

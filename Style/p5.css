@@ -8,7 +8,8 @@
 
 .one-card {
   width: 30%;
-  margin-bottom: 20px;
+  height: 135px;
+  margin-bottom: 25px;
   background-color: white;
   padding: 20px;
   position: relative;
@@ -55,8 +56,6 @@
   font-weight: bold;
 }
 
-
-
 /* الاداء التشغيلي */
 #revenue-share-table {
   padding: 20px;
@@ -74,7 +73,6 @@
 .revenue-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
   direction: rtl;
 }
 
@@ -118,11 +116,9 @@
   font-style: italic;
 }
 
-
 /* الاهداف التشغيلية */
 #card-grid {
   padding: 40px;
-  font-family: "Arial", sans-serif;
 }
 
 .card-grid {
@@ -186,4 +182,106 @@
   .card::before {
     border-right: 10px solid #c7cdd8;
   }
+}
+
+
+/*الموارد البشرية*/
+
+.charts{
+    position: relative;
+    margin-top: 60px;
+}
+
+.header {
+    background-color: #C88D48; 
+    color: #fff; 
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 40%;
+        position: absolute;
+    right: 32%;
+    top: -8%;
+    margin: 0 auto 20px auto; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.employees {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 10px auto;
+    flex-wrap: wrap; 
+}
+
+.year-chart {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.year-title1 {
+    font-size: 14px;
+    text-align: center;
+        margin-top: 50px;
+
+}
+
+.year-title2{
+        font-size: 50px;
+    font-weight: bold;
+        text-align: center;
+            margin: 5px auto 30px auto;
+
+}
+
+.chart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.chart img {
+    width: 100%;
+    height: auto;
+}
+
+.chart-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.legend {
+    margin-top: 20px;
+}
+
+.legend-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.color-block {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.saudi {
+    background-color: #C88D48; 
+}
+
+.non-saudi {
+    background-color: #517EA4;
 }

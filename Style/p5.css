@@ -12,7 +12,6 @@
     background-color: white;
     padding: 20px;
     position: relative;
-    border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     border-top-width: 8px;
@@ -54,4 +53,60 @@
 .title-with-arrow {
     font-size: 22px;
     font-weight: bold;
+}
+
+
+/* Revenue Share Table Styles */
+#revenue-share-table {
+    background-color: #f2f5fb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.table-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #062e4a;
+    margin-bottom: 20px;
+}
+
+.revenue-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+}
+
+.revenue-table th {
+    background-color: #062e4a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.revenue-table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.revenue-table tbody tr:nth-child(1),
+.revenue-table tbody tr:nth-child(2) {
+    background-color: white;
+}
+
+.total-row {
+    background-color: #EFDABE;
+    font-weight: bold;
+}
+
+.footnote {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: left;
+    color: #333;
+    font-style: italic;
 }

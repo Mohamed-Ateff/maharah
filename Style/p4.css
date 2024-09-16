@@ -288,6 +288,39 @@
     max-width: 300px;
 }
 
+/* nine cards */
+.nine-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+    gap: 5px; /* Space between the cards */
+    margin-top: 50px; /* Adds space at the top */
+    text-align: right; /* Align text to the right */
+}
+
+.nine-cards .card-9 {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: right; /* Ensures text is aligned to the right */
+    height: 275px;
+    clip-path: polygon(90% 0%,100% 15%,100% 100%,0% 100%,0% 0%);
+}
+
+.nine-cards h3 {
+    font-size: 30px;
+    color: #062E4A; 
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 56.22px;
+}
+
+.nine-cards p {
+    font-size: 20px;
+    color: #333333;
+    line-height: 30px;
+}
+/* nine cards Ends*/
 
 @media (max-width: 768px) {
     .card {

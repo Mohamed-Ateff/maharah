@@ -1,9 +1,166 @@
 /* Three cards (Name) */
 
-.three-cards{
+.three-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+    background-color: #f0f4fa;
+    margin-top: 200px;
+}
 
+.card {
+    background-color: white;
+    /* padding: 30px; */
+    padding-top: 60px; /* Adjust to give space for the icon */
+    position: relative;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Ensures cards take equal space */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content {
+    padding: 0 30px 30px 30px; /* This affects the content only, not the icon */
+    text-align: right
+}
+
+.icon-wrapper-1 {
+    position: absolute;
+    top: -50px;  /* Moves the icon upwards */
+    background-color: #3A73A8; /* Matches the card top color */
+    padding: 20px;
+   
+}
+
+.icon-wrapper-2 {
+    position: absolute;
+    top: -50px;  /* Moves the icon upwards */
+   
+    background-color: #062E4A; /* Matches the card top color */
+    padding: 20px;
+   
+}
+.icon-wrapper-3 {
+    position: absolute;
+    top: -50px;  /* Moves the icon upwards */
+   
+    background-color: #D9A867; /* Matches the card top color */
+    padding: 20px;
+ 
+}
+
+.icon-wrapper-1 img {
+    width: 50px;   /* may adjust later kareem*/
+    height: 50px;
+}
+.icon-wrapper-2 img {
+    width: 50px;   /* may adjust later kareem*/
+    height: 50px;
+}
+.icon-wrapper-3 img {
+    width: 50px;   /* may adjust later kareem*/
+    height: 50px;
+}
+
+.card h2 {
+    font-size: 1.875rem;
+    color: #3A73A8;
+    font-weight: 700;
+    line-height: 3.514rem;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #666;
+    line-height: 1.875rem;
+    align-items: right;
+}
+
+.vision {
+    border-top: 10px solid #3A73A8;
+}
+
+.mission {
+    border-top: 10px solid #062E4A;
+}
+
+.values {
+    border-top: 10px solid #D9A867;
+}
+
+/* Three cards */
+
+/* Four cards */
+
+.four-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.card-four {
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48%; 
+    height: 250px; 
+    position: relative;
+    padding: 20px;
+    color: black; 
+    text-align: right; 
+    display: flex;
+    align-items: flex-end; 
+    overflow: hidden; 
+}
+
+.card-1 {
+    background-image: url('../images/Other/Group\ 938.png'); 
+}
+
+.card-2 {
+    background-image: url('../images/Other/Group\ 939.png');
+}
+
+.card-3 {
+    background-image: url('../images/Other/Group\ 940.png');
+}
+
+.card-4 {
+    background-image: url('../images/Other/Group\ 941.png');
+}
+
+.card-content-four {
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+
+.card-four h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-four ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-four ul li {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 
+/* Four cards */
 
-/* Three cards */
+

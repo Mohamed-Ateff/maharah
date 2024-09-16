@@ -8,7 +8,7 @@
   align-items: stretch;
   background-color: white;
   margin-top: 50px;
-  padding: 50px 100px;
+  padding: 100px 100px;
 }
 .big-card .one-side {
   width: 60%;
@@ -26,7 +26,7 @@
 .big-card .one-side:last-child h3 {
   margin-bottom: 20px;
 }
-.big-card .one-side:last-child h3:last-child {
+.big-card .one-side:last-child h3:nth-of-type(2) {
   margin-top: 20px;
 }
 
@@ -49,4 +49,21 @@
 }
 .store img {
   width: 300px;
+}
+
+.div-for-icons {
+  display: flex;
+}
+.div-for-icons a {
+  border-radius: 50px;
+  margin-left: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #062e4a;
+  width: 53px;
+  height: 53px;
+}
+.div-for-icons img {
+  height: 22px;
 }

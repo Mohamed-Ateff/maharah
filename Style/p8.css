@@ -1,0 +1,21 @@
+.title-and-card {
+  margin-top: 250px;
+}
+
+.big-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: white;
+  margin-top: 50px;
+  padding: 50px 100px;
+}
+.big-card .one-side {
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
+.big-card .one-side h3 {
+  color: #3a73a8;
+}
+

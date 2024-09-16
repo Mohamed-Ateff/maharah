@@ -217,9 +217,7 @@
     height: 100%; /* Make sure the content is aligned evenly */
     background-color: #B5CADD;
 }
-/* .sides{
-    background-color: #B5CADD;
-} */
+
 .left-side, .middle-side, .right-side {
     width: 33.33%; /* Divide into three equal parts */
    text-align: center;
@@ -247,8 +245,8 @@
 .item {
     display: flex;
     align-items: flex-start;
-    gap: 15px; /* Space between circle and text */
-    justify-content: flex-start; /* Ensures the text flows right to left */
+    gap: 15px; 
+    justify-content: flex-start; 
     margin-top: 30px;
 }
 
@@ -271,8 +269,7 @@
     color: #333;
     margin-bottom: 10px;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: flex-end; */
+   
 }
 
 .circle {
@@ -284,7 +281,7 @@
 }
 
 .right-side img {
-    width: 100%; /* Ensures the image takes up the full container width */
+    width: 100%; 
     max-width: 300px;
 }
 
@@ -292,9 +289,9 @@
 .nine-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
-    gap: 5px; /* Space between the cards */
-    margin-top: 50px; /* Adds space at the top */
-    text-align: right; /* Align text to the right */
+    gap: 5px; 
+    margin-top: 50px; 
+    text-align: right; 
 }
 
 .nine-cards .card-9 {
@@ -322,6 +319,84 @@
 }
 /* nine cards Ends*/
 
+/* التطلعات */
+
+.container-white {
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-gap: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+
+.text-item {
+   
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.text-item h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 56.22px;
+    text-align: right;
+}
+
+.text-item p {
+    font-size: 16px;
+    text-align: right;
+font-weight: 700;
+line-height: 30px;
+color: #666666;
+}
+
+
+.image-wrapper {
+    grid-column: 3; /* Place in the last column */
+    align-self: end; /* Align image to the bottom */
+    text-align: center;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blue-border{
+    width: 75%;
+    height: 24.17px;
+    background-color: #3A73A8;
+    margin: auto;
+}
+/* التطلعات Ends*/
+
+/* التحديات */
+
+.title-forFinal{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.title-forFinal p{
+    font-size: 25px;
+    color: #333333; 
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+/*التحديات Ends*/
 @media (max-width: 768px) {
     .card {
         width: 100%;
@@ -384,11 +459,19 @@
     .right-side img {
         max-width: 100%;
     }
-    @media (max-width: 1200px) {
-        .card {
-            width: 48%;
-            margin-bottom: 20px;
-        }
+    .grid-layout {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .image-wrapper {
+        align-self: center; /* Center image in smaller screens */
+    }
+   
+}
+@media (max-width: 1200px) {
+    .card {
+        width: 48%;
+        margin-bottom: 20px;
     }
 }
 /* Four cards */

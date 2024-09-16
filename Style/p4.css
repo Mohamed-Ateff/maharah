@@ -296,19 +296,17 @@
 .nine-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
-    gap: 5px; 
+    gap: 12px; 
     margin-top: 50px; 
     text-align: right; 
 }
 
 .nine-cards .card-9 {
     background-color: white;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 50px;
     text-align: right; /* Ensures text is aligned to the right */
     height: 275px;
-    clip-path: polygon(90% 0%,100% 15%,100% 100%,0% 100%,0% 0%);
+    clip-path: polygon(93% 0%,100% 10%,100% 100%,0% 100%,0% 0%);
 }
 
 .nine-cards h3 {
@@ -323,6 +321,7 @@
     font-size: 20px;
     color: #333333;
     line-height: 30px;
+    font-weight: 700;
 }
 /* nine cards Ends*/
 
@@ -334,9 +333,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 40px 20px 0px 20px;
     box-sizing: border-box;
     position: relative;
+    margin-top: 20px;
 }
 
 .grid-layout {
@@ -349,8 +349,7 @@
 
 
 .text-item {
-   
-    padding: 20px;
+    padding: 0px 40px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -380,6 +379,8 @@ color: #666666;
 .image-wrapper img {
     max-width: 100%;
     height: auto;
+    position: relative;
+    top: 7px;
 }
 
 .blue-border{

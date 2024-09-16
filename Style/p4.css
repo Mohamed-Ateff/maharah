@@ -322,6 +322,77 @@
 }
 /* nine cards Ends*/
 
+/* التطلعات */
+.container-white {
+    border-bottom: 30px solid black;
+    height: 900px;
+    background-color: white;
+    position: relative;
+}
+.container-white {
+    height: 900px;
+    background-color: white;
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+}
+
+.flex-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.text-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.text-item {
+    width: 45%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.text-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-item p {
+    font-size: 16px;
+}
+
+.image-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.title-forFinal{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.title-forFinal p{
+    font-size: 25px;
+    color: #333333; 
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+/* التطلعات Ends*/
 @media (max-width: 768px) {
     .card {
         width: 100%;

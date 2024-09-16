@@ -67,3 +67,32 @@
 .div-for-icons img {
   height: 22px;
 }
+
+@media screen and (max-width: 768px) {
+  .big-card {
+    padding: 50px 50px;
+    flex-direction: column;
+  }
+  .big-card .one-side {
+    width: 100%;
+  }
+
+  .store img {
+    width: 100%;
+  }
+  .big-card .one-side:last-child {
+    width: 100%;
+  }
+  .div-for-icons {
+    flex-flow: wrap;
+  }
+  .div-for-icons a {
+    margin-bottom: 7px;
+    min-width: 53px;
+    min-height: 53px;
+    width: 53px;
+    height: 53px;
+    max-width: 53px;
+    max-height: 53px;
+  }
+}

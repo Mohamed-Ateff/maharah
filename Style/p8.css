@@ -18,4 +18,15 @@
 .big-card .one-side h3 {
   color: #3a73a8;
 }
-
+.margin-for-all-divs {
+  margin-top: 20px;
+}
+.margin-for-all-divs div {
+  margin-bottom: 20px;
+}
+.margin-for-all-divs div p {
+  color: #163029;
+}
+.margin-for-all-divs div a {
+  color: #163029;
+}

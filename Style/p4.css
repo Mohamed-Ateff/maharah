@@ -1,9 +1,269 @@
 /* Three cards (Name) */
 
-.three-cards{
-
+.three-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+    background-color: #f0f4fa;
+    margin-top: 200px;
+    flex-wrap: wrap;
 }
 
+.card {
+    background-color: white;
+   
+    padding-top: 60px; /* Adjust to give space for the icon */
+    position: relative;
+    border: 1px solid #e0e0e0;
+    /* border-radius: 10px; */
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease;
+   
+}
 
+.card-content {
+    padding: 0 30px 30px 30px; 
+    text-align: right
+}
+
+.icon-wrapper-1 {
+    position: absolute;
+    top: -50px; 
+    background-color: #3A73A8; 
+    padding: 20px;
+   
+}
+
+.icon-wrapper-2 {
+    position: absolute;
+    top: -50px;  
+    background-color: #062E4A; 
+    padding: 20px;
+   
+}
+.icon-wrapper-3 {
+    position: absolute;
+    top: -50px;  /* Moves the icon upwards */
+    background-color: #D9A867; 
+    padding: 20px;
+}
+
+.icon-wrapper-1 img {
+    width: 50px;   /* may adjust later kareem*/
+    height: 50px;
+}
+.icon-wrapper-2 img {
+    width: 50px;   /* may adjust later kareem*/
+    height: 50px;
+}
+.icon-wrapper-3 img {
+    width: 50px;   /* may adjust later kareem*/
+    height: 50px;
+}
+
+.card h2 {
+    font-size: 1.875rem;
+    color: #3A73A8;
+    font-weight: 700;
+    line-height: 3.514rem;
+    margin-top: 10px; 
+   
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #666;
+    line-height: 1.875rem;
+    align-items: right;
+}
+
+.vision {
+    border-top: 10px solid #3A73A8;
+}
+
+.mission {
+    border-top: 10px solid #062E4A;
+}
+
+.values {
+    border-top: 10px solid #D9A867;
+}
 
 /* Three cards */
+
+/* Four cards */
+
+.four-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.card-four {
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48%;
+    height: 320px;
+    position: relative;
+    padding: 2rem; 
+    color: black;
+    text-align: right;
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden;
+    box-sizing: border-box; 
+}
+
+.card-1 {
+    background-image: url('../images/Other/Group\ 938.png'); 
+    background-size: cover;    
+}
+
+.card-2 {
+    background-image: url('../images/Other/Group\ 939.png');
+    background-size:  cover;   
+}
+
+.card-3 {
+    background-image: url('../images/Other/Group\ 940.png');
+    background-size:  cover;   
+}
+
+.card-4 {
+    background-image: url('../images/Other/Group\ 941.png');
+    background-size:  cover;   
+}
+
+.card-content-four {
+    width: 100%;
+    position: relative;
+}
+
+.card-four h2 {
+    font-size: 1.875rem;
+    color: #3A73A8;
+    font-weight: 700;
+    line-height: 3.514rem;
+    margin-top: 10px;
+    z-index: 2; 
+}
+
+.card-four ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.card-four ul li {
+    font-size: 1rem;
+    line-height: 1.875rem;
+    list-style-type: square;
+    
+}
+
+.number {
+    position: absolute;
+    left: 3.5rem;
+    bottom: 10px;
+    font-size: 3.125rem;
+    color: white;
+    font-weight: 700;
+    line-height: 5.856rem;
+}
+
+/* Adjust Three Cards */
+.aligncenter{
+    text-align: center;
+}
+.threeadjust{
+    margin-top: 50px;
+}
+
+.icon-wrapper {
+    position: absolute;
+    top: -50px; 
+    background-color: #C6822A; 
+    width: 115px;
+    height: 94.3px;
+}
+
+.icon-wrapper p {
+    color: white;
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 5.856rem;
+}
+/* Adjust Three Cards */
+
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .icon-wrapper-1 img,
+    .icon-wrapper-2 img,
+    .icon-wrapper-3 img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .card-four {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .card-four h2 {
+        font-size: 1.5rem;
+    }
+
+    .number {
+        left: 1rem;
+        font-size: 2rem;
+    }
+
+    .icon-wrapper {
+        position: absolute;
+        top: -25px;
+        background-color: #C6822A;
+        width: 40px;
+        height: 40px;
+    }
+    .icon-wrapper p {
+        color: white;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height:1rem;
+    }
+    @media (max-width: 1200px) {
+        .card {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+    }
+}
+/* Four cards */
+
+

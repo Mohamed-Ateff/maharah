@@ -1,0 +1,57 @@
+/* nine cards section */
+.nine-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.one-card {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top-width: 8px;
+    border-top-style: solid;
+}
+
+.logo-div {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: -25px;
+    right: 0px;
+}
+
+.one-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 30px;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text-block {
+    margin-top: 20px;
+}
+
+.title-with-arrow {
+    font-size: 22px;
+    font-weight: bold;
+}

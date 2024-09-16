@@ -89,6 +89,10 @@
 .thBorders2 {
   border-right: 1px solid #b5cadd;
 }
+.thGray th{
+  color: #b5cadd;
+  font-weight: lighter;
+}
 .revenue-table td {
   padding: 15px;
   text-align: center;
@@ -117,7 +121,7 @@
 
 /* الاهداف التشغيلية */
 #card-grid {
-  padding: 40px;
+  padding: 40px 0px;
 }
 
 .card-grid {
@@ -288,7 +292,7 @@
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #c6822a; 
+  color: #c6822a;
 }
 
 .genderCharts {
@@ -330,7 +334,7 @@
 }
 
 .gender-table th {
-  background-color: #223b50; 
+  background-color: #223b50;
   color: #fff;
   border: 1px solid #b5cadd;
 }
@@ -377,8 +381,8 @@
   text-align: right;
   margin-right: 13%;
 }
-.yearColor{
-    color: #B5CADD;
+.yearColor {
+  color: #b5cadd;
 }
 .card-image {
   width: 150px;
@@ -386,7 +390,7 @@
   position: absolute;
   right: -75px;
   top: 50%;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
 }
 
 .card-image img {
@@ -410,7 +414,7 @@
 
 @media (max-width: 768px) {
   .card {
-    width: 100%; 
+    width: 100%;
   }
   .card-image {
     position: static;

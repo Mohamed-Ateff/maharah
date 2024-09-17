@@ -3,14 +3,19 @@
   justify-content: space-between;
   align-items: flex-start !important;
   flex-wrap: wrap;
+  margin-top: 250px;
+}
+
+.container-for-center h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .section {
-  /* background-color: #e69a00; */
   height: fit-content;
   max-height: fit-content !important;
-  width: 48%;
-  margin-bottom: 20px;
+  width: 32%;
+  margin-top: 40px;
 }
 
 .section-header {
@@ -24,15 +29,16 @@
 }
 
 .footer {
-  margin-top: 50px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
-  padding: 30px;
-  background-color: #d8d8d7;
+  height: 100px;
+  background-color: #ffffff;
 }
 
 .button-for-footer {
-  padding: 6px 40px;
+  font-family: "Cairo", sans-serif;
+  padding: 6px 70px;
   border: none;
   color: white;
   cursor: pointer;
@@ -41,18 +47,11 @@
   align-items: center;
   gap: 15px;
   font-size: 17px;
-  margin-left: 20px;
 }
 
-.footer svg {
-  position: relative;
-  top: 3px;
-  margin-right: 10px;
-  width: 27px !important;
-}
 #download-all {
-  border-radius: 500px !important;
-  background-color: #fcb44a;
+  color: white;
+  background-color: #3a73a8;
 }
 
 .sub-item {
@@ -62,15 +61,17 @@ label {
   margin-top: -5px;
   font-weight: 700;
   font-size: 17pt;
+  color: #3a73a8;
 }
 .section-header-div {
   padding: 5px 0;
+  margin-bottom: 10px;
 }
 .custom-checkbox {
   position: relative;
   display: inline-block;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   margin-left: 5px;
   cursor: pointer;
   outline: none !important;
@@ -80,9 +81,8 @@ input[type="checkbox"].custom-checkbox {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  border: 1px solid #c1c1c1;
   border-radius: 0px;
-  background-color: #d9d9d9;
+  background-color: white;
 }
 
 input[type="checkbox"].custom-checkbox:checked {
@@ -123,15 +123,15 @@ input[type="checkbox"].custom-checkbox:checked {
   gap: 5px;
   display: flex;
   align-items: center;
-  color: #746d6d;
+  color: #1d1d1d;
 }
 #download-selected {
   color: black;
   background-color: transparent;
+  background-color: red;
 }
 #download-all {
-  color: black;
-  border-radius: 25px;
+  color: white;
 }
 @media (max-width: 768px) {
   .section {
@@ -143,5 +143,5 @@ input[type="checkbox"].custom-checkbox:checked {
 }
 
 input[type="checkbox"] {
-  accent-color: #fcb44a;
+  accent-color: #005491;
 }

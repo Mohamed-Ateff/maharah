@@ -49,13 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     label: 'النقد من العمليات التشغيلية',
                     data: [74, 74, 247, 28, 194, 197],
                     backgroundColor: '#062E4A',
-                    barThickness: 112, // Bar width
+                    barThickness: 112, 
                     borderWidth: 1,
-                    order: 2 // Draw bars below the line
+                    order: 2 
                 },
                 {
                     label: 'نسبة التحول النقدي',
-                    data: [0.34, 0.26, 1.35, 0.19, 1.79, 2.07], // Line chart data
+                    data: [0.34, 0.26, 1.35, 0.19, 1.79, 2.07],
                     type: 'line',
                     borderColor: '#B5CADD',
                     backgroundColor: 'transparent',
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     fill: false,
                     pointStyle: 'none',
                     pointRadius: 0,
-                    order: 1, // Draw line on top of bars
+                    order: 1,
                     yAxisID: 'y2',
                 }
             ]
@@ -73,21 +73,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 x: {
                     ticks: {
                         font: {
-                            size: 30, // Font size
-                            weight: '700', // Font weight
+                            size: 30,
+                            weight: '700', 
                         },
-                        color: '#3A73A8', // Font color
-                        padding: 30, // Padding to simulate line height
+                        color: '#3A73A8', 
+                        padding: 30,
                     },
                     grid: {
-                        display: false // Hide grid lines
+                        display: false
                     }
                 },
                 y: {
-                    display: false // Hide y-axis and ticks
+                    display: false 
                 },
                 y2: {
-                    display: false // Hide second y-axis
+                    display: false 
                 }
             },
             plugins: {
@@ -99,29 +99,29 @@ document.addEventListener('DOMContentLoaded', () => {
                       font: {
                         size: 30,
                         weight:700,
-                      }, color: '#333333', // Set font color
+                      }, color: '#333333', 
                       padding: 5,
                     }
                   },
                 datalabels: {
-                    color: '#333333', // Bar chart data label color
+                    color: '#333333', 
                     font: {
-                        size: 30, // Font size for bar chart data labels
-                        lineHeight: 29.98 // Line height for bar chart data labels
+                        size: 30, 
+                        lineHeight: 29.98 
                     },
                     anchor: 'start',
                     align: 'center',
                     textAlign: 'center',
                     clamp:true,
                     padding: {
-                        top: -20, // Shift the labels up by 20 pixels
+                        top: -20, 
                     }, 
                     display:true 
                 }
             },
             layout: {
                 padding: {
-                    bottom: 5 // Padding below chart for labels
+                    bottom: 5 
                 }
             }
         },
@@ -139,13 +139,13 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const chartIndex = entry.target.dataset.index;
-                charts[chartIndex].update(); // Trigger chart rendering/animation
+                charts[chartIndex].update(); 
             }
         });
     }, observerOptions);
   
     document.querySelectorAll('canvas').forEach((canvas, index) => {
-        canvas.dataset.index = index; // Mark each chart with its index
-        observer.observe(canvas);     // Observe each canvas element
+        canvas.dataset.index = index; 
+        observer.observe(canvas);    
     });
   ;

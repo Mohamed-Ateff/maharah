@@ -77,7 +77,7 @@
 }
 
 .revenue-table th {
-  background-color: #062e4a;
+  background-color: #062E4A;
   color: white;
   padding: 15px;
   text-align: center;
@@ -115,7 +115,7 @@
 }
 
 .total-row {
-  background-color: #efdabe;
+  background-color: #EFDABE;
 }
 
 .footnote {
@@ -320,7 +320,7 @@
 }
 
 .gender-table th {
-  background-color: #223b50;
+  background-color: #062E4A;
   color: #fff;
   border: 1px solid #b5cadd;
 }
@@ -362,7 +362,7 @@
   color: #517ea4;
   font-size: 16px;
   font-weight: bold;
-  padding: 10px;
+  padding: 15px;
   text-align: right;
   margin-right: 13%;
 }
@@ -384,7 +384,7 @@
 }
 
 .card-content {
-  padding: 15px;
+  padding: 20px;
   text-align: right;
   color: #333;
   z-index: 1;
@@ -407,6 +407,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 992px) {
   .nine-cards {
     justify-content: space-between;
@@ -419,6 +425,41 @@
   .revenue-table th,
   .revenue-table td {
     font-size: 14px;
+  }
+   
+   .cards2023 {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card::before {
+    border-right: 15px solid #c7cdd8;
+  }
+  .card2023 {
+    width: 100%; 
+    height: auto; 
+    position: relative;
+  }
+
+  .card-image {
+    position: static; 
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    transform: none;
+  }
+
+  .card-date {
+    margin-right: 0;
+  }
+
+  .card-content {
+    margin-right: 0;
+    padding: 10px;
   }
 }
 
@@ -468,6 +509,14 @@
     width: 100%; 
     max-width: 400px; 
   }
+    .card {
+    width: 100%;
+  }
+  .card-image {
+    position: static;
+    margin-bottom: 20px;
+  }
+ 
 }
 
 @media (max-width: 480px) {
@@ -485,54 +534,18 @@
     height: 50px;
     font-size: 14px;
   }
-}
-
-@media (max-width: 768px) {
-  .card {
-    width: 100%;
-  }
-  .card-image {
-    position: static;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .card-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
-  .card::before {
-    border-right: 15px solid #c7cdd8;
-  }
-}
-
-@media (max-width: 480px) {
-  .card-grid {
+    .card-grid {
     grid-template-columns: 1fr;
   }
 
   .card::before {
     border-right: 10px solid #c7cdd8;
+  }
+    .card-date {
+    font-size: 14px;
+  }
+
+  .card-content p {
+    font-size: 14px;
   }
 }

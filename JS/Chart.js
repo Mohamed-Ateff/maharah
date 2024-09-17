@@ -1,46 +1,14 @@
-//ChartsJs
 document.addEventListener('DOMContentLoaded', () => {
     const ctx1 = document.getElementById('chart1').getContext('2d');
     const ctx2 = document.getElementById('chart2').getContext('2d');
     const ctx3 = document.getElementById('chart3').getContext('2d');
     const ctx4 = document.getElementById('chart4').getContext('2d');
-  
-    
-    // Create chart instances
-    // const data4 = {
-    //     labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
-    //     datasets: [
-    //       {
-    //         label: 'إجمالي المطلوبات',
-    //         data: [941, 1103, 1026, 1036, 1708, 1748],
-    //         backgroundColor: 'rgba(3, 4, 71,0.8)',
-    //         borderWidth: 1,
-    //         type: 'bar',
-    //         barPercentage: 1.2,
-    //         order: 1
-    //       },
-    //       {
-    //         label: 'إجمالي الموجودات',
-    //         data: [512, 518, 470, 465, 1051, 1081],
-    //         backgroundColor: 'rgba(46, 121, 179)',
-    //         borderWidth: 1,
-    //         type: 'bar',
-    //         barPercentage: 1.2,
-    //         order: 2
-    //       },
-    //       {
-    //         label: 'صافي الدين إلى نسبة الملكية',
-    //         data: [119, 88, 85, 81, 206, 208],
-    //         borderColor: '#D08C45',
-    //         fill: false,
-    //         type: 'line',
-    //         yAxisID: 'y2',
-    //         order: 3
-    //       }
-    //     ]
-    //   };
 
-    new Chart(ctx3, {
+    // Store chart instances in an array
+    const charts = [];
+
+    // Create chart 1 (example for ctx3)
+    charts.push(new Chart(ctx3, {
         type: 'bar',
         data: {
             labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
@@ -116,8 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     offset: 0,
                     display: true, // Always show labels for bars
                     padding:3
-
-                    
                 },
                 datalabels_line: {
                     color: '#B5CADD',
@@ -156,12 +122,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     top: 100
                 }
             }
-        },
-        // plugins: [ChartDataLabels]
-    });
+        }
+    }));
 
-    //chart 2
-    new Chart(ctx2, {
+    // Create chart 2 (example for ctx2)
+    charts.push(new Chart(ctx2, {
         type: 'bar',
         data: {
             labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
@@ -251,8 +216,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     offset: 0,
                     display: true, // Always show labels for bars
                     padding:3
-
-                    
                 },
                 datalabels_line: {
                     color: '#B5CADD',
@@ -265,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             },
             animation: {
-                duration: 5000,
+                duration: 10000,
                 easing: 'easeOutExpo',
                 onComplete: function() {
                     const ctx = this.ctx;
@@ -291,18 +254,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     top: 100
                 }
             }
-        },
-        // plugins: [ChartDataLabels]
-    });
-   
-});
-  
-    // Scroll-triggered animations
+        }
+    }));
+
+    // Scroll-triggered animations using IntersectionObserver
     const observerOptions = {
         threshold: 0.5
     };
-  
-    const observer = new IntersectionObserver((entries, observer) => {
+
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const chartIndex = entry.target.dataset.index;
@@ -310,10 +270,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, observerOptions);
-  
+
     document.querySelectorAll('canvas').forEach((canvas, index) => {
         canvas.dataset.index = index; // Mark each chart with its index
-        observer.observe(canvas);     // Observe each canvas element
+         observer.observe(canvas);     // Observe each canvas element
     });
-  ;
-  
+});

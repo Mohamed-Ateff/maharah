@@ -1,0 +1,55 @@
+/* Six Cards */
+.Six-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+    gap: 12px; 
+    margin-top: 50px; 
+    text-align: center; 
+}
+
+.Six-cards .card-6 {
+    background-color: white;
+    padding: 20px 50px;
+    text-align: center; /* Ensures text is aligned to the right */
+    height: 275px;
+    /* clip-path: polygon(93% 0%,100% 10%,100% 100%,0% 100%,0% 0%); */
+}
+
+.Six-cards h3 {
+    font-size: 60px;
+    color: #C6822A; 
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.Six-cards p {
+    font-size: 20px;
+    color: #333333;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+
+
+/* Six Cards Ends*/
+
+
+/* Charts */
+.chart-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.chart1-1,.chart2-2,.chart3-3,.chart4-4{
+    width: 100%;
+    height: 600px; /* Adjust the height as needed */
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: auto; /* Remove fixed height */
+    aspect-ratio: 2 / 1; /* Aspect ratio for charts, adjust if needed */
+}
+
+/* Charts Ends*/

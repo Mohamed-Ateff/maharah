@@ -18,12 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
   function triggerAnimations() {
     charts.forEach((chart) => {
       if (isElementInViewport(chart)) {
-        chart.classList.add("animate-bars"); // Trigger bar animation first
+        if (!chart.classList.contains("animate-bars")) {
+          chart.classList.add("animate-bars"); // Trigger bar animation first
 
-        // Delay line chart animation by 2 seconds after bars start
-        setTimeout(() => {
-          chart.classList.add("animate-line");
-        }, 2000); // 2-second delay
+          // Delay line chart animation by 2 seconds after bars start
+          setTimeout(() => {
+            if (!chart.classList.contains("animate-line")) {
+              chart.classList.add("animate-line");
+            }
+          }, 2000); // 2-second delay
+        }
       }
     });
   }

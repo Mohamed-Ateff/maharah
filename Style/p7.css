@@ -35,8 +35,11 @@
 /* Charts */
 
 .chart-container-for-bg {
-  margin-top: 50px;
+  margin-top: 15px;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .chart-container {

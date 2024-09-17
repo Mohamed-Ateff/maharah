@@ -1,0 +1,340 @@
+/*مقدمة*/
+#card-grid {
+  padding: 40px 0px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  text-align: right;
+  direction: rtl;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px 0px 0px 0px;
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 18%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #ebeff8dd;
+}
+
+.card h3 {
+  color: #3a73a8;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/*الهيكل التنظيمي*/
+
+.chart-container {
+  position: relative;
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.ceo-box {
+  background-color: #c6822a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Layout for 3 columns */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Branch boxes */
+.branch-box {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  color: #062e4a;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.sub-branch-box {
+  background-color: #f0f4fa;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  color: #062e4a;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+/* Arrow Styling */
+.arrow-left,
+.arrow-middle,
+.arrow-right {
+  position: absolute;
+  width: 2px;
+  background-color: #3a73a8;
+}
+
+.arrow-left {
+  height: 200px;
+  top: 90px;
+  left: 20%;
+}
+
+.arrow-middle {
+  height: 200px;
+  top: 90px;
+  left: 50%;
+}
+
+.arrow-right {
+  height: 100px;
+  top: 90px;
+  left: 80%;
+}
+
+.arrow-left::after,
+.arrow-middle::after,
+.arrow-right::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #3a73a8;
+  bottom: -10px;
+  left: -8px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow-left,
+  .arrow-middle,
+  .arrow-right {
+    display: none;
+  }
+}
+
+/*مجلس الادارة*/
+.ownersTable table {
+  margin-top: 50px;
+  width: 100%;
+  border-collapse: collapse;
+  direction: rtl;
+}
+.ownersTable th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.ownersTable th {
+  background-color: #062e4a;
+  color: #fff;
+}
+.ownersTable td {
+  background-color: #fff;
+}
+.ownersTable .thin {
+  font-weight: lighter;
+}
+.ownersTable .circle {
+  position: relative;
+}
+.ownersTable .circle::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #d9a867;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.tableChanges {
+  margin-top: 80px;
+  border-collapse: collapse;
+}
+.tableChanges th,
+.tableChanges td {
+  padding: 20px;
+  border: 1px solid #b5cadd;
+}
+.tableChanges th {
+  background-color: #062e4a;
+  color: white;
+  width: 20%;
+  font-size: 18px;
+}
+.tableChanges td {
+  background-color: #fff;
+  color: #062e4a;
+  font-size: 16px;
+}
+
+.capital-details,
+.shareholder-details {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.capital-details th,
+.shareholder-details th,
+.capital-details td,
+.shareholder-details td {
+  padding: 15px;
+  border: 1px solid #b5cadd;
+  text-align: center;
+}
+
+.capital-details th,
+.shareholder-details th {
+  background-color: #062e4a;
+  color: white;
+}
+.capital-details td,
+.shareholder-details td {
+  background-color: #fff;
+}
+
+.capital-details th {
+  width: 50%;
+}
+
+.shareholder-details th {
+  width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  table th,
+  table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  table th,
+  table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card::before {
+    border-right: 15px solid #c7cdd8;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-with-arrow {
+    font-size: 18px;
+  }
+
+  .flex-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-div {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card::before {
+    border-right: 10px solid #c7cdd8;
+  }
+  .card-date {
+    font-size: 14px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tableChanges th {
+    background-color: #062e4a;
+    color: white;
+    padding: 10px;
+  }
+
+  .tableChanges td {
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .tableChanges tr {
+    display: block;
+    border: 1px solid #b5cadd;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tableChanges th {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .tableChanges td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

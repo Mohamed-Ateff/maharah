@@ -488,11 +488,6 @@
   .revenue-table td {
     font-size: 14px;
   }
-
-  .cards2023 {
-    flex-direction: column;
-    gap: 30px;
-  }
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -501,6 +496,11 @@
   .card::before {
     border-right: 15px solid #c7cdd8;
   }
+  .cards2023 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
   .card2023 {
     width: 100%;
     height: auto;

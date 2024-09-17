@@ -40,6 +40,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.title-for-chart {
+  text-align: center;
+  position: relative;
+  top: 55px;
+  z-index: 11;
+}
+.title-for-chart h2 {
+  color: #333333;
+  margin-bottom: 7px;
+}
+.title-for-chart p {
+  color: #163029;
+}
+
+body[lang="en"] {
+  .chart-container-for-bg {
+    transform: rotate3d(80deg);
+  }
 }
 
 .chart-container {
@@ -90,18 +111,28 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
   stroke-dashoffset: 0;
 }
 
-.chart1-1,
-.chart2-2,
-.chart3-3,
-.chart4-4 {
-  width: 100%;
-  height: 600px; /* Adjust the height as needed */
-  background-color: #ffffff;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  width: 100%;
-  height: auto; /* Remove fixed height */
-  aspect-ratio: 2 / 1; /* Aspect ratio for charts, adjust if needed */
+.under-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -50px;
+}
+.one-title-under-chart {
+  margin-left: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-with-color {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+.one-title-under-chart p{
+    color: #333333;
+    font-weight: 800;
+    font-size: 15px;
 }
 
 /* Charts Ends*/

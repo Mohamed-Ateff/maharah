@@ -547,45 +547,38 @@
               <div class="year-chart">
                 <h6 class="year-title1">عام</h6>
                 <h3 class="year-title2">2022</h3>
-                <div class="chart">
-                  <img
-                    src="images/SVG - Charts/Group 986.svg"
-                    alt="Chart 2022"
-                  />
-                </div>
+                <canvas id="chart2022"></canvas>
                 <div class="legend">
                   <div class="legend-item">
+                    <div><span>339</span> <span>(63%)</span></div>
                     <span class="color-block saudi"></span> موظفون سعوديون
-                    <span>339</span> (63%)
                   </div>
                   <div class="legend-item">
+                    <div><span>197</span> (37%)</div>
+
                     <span class="color-block non-saudi"></span> موظفون غير
-                    سعوديون <span>197</span> (37%)
+                    سعوديون
                   </div>
                 </div>
               </div>
-              <div class="year-chart">
+
+              <div class="year-chart year-chart2">
                 <h6 class="year-title1">عام</h6>
                 <h3 class="year-title2">2023</h3>
-                <div class="chart">
-                  <img
-                    src="images/SVG - Charts/Group 986-1.svg"
-                    alt="Chart 2023"
-                  />
-                </div>
+                <canvas id="chart2023"></canvas>
                 <div class="legend">
                   <div class="legend-item">
+                    <div><span>336</span> (65%)</div>
                     <span class="color-block saudi"></span> موظفون سعوديون
-                    <span>336</span> (65%)
                   </div>
                   <div class="legend-item">
+                    <div><span>183</span> (35%)</div>
                     <span class="color-block non-saudi"></span> موظفون غير
-                    سعوديون <span>183</span> (35%)
+                    سعوديون
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="gender">
               <h2 class="genderTitle">
                 نسبة الموظفين الذكور والإناث من إجمالي موظفي الشركة في آخر أربع
@@ -633,7 +626,15 @@
                 </div>
 
                 <div class="saudiChart">
-                <img src="images/SVG - Charts/Group 984.svg" alt="Chart 2023" />
+                  <h3>نسبة السعوديين</h3>
+                  <p>من إجمالي موظفي الشركة في آخر أربع سنوات</p>
+
+                  <div class="bars">
+                    <div class="bar" data-year="2020" data-value="48%"></div>
+                    <div class="bar" data-year="2021" data-value="55%"></div>
+                    <div class="bar" data-year="2022" data-value="63%"></div>
+                    <div class="bar" data-year="2023" data-value="65%"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -824,8 +825,6 @@
         </div>
       </section>
 
-
-
       <footer class="margin-for-footer">
         <div class="top-footer">
           <a href="">
@@ -879,6 +878,8 @@
     </script>
 
     <!--jQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="JS/charts2.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="jquery.counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>

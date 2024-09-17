@@ -1,51 +1,9 @@
 /* النموذج التشغيلي */
-.nine-cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 70px;
-}
-
-.one-card {
-  width: 32%;
-  margin-bottom: 25px;
-  background-color: white;
-  padding: 70px 30px;
-  position: relative;
-  text-align: center;
-  border-top-width: 8px;
-  border-top-style: solid;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo-div {
-  width: 110px;
-  height: 90px;
-  background-color: #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 37px;
-  font-weight: bold;
-  color: white;
-  position: absolute;
-  top: -45px;
-  right: 0px;
-}
-
-.one-card p {
-  font-size: 18px;
-  font-weight: 800;
-  color: #333;
-}
-
 .flex-row {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  justify-content: space-between;
 }
 
 .text-block {
@@ -57,10 +15,51 @@
   font-weight: bold;
 }
 
+.nine-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.one-card {
+  width: 30%;
+  height: 135px;
+  margin-bottom: 25px;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  border-top-width: 8px;
+  border-top-style: solid;
+}
+
+.logo-div {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: -25px;
+  right: 0px;
+}
+
+.one-card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+}
+
 /* الاداء التشغيلي */
 #revenue-share-table {
-  padding: 0px;
-  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .table-title {
@@ -82,31 +81,34 @@
   color: white;
   padding: 15px;
   text-align: center;
-  font-size: 22px;
+  font-size: 16px;
 }
+
 .thBorders {
   border-right: 1px solid #b5cadd;
   border-left: 1px solid #b5cadd;
 }
+
 .thBorders2 {
   border-right: 1px solid #b5cadd;
 }
-.thGray th{
-  font-size: 16px;
-  padding-top: 0px;
+
+.thGray th {
   color: #b5cadd;
   font-weight: lighter;
 }
+
 .revenue-table td {
-  /* background-color: blue; */
   padding: 15px;
   text-align: center;
   font-size: 14px;
   border: 1px solid #ddd;
 }
+
 .tdBold {
   font-weight: bold;
 }
+
 .revenue-table tbody tr:nth-child(1),
 .revenue-table tbody tr:nth-child(2) {
   background-color: white;
@@ -169,27 +171,6 @@
   color: #333;
   font-size: 16px;
   line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
-  .card::before {
-    border-right: 15px solid #c7cdd8;
-  }
-}
-
-@media (max-width: 480px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .card::before {
-    border-right: 10px solid #c7cdd8;
-  }
 }
 
 /*الموارد البشرية*/
@@ -320,7 +301,7 @@
 
 .table-container {
   width: 50%;
-  height: 200px;
+  max-height: 470px;
 }
 
 .gender-table {
@@ -354,7 +335,6 @@
 }
 
 /*ابرز ملامح 2023*/
-
 .cards2023 {
   display: flex;
   flex-wrap: wrap;
@@ -417,6 +397,96 @@
   line-height: 1.5;
 }
 
+@media (max-width: 1200px) {
+  .nine-cards {
+    justify-content: space-around;
+  }
+
+  .one-card {
+    width: 32%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nine-cards {
+    justify-content: space-between;
+  }
+
+  .one-card {
+    width: 48%;
+  }
+
+  .revenue-table th,
+  .revenue-table td {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tow-titles h1 {
+    font-size: 24px;
+  }
+
+  .nine-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .one-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .logo-div {
+    top: -15px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .revenue-table th,
+  .revenue-table td {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .employees {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+  }
+
+  .year-chart {
+    width: 100%; 
+    max-width: 400px; 
+  }
+  .genderCharts{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+  }
+  .genderCharts >div{
+    width: 100%; 
+    max-width: 400px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .title-with-arrow {
+    font-size: 18px;
+  }
+
+  .flex-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-div {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   .card {
     width: 100%;
@@ -424,5 +494,45 @@
   .card-image {
     position: static;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .card::before {
+    border-right: 15px solid #c7cdd8;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card::before {
+    border-right: 10px solid #c7cdd8;
   }
 }

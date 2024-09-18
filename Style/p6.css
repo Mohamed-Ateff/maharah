@@ -96,7 +96,6 @@
   border: 1px solid #e0e0e0;
 }
 
-/* Arrow Styling */
 .arrow-left,
 .arrow-middle,
 .arrow-right {
@@ -160,8 +159,7 @@
 .ownersTable th,
 td {
   border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
+  padding: 12px;
 }
 .ownersTable th {
   background-color: #062e4a;
@@ -240,22 +238,6 @@ td {
   width: 20%;
 }
 
-@media screen and (max-width: 768px) {
-  table th,
-  table td {
-    padding: 10px;
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  table th,
-  table td {
-    padding: 8px;
-    font-size: 12px;
-  }
-}
-
 @media (max-width: 1024px) {
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -273,14 +255,49 @@ td {
   }
 }
 
-@media (max-width: 768px) {
-  .card {
+@media screen and (max-width: 768px) {
+  table th,
+  table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+    .card {
     width: 100%;
   }
+    .tableChanges th {
+    background-color: #062e4a;
+    color: white;
+    padding: 10px;
+  }
+
+  .tableChanges td {
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .tableChanges tr {
+    display: block;
+    border: 1px solid #b5cadd;
+  }
+
 }
 
-@media (max-width: 480px) {
-  .title-with-arrow {
+@media screen and (max-width: 480px) {
+  table th,
+  table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+    .tableChanges th {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .tableChanges td {
+    font-size: 14px;
+    padding: 8px;
+  }
+    .title-with-arrow {
     font-size: 18px;
   }
 
@@ -309,32 +326,6 @@ td {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 768px) {
-  .tableChanges th {
-    background-color: #062e4a;
-    color: white;
-    padding: 10px;
-  }
 
-  .tableChanges td {
-    background-color: #fff;
-    padding: 10px;
-  }
 
-  .tableChanges tr {
-    display: block;
-    border: 1px solid #b5cadd;
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .tableChanges th {
-    font-size: 16px;
-    padding: 8px;
-  }
-
-  .tableChanges td {
-    font-size: 14px;
-    padding: 8px;
-  }
-}

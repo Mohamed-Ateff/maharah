@@ -430,22 +430,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
   margin-top: 30px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 
 .card2023 {
   background-color: #fff;
-  width: 40%;
-  height: 230px;
+  width: calc(50% - 30px);
+  height: 256.65px;
   display: flex;
   flex-direction: column;
   text-align: right;
   position: relative;
-  padding: 20px;
+  /* padding: 20px; */
   box-sizing: border-box;
 }
 
@@ -461,10 +461,10 @@
   color: #b5cadd;
 }
 .card-image {
-  width: 150px;
-  height: 150px;
+  width: 210px;
+  height: 181.58px;
   position: absolute;
-  right: -75px;
+  right: -140px;
   top: 50%;
   transform: translateY(-50%);
 }

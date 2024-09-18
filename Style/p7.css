@@ -2,7 +2,7 @@
 .Six-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 12px;
+    gap: 10px;
     margin-top: 50px;
     text-align: center;
     position: relative;
@@ -26,6 +26,7 @@
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 40px;
+   padding-bottom: 40px;
 }
 
 .Six-cards p {
@@ -59,21 +60,35 @@
     font-size: 60px;
     line-height: 40px;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 .circle-content p{
     font-size: 20px;
     line-height: 30px;
     font-weight: 700;
     color:#FFFFFF;
+    padding: 0px 60px 0px 60px;
 }
 
 .Six-cards div:nth-child(2) {
     justify-content: flex-start; 
+    background: radial-gradient(circle at bottom center, transparent, transparent 120px, #FFFFFF 30px, #FFFFFF);
+    padding-bottom: 10px;
 }
 
 
 .Six-cards div:nth-child(5) {
     justify-content: flex-end; 
+    background: radial-gradient(circle at top center, transparent, transparent 120px, #FFFFFF 12px, #FFFFFF);
+    padding-bottom: 10px;
+}
+.Six-cards div:nth-child(2) h3{
+    padding-bottom: 20px;
+}
+
+
+.Six-cards div:nth-child(5) h3{
+    padding-bottom: 20px;
 }
 
 
@@ -196,10 +211,11 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
 }
 
 .adjustforanimate h1{
-font-weight: 600;
+font-weight: 700;
 font-size: 60px;
 line-height: 100px;
 color: #3A73A8;
+font-family: cairo;
 }
 
 .adjustforanimate h3{
@@ -207,6 +223,7 @@ color: #3A73A8;
   font-size: 40px;
   line-height: 100px;
   color: #C6822A;
+  font-family: cairo;
 }
 
 .btn-final{
@@ -226,6 +243,7 @@ color: #3A73A8;
   font-size: 20px;
   line-height: 37.48px;
   font-weight: 700;
+  font-family: cairo;
 }
 .img-container{
   background-color: #FFFFFF;
@@ -269,18 +287,19 @@ color: #3A73A8;
       line-height: 0px;
   }
 
-  .circle-content h2{
-    font-size: 30px;
-    line-height: 20px;
-    font-weight: 700;
+.circle-content h2{
+  font-size: 30px;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 .circle-content p{
-    font-size: 10px;
-    line-height: 15px;
-    font-weight: 700;
-    color:#FFFFFF;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 700;
+  color:#FFFFFF;
+  padding: 0px 20px 0px 20px;
 }
-
   /* Content sizes decrease */
   .Six-cards h3 {
       font-size: 40px; /* Decrease size */
@@ -295,18 +314,29 @@ color: #3A73A8;
   /* Clear space for the circle */
   .Six-cards div:nth-child(3) {
       padding-left: 70px; /* Shift content to the right */
+      background: radial-gradient(circle at left center, transparent, transparent 75px, #FFFFFF 12px, #FFFFFF);
   }
 
   .Six-cards div:nth-child(4) {
       padding-right: 70px; /* Shift content to the left */
+      background: radial-gradient(circle at right center, transparent, transparent 75px, #FFFFFF 12px, #FFFFFF);
   }
   .Six-cards div:nth-child(2) {
     justify-content: center; 
+    background: #FFFFFF; 
+}
+
+.Six-cards div:nth-child(2) h3{
+  padding-bottom: 40px;
 }
 
 
+.Six-cards div:nth-child(5) h3{
+  padding-bottom: 40px;
+}
 .Six-cards div:nth-child(5) {
     justify-content: center; 
+    background: #FFFFFF
 }
 .container-Final {
   flex-direction: column; /* Stack elements vertically */
@@ -359,7 +389,19 @@ color: #3A73A8;
   .circle-content {
       font-size: 12px; 
   }
-
+  .circle-content h2{
+    font-size: 15px;
+    line-height: 10px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .circle-content p{
+    font-size: 5px;
+    line-height: 7px;
+    font-weight: 700;
+    color:#FFFFFF;
+    padding: 0px 5px 0px 5px;
+  }
   .Six-cards h3 {
       font-size: 30px; 
       line-height: 25px;
@@ -397,4 +439,21 @@ color: #3A73A8;
     width: 18px; 
     height: 18px;
   }
+  .Six-cards div:nth-child(3) {
+    padding-left: 70px; /* Shift content to the right */
+    background: radial-gradient(circle at left center, transparent, transparent 55px, #FFFFFF 12px, #FFFFFF);
+}
+
+.Six-cards div:nth-child(4) {
+    padding-right: 70px; /* Shift content to the left */
+    background: radial-gradient(circle at right center, transparent, transparent 45px, #FFFFFF 12px, #FFFFFF);
+}
+.Six-cards div:nth-child(3) h3{
+  padding-bottom: 5px;
+}
+
+
+.Six-cards div:nth-child(4) h3{
+  padding-bottom: 5px;
+}
 }

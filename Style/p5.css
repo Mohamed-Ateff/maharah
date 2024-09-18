@@ -32,9 +32,8 @@
   position: relative;
   text-align: center;
   border-top-width: 8px;
-  border-top-style: solid;
+  border-top-style: solid;
 }
-
 
 .logo-div {
   width: 115px;
@@ -50,10 +49,10 @@
   top: -50px;
   right: 0px;
 }
-.logo-div span{
- font-weight: 700;
- font-size: 50px;
- line-height: 93.7px;
+.logo-div span {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 93.7px;
 }
 
 .one-card p {
@@ -97,27 +96,24 @@
   border-right: 1px solid #b5cadd;
   border-left: 1px solid #b5cadd;
   font-weight: 700;
-  font-size:300px;
+  font-size: 300px;
   line-height: 40px;
-  
 }
 /* added */
-.thBorders p{
+.thBorders p {
   font-weight: 700;
-  font-size:25px;
+  font-size: 25px;
   line-height: 40px;
-  
 }
 
 .thBorders2 {
   border-right: 1px solid #b5cadd;
 }
 /* added */
-.thBorders2 p{
+.thBorders2 p {
   font-weight: 700;
-  font-size:25px;
+  font-size: 25px;
   line-height: 40px;
-  
 }
 
 .thGray th {
@@ -178,7 +174,7 @@
   content: "";
   position: absolute;
   right: 0;
-  top: 18%;
+  top: 22%;
   transform: translateY(-50%);
   width: 0;
   height: 0;
@@ -201,94 +197,133 @@
   font-size: 16px;
   line-height: 29.98px;
   font-weight: 700;
-  padding: 0 0px 0 40px;   /*TODO: will adjust for mobile*/
+  padding: 0 0px 0 40px; /*TODO: will adjust for mobile*/
 }
 
 /*الموارد البشرية*/
 
-.charts {
-  position: relative;
-  margin-top: 60px;
-}
-
-.header {
-  background-color: #c6822a;
-  color: #fff;
-  padding: 30px 0;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  width: 40%;
-  position: absolute;
-  right: 32%;
-  top: -3%;
-  margin: 0 auto 20px auto;
-  z-index: 1;
-}
-.employees {
+.pie-charts {
+  width: 85%;
+  margin: 100px auto auto auto;
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border-top: 10px solid #3a73a8;
-}
-
-.year-chart {
-  width: 48%;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 70px 20px;
-  text-align: center;
+  background-color: red;
   position: relative;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.year-chart2 {
-  background-color: #b5cadd;
+.title-for-pie-chart-card {
+  background-color: #c6822a;
+  height: 100px;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-.year-title1 {
-  font-size: 16px;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.year-title2 {
-  font-size: 36px;
-  color: #000;
-  margin-bottom: 20px;
-}
-
-.legend {
-  margin-top: 20px;
-}
-
-.legend-item {
+.two-cards-container {
   display: flex;
   justify-content: flex-start;
-  padding: 5px 0;
-  margin-bottom: 20px;
+  align-items: stretch;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
-.legend-item > div {
-  font-weight: bold;
-  margin-right: 10px;
+.one-card-for-pie {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.one-card-for-pie .year {
+  color: #333333;
+  font-weight: 700;
+}
+.one-card-for-pie .date {
+  font-size: 45px;
+  color: #333333;
+  margin-top: -3px;
 }
 
-.color-block {
-  display: inline-block;
-  width: 15px;
-  height: 40px;
-  margin: auto 10px;
-  vertical-align: middle;
+/* pie */
+
+.doughnut-chart-container {
+  overflow: hidden;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 235px;
+  margin: 15px 0px 20px 0px;
+  position: relative;
 }
 
-.saudi {
-  background-color: #c7a45e;
+.doughnutChart1 {
 }
 
-.non-saudi {
-  background-color: #517ea4;
+.number-inside-pie {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  font-weight: 700;
+  color: #333333;
 }
+
+.div-for-data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  width: fit-content;
+  min-width: 62%;
+}
+
+.div-for-numbs {
+}
+.div-for-numbs p {
+  font-weight: 700;
+}
+.p1-for-div-for-numbs {
+  color: #333333;
+  font-size: 25px;
+  margin-bottom: -5px;
+}
+.p2-for-div-for-numbs {
+  margin-top: -5px;
+  font-size: 20px;
+  color: #666666;
+}
+
+.div-for-color-for-pie {
+  width: 22px;
+  height: 60px;
+  margin: 0px 10px 0px 20px;
+}
+.div-for-data h5{
+  font-weight: 700;
+  font-size: 18px;
+  color: #666666;
+}
+
+/* pie Ends */
+
+/*الموارد البشرية*/
 
 .gender {
+  background-color: red;
   margin: 30px 0px 50px 0px;
 }
 
@@ -440,10 +475,10 @@
   /* margin-right: auto; */
 }
 
-.line-underimg{
+.line-underimg {
   width: 210px;
   height: 10px;
-  background-color: #3A73A8;
+  background-color: #3a73a8;
 }
 
 .card2023 {
@@ -561,11 +596,11 @@
     margin-right: 0;
     padding: 10px;
   }
-  .line-underimg{
+  .line-underimg {
     width: 100px;
     height: 10px;
-    background-color: #3A73A8;
-  } 
+    background-color: #3a73a8;
+  }
 }
 
 @media (max-width: 768px) {
@@ -621,10 +656,10 @@
     position: static;
     margin-bottom: 20px;
   }
-  .line-underimg{
+  .line-underimg {
     width: 100px;
     height: 10px;
-    background-color: #3A73A8;
+    background-color: #3a73a8;
   }
 }
 
@@ -643,11 +678,11 @@
     height: 50px;
     font-size: 14px;
   }
-  .logo-div span{
+  .logo-div span {
     font-weight: 700;
     font-size: 20px;
     line-height: 40px;
-   }
+  }
   .card-grid {
     grid-template-columns: 1fr;
   }
@@ -662,12 +697,12 @@
   .card-content p {
     font-size: 14px;
   }
-  .line-underimg{
+  .line-underimg {
     width: 100px;
     height: 10px;
-    background-color: #3A73A8;
+    background-color: #3a73a8;
   }
-  .padding-top-mobile{
-    padding-top:200px
+  .padding-top-mobile {
+    padding-top: 200px;
   }
 }

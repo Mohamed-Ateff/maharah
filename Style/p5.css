@@ -17,15 +17,16 @@
 
 .nine-cards {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 20px;
   flex-wrap: wrap;
   margin-top: 50px;
 }
 
 .one-card {
   width: 30%;
-  height: 135px;
-  margin-bottom: 25px;
+  height: 153.75px;
+  margin-bottom: 30px;
   background-color: white;
   padding: 20px;
   position: relative;
@@ -35,8 +36,8 @@
 }
 
 .logo-div {
-  width: 60px;
-  height: 60px;
+  width: 115px;
+  height: 94.3px;
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -45,20 +46,27 @@
   font-weight: bold;
   color: white;
   position: absolute;
-  top: -25px;
+  top: -50px;
   right: 0px;
+}
+.logo-div span{
+ font-weight: 700;
+ font-size: 50px;
+ line-height: 93.7px;
 }
 
 .one-card p {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
   color: #333;
   margin-top: 30px;
+  vertical-align: center;
+  line-height: 40px;
 }
 
 /* الاداء التشغيلي */
 #revenue-share-table {
-  padding: 20px;
+  padding-top: 20px;
   border-radius: 10px;
 }
 
@@ -87,10 +95,28 @@
 .thBorders {
   border-right: 1px solid #b5cadd;
   border-left: 1px solid #b5cadd;
+  font-weight: 700;
+  font-size:300px;
+  line-height: 40px;
+  
+}
+/* added */
+.thBorders p{
+  font-weight: 700;
+  font-size:25px;
+  line-height: 40px;
+  
 }
 
 .thBorders2 {
   border-right: 1px solid #b5cadd;
+}
+/* added */
+.thBorders2 p{
+  font-weight: 700;
+  font-size:25px;
+  line-height: 40px;
+  
 }
 
 .thGray th {
@@ -162,15 +188,18 @@
 
 .card h3 {
   color: #3a73a8;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 37.48px;
   margin-bottom: 10px;
 }
 
 .card p {
   color: #333;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 29.98px;
+  font-weight: 700;
+  padding: 0 20px 0 25px;   /*TODO: will adjust for mobile*/
 }
 
 /*الموارد البشرية*/
@@ -595,6 +624,11 @@
     height: 50px;
     font-size: 14px;
   }
+  .logo-div span{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+   }
   .card-grid {
     grid-template-columns: 1fr;
   }

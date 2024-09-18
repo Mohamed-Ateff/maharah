@@ -1,12 +1,13 @@
 /*مقدمة*/
+
 #card-grid {
-  padding: 40px 0px;
+  padding: 35px 0px;
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4px;
+  gap: 5px;
   text-align: right;
   direction: rtl;
 }
@@ -17,22 +18,11 @@
   align-items: center;
   background-color: white;
   padding: 20px 0px 0px 0px;
-  position: relative;
   overflow: hidden;
-  height: 180px;
-}
+  min-height: 165px;
 
-.card::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 18%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 20px solid #ebeff8dd;
+  text-align: right;
+  clip-path: polygon(89% 0%, 100% 14%, 100% 100%, 0% 100%, 0% 0%);
 }
 
 .card h3 {
@@ -136,43 +126,47 @@
   left: -8px;
 }
 
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .arrow-left,
-  .arrow-middle,
-  .arrow-right {
-    display: none;
-  }
-}
 
 /*مجلس الادارة*/
 .ownersTable table {
-  margin-top: 50px;
+  margin: 50px auto 65px auto;
   width: 100%;
   border-collapse: collapse;
   direction: rtl;
 }
-.ownersTable th,
-td {
-  border: 1px solid #ddd;
-  padding: 12px;
-}
+
 .ownersTable th {
   background-color: #062e4a;
   color: #fff;
+  font-size: 20px;
+  padding: 12px;
 }
+
+.ownersTable .thBorders {
+  text-align: right;
+  border-right: 1px solid #b5cadd;
+  border-left: 1px solid #b5cadd;
+}
+
 .ownersTable td {
   background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: 3px solid #ebeff8dd;
+  border-bottom: 3px solid #ebeff8dd;
+  font-weight: 700;
+  padding: 20px;
+}
+.ownersTable td:first-child {
+  text-align: center;
 }
 .ownersTable .thin {
   font-weight: lighter;
+  color: #b5cadd;
 }
 .ownersTable .circle {
   position: relative;
+  text-align: center;
 }
 .ownersTable .circle::before {
   content: "";
@@ -184,7 +178,8 @@ td {
 }
 
 .tableChanges {
-  margin-top: 80px;
+  margin-top: 30px;
+  width: 100%;
   border-collapse: collapse;
 }
 .tableChanges th,
@@ -197,20 +192,28 @@ td {
   color: white;
   width: 20%;
   font-size: 18px;
+  font-weight: 700;
+  padding: 45px 0;
 }
 .tableChanges td {
   background-color: #fff;
   color: #062e4a;
   font-size: 16px;
+  border-bottom: 4px solid #ebeff8dd;
 }
 
+
+/*مساهمونا*/
 .capital-details,
 .shareholder-details {
   width: 100%;
-  margin: 20px auto;
+  margin: 20px auto 80px auto;
   border-collapse: collapse;
 }
-
+.table-caption{
+  margin: 20px 0 10px 0;
+  font-size: 19px;
+}
 .capital-details th,
 .shareholder-details th,
 .capital-details td,
@@ -218,17 +221,25 @@ td {
   padding: 15px;
   border: 1px solid #b5cadd;
   text-align: center;
+  font-weight: 700;
 }
 
 .capital-details th,
 .shareholder-details th {
   background-color: #062e4a;
   color: white;
-}
+    padding: 25px 0;
+    font-size: 22px;
+  }
 .capital-details td,
 .shareholder-details td {
   background-color: #fff;
+  padding: 20px 0;
 }
+.shareholder-details td:first-child {
+  width: 100px;
+}
+
 
 .capital-details th {
   width: 50%;
@@ -256,15 +267,25 @@ td {
 }
 
 @media screen and (max-width: 768px) {
+    .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow-left,
+  .arrow-middle,
+  .arrow-right {
+    display: none;
+  }
   table th,
   table td {
     padding: 10px;
     font-size: 14px;
   }
-    .card {
+  .card {
     width: 100%;
   }
-    .tableChanges th {
+  .tableChanges th {
     background-color: #062e4a;
     color: white;
     padding: 10px;
@@ -279,7 +300,9 @@ td {
     display: block;
     border: 1px solid #b5cadd;
   }
-
+  .table-caption{
+    margin: 60px 0 10px 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -288,7 +311,7 @@ td {
     padding: 8px;
     font-size: 12px;
   }
-    .tableChanges th {
+  .tableChanges th {
     font-size: 16px;
     padding: 8px;
   }
@@ -297,7 +320,7 @@ td {
     font-size: 14px;
     padding: 8px;
   }
-    .title-with-arrow {
+  .title-with-arrow {
     font-size: 18px;
   }
 
@@ -326,6 +349,3 @@ td {
     font-size: 14px;
   }
 }
-
-
-

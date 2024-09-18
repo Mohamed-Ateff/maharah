@@ -126,9 +126,10 @@ input[type="checkbox"].custom-checkbox:checked {
   color: #1d1d1d;
 }
 #download-selected {
-  color: black;
+  font-weight: 600;
+  color: white;
   background-color: transparent;
-  background-color: red;
+  background-color: #c6822a;
 }
 #download-all {
   color: white;

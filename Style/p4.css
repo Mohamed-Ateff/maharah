@@ -101,13 +101,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
     margin-top: 50px;
 }
 
 .card-four {
     background-size: contain; 
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     width: 49.5%;
     margin-bottom: 5px;
@@ -405,6 +404,17 @@ color: #666666;
     line-height: 40px;
 }
 /*التحديات Ends*/
+
+@media (max-width: 1200px) {
+    .card {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+     /* .card-four {
+        width: 100%;
+      
+    } */
+}
 @media (max-width: 768px) {
     .card {
         width: 100%;
@@ -445,13 +455,13 @@ color: #666666;
         position: absolute;
         top: -25px;
         background-color: #C6822A;
-        width: 40px;
-        height: 40px;
+        width: 74px;
+        height: 70px;
     }
     .icon-wrapper p {
         color: white;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 3rem;
         line-height:1rem;
     }
     .new-section {
@@ -502,11 +512,17 @@ color: #666666;
         background-color: #3A73A8;
         margin: auto;
     }
+    .title-with-arrow{
+        line-height: 45px;
+    }
 }
-@media (max-width: 1200px) {
-    .card {
-        width: 48%;
-        margin-bottom: 20px;
+
+@media (max-width:556px) {
+    .Some-p-under-each-other p{
+        margin-top: 111px;
+    }
+    .flex-row{
+        margin-bottom: 80px;
     }
 }
 @media (max-width: 480px) {

@@ -24,16 +24,17 @@
 }
 
 .one-card {
-  width: 360.79px;
+  width: 32%;
   height: 153.75px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   background-color: white;
   padding: 30px;
   position: relative;
   text-align: center;
   border-top-width: 8px;
-  border-top-style: solid;
+  border-top-style: solid;
 }
+
 
 .logo-div {
   width: 115px;

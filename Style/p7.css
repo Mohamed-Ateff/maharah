@@ -1,7 +1,7 @@
 /* Six Cards */
 .Six-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 12px;
     margin-top: 50px;
     text-align: center;
@@ -15,8 +15,8 @@
     height: 275px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
+    justify-content: center; 
+    align-items: center; 
     position: relative;
 }
 
@@ -183,3 +183,218 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
 }
 
 /* Charts Ends*/
+
+ /* القوائم المالية  */
+.container-Final{
+  background-color: #FFFFFF;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.adjustforanimate h1{
+font-weight: 600;
+font-size: 60px;
+line-height: 100px;
+color: #3A73A8;
+}
+
+.adjustforanimate h3{
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100px;
+  color: #C6822A;
+}
+
+.btn-final{
+  background-color: #C6822A;
+  width: 355px;
+  height: 89.95px;
+  border-radius: 60px;
+  border-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-color: white;
+}
+.btn-final p{
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 37.48px;
+  font-weight: 700;
+}
+.img-container{
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 57.23px;
+  height: 57.23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container img{
+  width: 24.53px;
+  height: 24.53px;
+}
+
+
+
+ /* القوائم المالية Ends  */
+
+ @media (max-width: 768px) {
+  .Six-cards {
+      grid-template-columns: repeat(2, 1fr); /* 2-column grid on smaller screens */
+  }
+
+  .Six-cards .card-6 {
+      height: 200px; /* Reduce height of divs */
+      padding: 15px 40px; /* Reduce padding */
+  }
+
+  /* Circle adjustments */
+  .circle {
+      width: 150px;
+      height: 150px;
+      top: 50%;
+      left: 23%; /* Adjust circle position for smaller layout */
+      transform: translate(50%, -50%);
+  }
+
+  .circle-content {
+      font-size: 16px; /* Reduce font size inside the circle */
+      line-height: 0px;
+  }
+
+  .circle-content h2{
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.circle-content p{
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+    color:#FFFFFF;
+}
+
+  /* Content sizes decrease */
+  .Six-cards h3 {
+      font-size: 40px; /* Decrease size */
+      line-height: 30px;
+  }
+
+  .Six-cards p {
+      font-size: 16px; /* Decrease size */
+      line-height: 25px;
+  }
+
+  /* Clear space for the circle */
+  .Six-cards div:nth-child(3) {
+      padding-left: 70px; /* Shift content to the right */
+  }
+
+  .Six-cards div:nth-child(4) {
+      padding-right: 70px; /* Shift content to the left */
+  }
+  .Six-cards div:nth-child(2) {
+    justify-content: center; 
+}
+
+
+.Six-cards div:nth-child(5) {
+    justify-content: center; 
+}
+.container-Final {
+  flex-direction: column; /* Stack elements vertically */
+  height: auto; /* Allow height to adjust based on content */
+}
+
+.adjustforanimate h1 {
+  font-size: 45px; /* Reduce font size */
+  line-height: 80px;
+}
+
+.adjustforanimate h3 {
+  font-size: 30px; /* Reduce font size */
+  line-height: 60px;
+}
+
+.btn-final {
+  width: 200px; /* Decrease button width */
+  height: 75px; /* Decrease button height */
+}
+
+.btn-final p {
+  font-size: 18px; /* Decrease font size */
+}
+
+.img-container {
+  width: 45px; /* Decrease image container size */
+  height: 45px;
+}
+
+.img-container img {
+  width: 20px; /* Decrease icon size */
+  height: 20px;
+}
+}
+
+
+@media (max-width: 480px) {
+  .Six-cards .card-6 {
+      height: 150px; 
+      padding: 10px 30px; 
+  }
+
+  
+  .circle {
+      width: 100px;
+      height: 100px;
+  }
+
+  .circle-content {
+      font-size: 12px; 
+  }
+
+  .Six-cards h3 {
+      font-size: 30px; 
+      line-height: 25px;
+  }
+
+  .Six-cards p {
+      font-size: 14px; 
+      line-height: 20px;
+  }
+  .adjustforanimate h1 {
+    font-size: 35px; 
+    line-height: 60px;
+  }
+
+  .adjustforanimate h3 {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .btn-final {
+    width: 240px; 
+    height: 65px; 
+  }
+
+  .btn-final p {
+    font-size: 16px; 
+  }
+
+  .img-container {
+    width: 40px; 
+    height: 40px;
+  }
+
+  .img-container img {
+    width: 18px; 
+    height: 18px;
+  }
+}

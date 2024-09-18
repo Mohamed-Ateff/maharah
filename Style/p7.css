@@ -1,26 +1,31 @@
 /* Six Cards */
 .Six-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
-  gap: 12px;
-  margin-top: 50px;
-  text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+    gap: 12px;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
 }
 
 .Six-cards .card-6 {
-  background-color: white;
-  padding: 20px 50px;
-  text-align: center; /* Ensures text is aligned to the right */
-  height: 275px;
-  /* clip-path: polygon(93% 0%,100% 10%,100% 100%,0% 100%,0% 0%); */
+    background-color: white;
+    padding: 20px 50px;
+    text-align: center;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    position: relative;
 }
 
 .Six-cards h3 {
-  font-size: 60px;
-  color: #c6822a;
-  font-weight: 700;
-  margin-bottom: 10px;
-  line-height: 40px;
+    font-size: 60px;
+    color: #C6822A;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 40px;
 }
 
 .Six-cards p {
@@ -29,6 +34,48 @@
   line-height: 30px;
   font-weight: 700;
 }
+.circle {
+    position: absolute;
+    width: 233.74px; /* Adjust size as needed */
+    height: 233.74px;
+    background-color: #3A73A8; /* Semi-transparent background */
+    border-radius: 50%;
+    top: 50%; /* Centered vertically relative to the container */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the circle at the border between the second and fifth divs */
+    z-index: 1; /* Ensure it stays on top of the divs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-content {
+    font-size: 20px;
+    color:#FFFFFF;
+    text-align: center;
+    z-index: 2; /* Ensures text is on top of the circle */
+}
+.circle-content h2{
+    font-size: 60px;
+    line-height: 40px;
+    font-weight: 700;
+}
+.circle-content p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color:#FFFFFF;
+}
+
+.Six-cards div:nth-child(2) {
+    justify-content: flex-start; 
+}
+
+
+.Six-cards div:nth-child(5) {
+    justify-content: flex-end; 
+}
+
 
 /* Six Cards Ends*/
 

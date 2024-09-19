@@ -934,6 +934,156 @@ body[lang="en"] {
   .card-text p {
     font-size: 16px;
   }
+  .map {
+    margin-top: 50px;
+  }
+
+  .map .header-for-map {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .map .header-for-map h1 {
+    font-size: 24px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    /* padding-top: 300px */
+  }
+  .map .header-for-map h1:nth-child(1){
+    padding-top: 350px
+  }
+
+  .map-img {
+    width: 60%;
+    height: auto;
+    top: unset;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20px;
+  }
+
+  .map-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .one-container-for-boxes-map {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .one-small-card-for-map {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .one-box-for-smal-boxes {
+    margin-top: 10px;
+  }
+
+  .small-box-for-info {
+    flex-direction: column;
+  }
+
+  .title-for-box {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .title-for-box p {
+    transform: rotate(0);
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .flex-locations-under {
+    padding: 10px;
+  }
+
+  .box-for-locations {
+    margin-bottom: 10px;
+  }
+
+  .box-for-locations p {
+    font-size: 14px;
+  }
+  .four-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .four-cards .one-title-for-four-cards {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: none;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .one-cards {
+    width: 90%;
+    padding: 40px 30px;
+    margin-bottom: 20px;
+    display: flex;
+  justify-content: center;
+  }
+
+  .tr {
+    top: 50%;
+    /* right: %; */
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    width: 40px;
+  height: 40px;
+  }
+  .one-cards p {
+    color: #666666;
+    font-weight: 700;
+    text-align: center;
+  }
+  .nine-cards {
+    justify-content: center;
+    gap:20px
+  }
+  
+  .nine-cards .one-card-from-nine {
+    width: 48%;
+    min-height: 100px;
+    /* padding: 20px; */
+    margin-bottom: 2px;
+  }
+  
+  .logo-div {
+    min-width: 70px;
+    min-height: 70px;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+  }
+  
+  .nine-cards .one-card-from-nine p {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+  .tr-two {
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    top: -22%;
+    right: 46%;
+    transform: translateY(50%);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: #d9a867;
+    z-index: 2;
+  }
 }
 
                        /*Mobile*/
@@ -1001,4 +1151,107 @@ body[lang="en"] {
   .card-text p {
     font-size: 16px;
   }
+  .map {
+    margin-top: 30px;
+  }
+
+  
+  .map .header-for-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+  }
+
+  
+  .map-img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    order: -1; 
+    position: relative;
+    left: unset;
+    top: unset;
+    transform: none;
+  }
+
+  .map-img img {
+    width: 100%;
+    height: auto;
+  }
+
+ 
+  .map .header-for-map h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .map .header-for-map h1:nth-child(1){
+    padding-top: 20px
+  }
+
+  /* Content below the image */
+  .one-container-for-boxes-map {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .one-small-card-for-map {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .title-for-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .flex-locations-under {
+    padding: 0;
+  }
+
+  .box-for-locations p {
+    font-size: 12px;
+  }
+  .tr {
+    top: 50%;
+    /* right: %; */
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    width: 30px;
+  height: 30px;
+  }
+  .nine-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nine-cards .one-card-from-nine {
+    width: 90%;
+    min-height: 80px;
+    padding: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .logo-div {
+    min-width: 60px;
+    min-height: 60px;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+  }
+  
+  .nine-cards .one-card-from-nine p {
+    font-size: 16px;
+    margin-right: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  
 }

@@ -233,7 +233,7 @@
     text-align: right; /* Align text to the right */
     flex-direction: column;
     gap: 30px;
-    text-align: right; /
+    text-align: right;
 }
 .middle-side h2{
     font-size: 22px;
@@ -370,17 +370,25 @@ color: #666666;
 
 
 .image-wrapper {
-    grid-column: 3; /* Place in the last column */
-    align-self: end; /* Align image to the bottom */
-    text-align: center;
+  grid-column: 3; 
+  align-self: end; 
+  text-align: center;
 }
 
 .image-wrapper img {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    top: 7px;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 7px;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 1s ease-out; 
 }
+
+.image-wrapper.animate img {
+  transform: scaleY(1);
+}
+
 
 .blue-border{
     width: 75%;

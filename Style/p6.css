@@ -36,91 +36,100 @@
 /*الهيكل التنظيمي*/
 .chart-container {
   position: relative;
-  padding: 40px;
   border-radius: 8px;
   width: 100%;
-  max-width: 1200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px;
+  margin-top: 70px;
+}
+.chart-container::before {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  height: 105px;
+  width: 4px;
+  background-color: #3a73a8;
+  content: "";
 }
 
 .ceo-box {
   background-color: #c6822a;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   font-size: 1.2em;
   border-radius: 8px;
-  margin-bottom: 20px;
+  width: 35%;
+  margin: auto auto 20px auto;
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-weight: 700;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
+  border-top: 6px solid #3a73a8;
+  border-radius: 10px;
+  padding: 35px 25px 25px 25px;
+  margin-top: 50px;
+  z-index: 1;
+  background-color: #dfe7f3;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
+  width: 32%;
+  position: relative;
+}
+.column:nth-child(1) {
+  padding: 0px 17px;
+}
+.column:nth-child(2) {
+  padding: 0px 17px;
+}
+.column:nth-child(3) {
+  padding: 0px 17px;
+}
+.column:nth-child(1)::before {
+  content: none;
+}
+
+.column::before {
+  position: absolute;
+  top: 12.5%;
+  right: 0;
+  background-color: #c6822a;
+  width: 4px;
+  height: 75%;
+  content: "";
 }
 
 .branch-box {
+  margin-bottom: 10px;
   background-color: white;
-  padding: 15px;
+  padding: 20px 40px;
+  min-height: 100px;
   text-align: center;
-  border-radius: 8px;
-  color: #062e4a;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  color: #3a73a8;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.no-padding {
+  padding: 0px 40px;
 }
 
-.sub-branch-box {
-  background-color: #f0f4fa;
-  padding: 15px;
-  text-align: center;
-  border-radius: 8px;
-  color: #062e4a;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e0e0e0;
-}
-
-.arrow-left,
-.arrow-middle,
-.arrow-right {
-  position: absolute;
-  width: 2px;
-  background-color: #3a73a8;
-}
-
-.arrow-left {
-  height: 200px;
-  top: 90px;
-  left: 20%;
-}
-
-.arrow-middle {
-  height: 200px;
-  top: 90px;
-  left: 50%;
-}
-
-.arrow-right {
-  height: 100px;
-  top: 90px;
-  left: 80%;
-}
-
-.arrow-left::after,
-.arrow-middle::after,
-.arrow-right::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #3a73a8;
-  bottom: -10px;
-  left: -8px;
+.branch-box img {
+  height: 80px;
 }
 
 /*مجلس الادارة*/
@@ -247,15 +256,13 @@
   padding: 35px 0;
 }
 #shareholder-details3 th {
-  width:fit-content;
+  width: fit-content;
 }
-
-
 
 /*توزيعات الارباح*/
 .revenue-table {
   width: 100%;
-    border-collapse: collapse;
+  border-collapse: collapse;
   direction: rtl;
   margin-top: 20px;
 }
@@ -266,7 +273,7 @@
   padding: 15px;
   text-align: center;
   font-size: 16px;
-  border: 1px solid #B5CADD;
+  border: 1px solid #b5cadd;
 }
 
 .thGray th {
@@ -280,8 +287,7 @@
   font-size: 14px;
   font-weight: 700;
   border-bottom: 2px solid #ebeff8dd;
-    border-left: 1px solid #B5CADD;
-
+  border-left: 1px solid #b5cadd;
 }
 
 .tdBold {
@@ -296,13 +302,13 @@
 .total-row {
   background-color: #efdabe;
 }
-.total-row td{
-    text-align: right;
-    padding-right: 20px;
+.total-row td {
+  text-align: right;
+  padding-right: 20px;
 }
-.total-row td:nth-child(2){
-    text-align: right;
-    padding-right: 35px;
+.total-row td:nth-child(2) {
+  text-align: right;
+  padding-right: 35px;
 }
 
 .footnote {
@@ -312,11 +318,9 @@
   color: #333;
   font-style: italic;
 }
-.revenue-table span{
+.revenue-table span {
   display: block;
 }
-
-
 
 @media (max-width: 1024px) {
   .card-grid {
@@ -380,11 +384,11 @@
   .revenue-table th,
   .revenue-table td {
     padding: 10px;
-    font-size: 12px; 
+    font-size: 12px;
   }
 
   .revenue-table {
-    font-size: 12px; 
+    font-size: 12px;
   }
 
   .total-row td {
@@ -393,7 +397,6 @@
 }
 
 @media screen and (max-width: 480px) {
-
   .ownersTable table {
     width: 100%;
     overflow-x: auto;
@@ -454,7 +457,7 @@
   .revenue-table th,
   .revenue-table td {
     padding: 5px;
-    font-size: 10px; 
+    font-size: 10px;
   }
 
   .revenue-table {

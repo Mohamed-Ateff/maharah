@@ -14,6 +14,11 @@ body {
   z-index: 9;
   line-height: 1.4;
 }
+.div-for-color {
+  background-color: #ebeff8;
+  z-index: 9999 !important;
+  overflow: hidden;
+}
 a {
   color: #000;
   text-decoration: none;
@@ -128,10 +133,9 @@ body[lang="en"] {
 
 /* Mobile Screen Adjustments*/
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
   .padding-top-mobile {
     padding-top: 100px;
   }
-
 }
 /* Mobile Screen Adjustments Ends*/

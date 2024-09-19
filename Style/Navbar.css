@@ -265,9 +265,8 @@ li:hover .sub-menu {
     margin-right: 15px;
   }
   .navbar-nav {
-    border-right: 2px solid #fcb44a;
+    border-right: 3px solid #d9a867;
     padding: 30px 0px 100px 0px;
-    background-color: #163029;
   }
   .menu-link {
     padding-right: 23px !important;
@@ -277,14 +276,12 @@ li:hover .sub-menu {
     display: none;
   }
   .menu-link {
-    background-color: #163029;
     color: white;
   }
   .sub-menu {
     margin: 10px 0px !important;
   }
   .sub-menu-item {
-    background-color: #163029;
     padding: 0px 30px;
     color: #d8d8d7 !important;
   }
@@ -316,7 +313,7 @@ li:hover .sub-menu {
   }
   .sub-menu-item ul li a {
     font-size: 14px;
-
+    font-weight: 600 !important;
     color: #d8d8d7 !important;
   }
   .navbar-nav {

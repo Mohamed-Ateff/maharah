@@ -1,32 +1,32 @@
 /* Six Cards */
 .Six-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px;
-    margin-top: 50px;
-    text-align: center;
-    position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
 }
 
 .Six-cards .card-6 {
-    background-color: white;
-    padding: 20px 50px;
-    text-align: center;
-    height: 275px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    position: relative;
+  background-color: white;
+  padding: 20px 50px;
+  text-align: center;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .Six-cards h3 {
-    font-size: 60px;
-    color: #C6822A;
-    font-weight: 700;
-    margin-bottom: 10px;
-    line-height: 40px;
-   padding-bottom: 40px;
+  font-size: 60px;
+  color: #c6822a;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 40px;
+  padding-bottom: 40px;
 }
 
 .Six-cards p {
@@ -36,61 +36,73 @@
   font-weight: 700;
 }
 .circle {
-    position: absolute;
-    width: 233.74px; /* Adjust size as needed */
-    height: 233.74px;
-    background-color: #3A73A8; /* Semi-transparent background */
-    border-radius: 50%;
-    top: 50%; /* Centered vertically relative to the container */
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the circle at the border between the second and fifth divs */
-    z-index: 1; /* Ensure it stays on top of the divs */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  width: 233.74px; /* Adjust size as needed */
+  height: 233.74px;
+  background-color: #3a73a8; /* Semi-transparent background */
+  border-radius: 50%;
+  top: 50%; /* Centered vertically relative to the container */
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the circle at the border between the second and fifth divs */
+  z-index: 1; /* Ensure it stays on top of the divs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle-content {
-    font-size: 20px;
-    color:#FFFFFF;
-    text-align: center;
-    z-index: 2; /* Ensures text is on top of the circle */
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  z-index: 2; /* Ensures text is on top of the circle */
 }
-.circle-content h2{
-    font-size: 60px;
-    line-height: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
+.circle-content h2 {
+  font-size: 60px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
-.circle-content p{
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 700;
-    color:#FFFFFF;
-    padding: 0px 60px 0px 60px;
+.circle-content p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0px 60px 0px 60px;
 }
 
 .Six-cards div:nth-child(2) {
-    justify-content: flex-start; 
-    background: radial-gradient(circle at bottom center, transparent, transparent 120px, #FFFFFF 30px, #FFFFFF);
-    padding-bottom: 10px;
+  justify-content: flex-start;
+  background: radial-gradient(
+    circle at bottom center,
+    transparent,
+    transparent 120px,
+    #ffffff 30px,
+    #ffffff
+  );
+  padding-bottom: 10px;
 }
-
 
 .Six-cards div:nth-child(5) {
-    justify-content: flex-end; 
-    background: radial-gradient(circle at top center, transparent, transparent 120px, #FFFFFF 12px, #FFFFFF);
-    padding-bottom: 10px;
+  justify-content: flex-end;
+  background: radial-gradient(
+    circle at top center,
+    transparent,
+    transparent 120px,
+    #ffffff 12px,
+    #ffffff
+  );
+  padding-bottom: 10px;
 }
-.Six-cards div:nth-child(2) h3{
-    padding-bottom: 20px;
+.Six-cards div:nth-child(2) h3 {
+  padding-bottom: 20px;
 }
 
-
-.Six-cards div:nth-child(5) h3{
-    padding-bottom: 20px;
+.Six-cards div:nth-child(5) h3 {
+  padding-bottom: 20px;
 }
-
 
 /* Six Cards Ends*/
 
@@ -149,29 +161,74 @@ body[lang="en"] {
   transform: scaleY(1);
 }
 
+/* General Line Chart Drawing Effect */
+
+.line-chart {
+  stroke-dasharray: 1000; /* Length of the dash array, adjust according to path length */
+  stroke-dashoffset: 1000; /* Initially hidden */
+  animation: draw-line 3s ease forwards; /* Line animation */
+}
+
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0; /* Draw the line */
+  }
+}
+
+.chart-container {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  transform: translateY(20px); /* Optional for smooth reveal */
+}
+
+/* Show the chart with animation when it enters the viewport */
+.chart-container.animate-bars {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Bar chart animation */
+.bar-chart .bar {
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 3s ease;
+}
+
+/* Animate the bars when in view */
+.chart-container.animate-bars .bar {
+  transform: scaleY(1);
+}
+
+.line-chart {
+  stroke-dasharray: 1000;
+  fill: none; /* Ensure the line is not filled */
+}
+
 /* Line chart drawing effect for LTR (English) */
 body[lang="en"] .line-chart {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000; /* Start from the right */
+  stroke-dashoffset: 1000; /* Start from the left */
   transition: stroke-dashoffset 3s ease; /* Adjust duration as needed */
 }
 
 /* Animate the line drawing from left to right when in view (LTR) */
 body[lang="en"] .chart-container.animate-line .line-chart {
-  stroke-dashoffset: 0;
+  stroke-dashoffset: 0; /* Finish drawing */
 }
 
 /* Line chart drawing effect for RTL (Arabic) */
 body[lang="ar"] .line-chart {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: -1000; /* Start from the left */
+  stroke-dashoffset: -1000; /* Start from the right */
   transition: stroke-dashoffset 3s ease; /* Adjust duration as needed */
 }
 
 /* Animate the line drawing from right to left when in view (RTL) */
 body[lang="ar"] .chart-container.animate-line .line-chart {
-  stroke-dashoffset: 0;
+  stroke-dashoffset: 0; /* Finish drawing */
 }
+
+
+
+
 
 .under-chart {
   display: flex;
@@ -191,17 +248,17 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
   height: 20px;
   margin-left: 8px;
 }
-.one-title-under-chart p{
-    color: #333333;
-    font-weight: 800;
-    font-size: 15px;
+.one-title-under-chart p {
+  color: #333333;
+  font-weight: 800;
+  font-size: 15px;
 }
 
 /* Charts Ends*/
 
- /* القوائم المالية  */
-.container-Final{
-  background-color: #FFFFFF;
+/* القوائم المالية  */
+.container-Final {
+  background-color: #ffffff;
   height: 300px;
   display: flex;
   flex-wrap: wrap;
@@ -210,24 +267,24 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
   gap: 20px;
 }
 
-.adjustforanimate h1{
-font-weight: 700;
-font-size: 60px;
-line-height: 100px;
-color: #3A73A8;
-font-family: cairo;
-}
-
-.adjustforanimate h3{
-  font-weight: 600;
-  font-size: 40px;
+.adjustforanimate h1 {
+  font-weight: 700;
+  font-size: 60px;
   line-height: 100px;
-  color: #C6822A;
+  color: #3a73a8;
   font-family: cairo;
 }
 
-.btn-final{
-  background-color: #C6822A;
+.adjustforanimate h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100px;
+  color: #c6822a;
+  font-family: cairo;
+}
+
+.btn-final {
+  background-color: #c6822a;
   width: 355px;
   height: 89.95px;
   border-radius: 60px;
@@ -238,15 +295,15 @@ font-family: cairo;
   align-items: center;
   border-color: white;
 }
-.btn-final p{
-  color: #FFFFFF;
+.btn-final p {
+  color: #ffffff;
   font-size: 20px;
   line-height: 37.48px;
   font-weight: 700;
   font-family: cairo;
 }
-.img-container{
-  background-color: #FFFFFF;
+.img-container {
+  background-color: #ffffff;
   border-radius: 50%;
   width: 57.23px;
   height: 57.23px;
@@ -254,168 +311,177 @@ font-family: cairo;
   justify-content: center;
   align-items: center;
 }
-.img-container img{
+.img-container img {
   width: 24.53px;
   height: 24.53px;
 }
 
+/* القوائم المالية Ends  */
 
-
- /* القوائم المالية Ends  */
-
- @media (max-width: 768px) {
+@media (max-width: 768px) {
   .Six-cards {
-      grid-template-columns: repeat(2, 1fr); /* 2-column grid on smaller screens */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2-column grid on smaller screens */
   }
 
   .Six-cards .card-6 {
-      height: 200px; /* Reduce height of divs */
-      padding: 15px 40px; /* Reduce padding */
+    height: 200px; /* Reduce height of divs */
+    padding: 15px 40px; /* Reduce padding */
   }
 
   /* Circle adjustments */
   .circle {
-      width: 150px;
-      height: 150px;
-      top: 50%;
-      left: 23%; /* Adjust circle position for smaller layout */
-      transform: translate(50%, -50%);
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 23%; /* Adjust circle position for smaller layout */
+    transform: translate(50%, -50%);
   }
 
   .circle-content {
-      font-size: 16px; /* Reduce font size inside the circle */
-      line-height: 0px;
+    font-size: 16px; /* Reduce font size inside the circle */
+    line-height: 0px;
   }
 
-.circle-content h2{
-  font-size: 30px;
-  line-height: 20px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-.circle-content p{
-  font-size: 10px;
-  line-height: 15px;
-  font-weight: 700;
-  color:#FFFFFF;
-  padding: 0px 20px 0px 20px;
-}
+  .circle-content h2 {
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .circle-content p {
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 0px 20px 0px 20px;
+  }
   /* Content sizes decrease */
   .Six-cards h3 {
-      font-size: 40px; /* Decrease size */
-      line-height: 30px;
+    font-size: 40px; /* Decrease size */
+    line-height: 30px;
   }
 
   .Six-cards p {
-      font-size: 16px; /* Decrease size */
-      line-height: 25px;
+    font-size: 16px; /* Decrease size */
+    line-height: 25px;
   }
 
   /* Clear space for the circle */
   .Six-cards div:nth-child(3) {
-      padding-left: 70px; /* Shift content to the right */
-      background: radial-gradient(circle at left center, transparent, transparent 75px, #FFFFFF 12px, #FFFFFF);
+    padding-left: 70px; /* Shift content to the right */
+    background: radial-gradient(
+      circle at left center,
+      transparent,
+      transparent 75px,
+      #ffffff 12px,
+      #ffffff
+    );
   }
 
   .Six-cards div:nth-child(4) {
-      padding-right: 70px; /* Shift content to the left */
-      background: radial-gradient(circle at right center, transparent, transparent 75px, #FFFFFF 12px, #FFFFFF);
+    padding-right: 70px; /* Shift content to the left */
+    background: radial-gradient(
+      circle at right center,
+      transparent,
+      transparent 75px,
+      #ffffff 12px,
+      #ffffff
+    );
   }
   .Six-cards div:nth-child(2) {
-    justify-content: center; 
-    background: #FFFFFF; 
-}
+    justify-content: center;
+    background: #ffffff;
+  }
 
-.Six-cards div:nth-child(2) h3{
-  padding-bottom: 40px;
-}
+  .Six-cards div:nth-child(2) h3 {
+    padding-bottom: 40px;
+  }
 
+  .Six-cards div:nth-child(5) h3 {
+    padding-bottom: 40px;
+  }
+  .Six-cards div:nth-child(5) {
+    justify-content: center;
+    background: #ffffff;
+  }
+  .container-Final {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow height to adjust based on content */
+  }
 
-.Six-cards div:nth-child(5) h3{
-  padding-bottom: 40px;
-}
-.Six-cards div:nth-child(5) {
-    justify-content: center; 
-    background: #FFFFFF
-}
-.container-Final {
-  flex-direction: column; /* Stack elements vertically */
-  height: auto; /* Allow height to adjust based on content */
-}
+  .adjustforanimate h1 {
+    font-size: 45px; /* Reduce font size */
+    line-height: 80px;
+  }
 
-.adjustforanimate h1 {
-  font-size: 45px; /* Reduce font size */
-  line-height: 80px;
-}
+  .adjustforanimate h3 {
+    font-size: 30px; /* Reduce font size */
+    line-height: 60px;
+  }
 
-.adjustforanimate h3 {
-  font-size: 30px; /* Reduce font size */
-  line-height: 60px;
-}
+  .btn-final {
+    width: 200px; /* Decrease button width */
+    height: 75px; /* Decrease button height */
+  }
 
-.btn-final {
-  width: 200px; /* Decrease button width */
-  height: 75px; /* Decrease button height */
-}
+  .btn-final p {
+    font-size: 18px; /* Decrease font size */
+  }
 
-.btn-final p {
-  font-size: 18px; /* Decrease font size */
-}
+  .img-container {
+    width: 45px; /* Decrease image container size */
+    height: 45px;
+  }
 
-.img-container {
-  width: 45px; /* Decrease image container size */
-  height: 45px;
-}
-
-.img-container img {
-  width: 20px; /* Decrease icon size */
-  height: 20px;
-}
+  .img-container img {
+    width: 20px; /* Decrease icon size */
+    height: 20px;
+  }
 }
 
 /* mobile */
 @media (max-width: 480px) {
- 
   .Six-cards .card-6 {
-      height: 150px; 
-      padding: 10px 30px; 
+    height: 150px;
+    padding: 10px 30px;
   }
 
-  
   .circle {
-      width: 100px;
-      height: 100px;
-      transform: translate(35%, -50%);
-    }
-  
+    width: 100px;
+    height: 100px;
+    transform: translate(35%, -50%);
+  }
 
   .circle-content {
-      font-size: 12px; 
+    font-size: 12px;
   }
-  .circle-content h2{
+  .circle-content h2 {
     font-size: 15px;
     line-height: 10px;
     font-weight: 700;
     margin-bottom: 0;
   }
-  .circle-content p{
+  .circle-content p {
     font-size: 5px;
     line-height: 7px;
     font-weight: 700;
-    color:#FFFFFF;
+    color: #ffffff;
     padding: 0px 5px 0px 5px;
   }
   .Six-cards h3 {
-      font-size: 30px; 
-      line-height: 25px;
+    font-size: 30px;
+    line-height: 25px;
   }
 
   .Six-cards p {
-      font-size: 14px; 
-      line-height: 20px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .adjustforanimate h1 {
-    font-size: 35px; 
+    font-size: 35px;
     line-height: 60px;
   }
 
@@ -425,74 +491,84 @@ font-family: cairo;
   }
 
   .btn-final {
-    width: 240px; 
-    height: 80px; 
+    width: 240px;
+    height: 80px;
   }
 
   .btn-final p {
-    font-size: 16px; 
+    font-size: 16px;
   }
 
   .img-container {
-    width: 40px; 
+    width: 40px;
     height: 40px;
   }
 
   .img-container img {
-    width: 18px; 
+    width: 18px;
     height: 18px;
   }
   .Six-cards div:nth-child(3) {
     padding-left: 70px; /* Shift content to the right */
-    background: radial-gradient(circle at left center, transparent, transparent 55px, #FFFFFF 12px, #FFFFFF);
-}
+    background: radial-gradient(
+      circle at left center,
+      transparent,
+      transparent 55px,
+      #ffffff 12px,
+      #ffffff
+    );
+  }
 
-.Six-cards div:nth-child(4) {
+  .Six-cards div:nth-child(4) {
     padding-right: 70px; /* Shift content to the left */
-    background: radial-gradient(circle at right center, transparent, transparent 45px, #FFFFFF 12px, #FFFFFF);
-}
-.Six-cards div:nth-child(3) h3{
-  padding-bottom: 0px;
-}
+    background: radial-gradient(
+      circle at right center,
+      transparent,
+      transparent 45px,
+      #ffffff 12px,
+      #ffffff
+    );
+  }
+  .Six-cards div:nth-child(3) h3 {
+    padding-bottom: 0px;
+  }
 
+  .Six-cards div:nth-child(4) h3 {
+    padding-bottom: 0px;
+  }
+  .Six-cards div:nth-child(1) h3 {
+    padding-bottom: 5px;
+  }
 
-.Six-cards div:nth-child(4) h3{
-  padding-bottom: 0px;
-}
-.Six-cards div:nth-child(1) h3{
-  padding-bottom: 5px;
-}
+  .Six-cards div:nth-child(2) h3 {
+    padding-bottom: 5px;
+  }
+  .Six-cards div:nth-child(5) h3 {
+    padding-bottom: 5px;
+  }
+  .Six-cards div:nth-child(6) h3 {
+    padding-bottom: 5px;
+  }
+  .btn-final p {
+    font-size: 16px; /* Decrease font size */
+    width: 200px;
+    height: 30px;
+    border-radius: 60px;
+  }
 
+  .img-container {
+    width: 45px; /* Decrease image container size */
+    height: 45px;
+  }
 
-.Six-cards div:nth-child(2) h3{
-  padding-bottom: 5px;
-}
-.Six-cards div:nth-child(5) h3{
-  padding-bottom: 5px;
-}
-.Six-cards div:nth-child(6) h3{
-  padding-bottom: 5px;
-}
-.btn-final p {
-  font-size: 16px; /* Decrease font size */
-  width: 200px;
-  height: 30px;
-  border-radius: 60px;
-}
-
-.img-container {
-  width: 45px; /* Decrease image container size */
-  height: 45px;
-}
-
-.img-container img {
-  width: 20px; /* Decrease icon size */
-  height: 20px;
-}
-.padding-mobile-top{
-  padding-top: 100px;
-}
-.padding-mobile-bottom{
-  padding-bottom: 10px;
-}
+  .img-container img {
+    width: 20px; /* Decrease icon size */
+    height: 20px;
+  }
+  .padding-mobile-top {
+    padding-top: 100px;
+  }
+  .padding-mobile-bottom {
+    padding-bottom: 10px;
+  }
 }

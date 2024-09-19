@@ -101,52 +101,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 50px;
-}
-
-.card-four {
-    /* background-size: contain; 
-    background-position: center; */
-    background-repeat: no-repeat;
-    width: 49.5%;
-    margin-bottom: 5px;
-    height: 320px;
-    position: relative;
-    padding: 2.5rem 3rem; 
-    color: black;
-    text-align: right;
-    display: flex;
-    flex-direction: column; 
-    overflow: hidden;
-    box-sizing: border-box; 
-}
-
-.card-1 {
-    background-image: url('../images/Other/Group\ 938.png'); 
-    background-size: cover;    
-}
-
-.card-2 {
-    background-image: url('../images/Other/Group\ 939.png');
-    background-size:  cover;   
-}
-
-.card-3 {
-    background-image: url('../images/Other/Group\ 940.png');
-    background-size:  cover;   
-}
-
-.card-4 {
-    background-image: url('../images/Other/Group\ 941.png');
-    background-size:  cover;   
+    gap: 5px;
+    margin-top: 30px;
 }
 
 .card-content-four {
     width: 100%;
     position: relative;
+    padding: 50px;
 }
 
-.card-four h2 {
+.card-content-four h2 {
     font-size: 1.875rem;
     color: #3A73A8;
     font-weight: 700;
@@ -155,28 +120,46 @@
     margin-bottom: 5px;
 }
 
-.card-four ul {
+.card-content-four ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     font-weight: 400;
 }
 
-.card-four ul li {
+.card-content-four ul li {
     font-size: 1rem;
     line-height: 1.875rem;
     list-style-type: square;
     margin-right: 20px;
 }
 
-.number {
-    position: absolute;
-    left: 3.6rem;
-    bottom: 15px;
-    font-size: 3.125rem;
-    color: white;
-    font-weight: 700;
-    line-height: 5.856rem;
+.card-4{
+    height: 306px;
+    /* width:555.24px; */
+    width:49%;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 69%);       
+    position: relative;
+    margin-top: 10px;
+ }
+
+.small-triangle{
+position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95.37px;
+  height: 95.37px;
+ background-color: #062E4A;
+}
+.moving-number{
+position: absolute;
+bottom: 20px;
+left: 50px;
+font-weight: 700;
+font-size: 50px;
+ line-height: 93.7px;
+ color: white;
 }
 
 /* Adjust Three Cards */
@@ -443,7 +426,7 @@ color: #666666;
     .card p {
         font-size: 0.9rem;
     }
-
+/*ggdd*/
     .card-four {
         width: 100%;
         height: auto;
@@ -453,11 +436,53 @@ color: #666666;
     .card-four h2 {
         font-size: 1.5rem;
     }
+/*ggdd*/
+.four-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 10px;
+}
 
-    .number {
-        left: 1rem;
-        font-size: 2rem;
-    }
+.card-content-four {
+    width: 100%;
+    position: relative;
+    padding: 50px;
+}
+
+.card-content-four h2 {
+    font-size: 1.875rem;
+    color: #3A73A8;
+    font-weight: 700;
+    line-height: 3.514rem;
+    z-index: 2; 
+    margin-bottom: 5px;
+}
+
+.card-content-four ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.card-content-four ul li {
+    font-size: 1rem;
+    line-height: 1.875rem;
+    list-style-type: square;
+    margin-right: 20px;
+}
+
+.card-4{
+    height: 306px;
+    /* width:555.24px; */
+    width:100%;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 16% 100%, 0 69%);       
+    position: relative;
+    margin-top: 10px;
+ }
 
     .icon-wrapper {
         position: absolute;
@@ -543,6 +568,69 @@ color: #666666;
       font-size: 18px; 
       line-height: 24px;
     }
+    .four-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    .card-content-four {
+        width: 100%;
+        position: relative;
+        padding: 20px;
+    }
+    
+    .card-content-four h2 {
+        font-size: 25px;
+        color: #3A73A8;
+        font-weight: 700;
+        line-height: 3.514rem;
+        z-index: 2; 
+        margin-bottom: 5px;
+    }
+    
+    .card-content-four ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-weight: 400;
+    }
+    
+    .card-content-four ul li {
+        font-size: 16px;
+        line-height: 20px;
+        list-style-type: square;
+        margin-right: 20px;
+    }
+    
+    .card-4{
+        height: 306px;
+        /* width:555.24px; */
+        width:100%;
+        background-color: white;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 23% 100%, 0 74%);       
+        position: relative;
+        margin-top: 10px;
+     }
+   
+     .small-triangle{
+        position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 80px;
+          height: 80px;
+         background-color: #062E4A;
+        }
+        .moving-number{
+        position: absolute;
+        bottom: 10px;
+        left: 45px;
+        font-weight: 700;
+        font-size: 50px;
+         line-height: 93.7px;
+         color: white;
+        }
   }
 /* Four cards */
 

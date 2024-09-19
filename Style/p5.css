@@ -268,8 +268,6 @@
   position: relative;
 }
 
-.doughnutChart1 {
-}
 
 .number-inside-pie {
   position: absolute;
@@ -290,8 +288,7 @@
   min-width: 62%;
 }
 
-.div-for-numbs {
-}
+
 .div-for-numbs p {
   font-weight: 700;
 }

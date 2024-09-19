@@ -1,4 +1,3 @@
-
 /* header */
 
 /* Initial Header Styles */
@@ -82,7 +81,7 @@ header.scrolled .one-buttons-for-header:nth-child(2) {
 }
 header.scrolled .one-buttons-for-header:nth-child(2) .span-for-icon-button {
   transition: 0.3s ease;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .one-buttons-for-header img {
@@ -92,10 +91,33 @@ header.scrolled .one-buttons-for-header:nth-child(2) .span-for-icon-button {
 .one-buttons-for-header:focus {
   outline: none;
 }
+
+.delete-for-pc {
+  display: none;
+}
+
 @media screen and (max-width: 992px) {
   .one-buttons-for-header {
     margin-right: 20px;
     margin-top: 10px;
+  }
+  header {
+    padding: 0px 0px;
+  }
+  .delete-for-pc {
+    display: block !important;
+  }
+  .delete-for-mobile {
+    display: none;
+  }
+  .one-buttons-for-header:nth-child(2) {
+    transition: 0.3s ease;
+    background-color: #C6822A !important; 
+    color: #c6822a;
+  }
+  .one-buttons-for-header:nth-child(2) {
+    background-color: #d9a867;
+    color: white !important;
   }
 }
 

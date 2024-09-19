@@ -125,3 +125,13 @@ body[lang="en"] {
 }
 
 /* Title with arrow Ends */
+
+/* Mobile Screen Adjustments*/
+
+@media (max-width: 480px) { 
+  .padding-top-mobile {
+    padding-top: 100px;
+  }
+
+}
+/* Mobile Screen Adjustments Ends*/

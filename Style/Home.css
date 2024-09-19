@@ -86,6 +86,7 @@ body {
   justify-content: space-between;
   align-items: center;
   align-items: stretch;
+  flex-wrap: wrap; /* for mobile */
 }
 
 .chart-one {
@@ -133,6 +134,7 @@ body {
 }
 
 /* Slider */
+
 
 .slider-container {
   overflow: hidden;
@@ -847,4 +849,156 @@ body[lang="en"] {
 }
 .a-big-word div p {
   font-size: 35px;
+}
+
+@media (max-width: 1024px) {
+  .chart-one {
+    width: 100%; /* Full width on tablets */
+    min-height: 300px;
+  }
+
+  .boxes-one {
+    width: 100%; /* Stack below the chart */
+    padding: 20px 30px;
+  }
+}
+
+                      
+
+@media (max-width: 768px) {
+  .chart-and-boxes {
+    flex-direction: column; /* Stack the chart and boxes vertically */
+    align-items: flex-start; /* Align left on smaller screens */
+  }
+
+  .chart-one {
+    width: 100%; /* Full width on mobile */
+    min-height: 250px;
+  }
+
+  .boxes-one {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .three-boxes-m {
+    display: flex;
+    flex-direction: column; /* Stack the small boxes vertically */
+  }
+
+  .one-small-box {
+    font-size: 18px; /* Adjust font size for readability */
+  }
+
+  .one-small-box span:first-child {
+    font-size: 20px;
+    margin-left: 5px; /* Reduce margin on smaller screens */
+  }
+  .cards-phone-and-text {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card-phone,
+  .card-text {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .card-phone {
+    padding: 0 50px;
+  }
+
+  .card-phone img {
+    height: 200px;
+    transform: translate(-15%, -50%);
+  }
+
+  .card-phone h3 span {
+    font-size: 20px;
+  }
+
+  .card-text h3 {
+    font-size: 20px;
+  }
+
+  .card-text span {
+    font-size: 40px;
+  }
+
+  .card-text div {
+    font-size: 35px;
+  }
+
+  .card-text p {
+    font-size: 16px;
+  }
+}
+
+                       /*Mobile*/
+                       
+@media (max-width: 480px) {
+  .chart-one {
+    min-height: 200px; 
+    margin-bottom: 20px;
+  }
+
+  .one-small-box {
+    font-size: 16px; 
+    padding: 10px; 
+  }
+
+  .one-small-box span:first-child {
+    font-size: 18px;
+    margin-left: 3px;
+  }
+  .cards-phone-and-text {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .card-phone {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-phone img {
+    position: static;
+    height: 200px; 
+    transform: none;
+    margin-right: 10px; 
+  }
+
+  .card-phone h3 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .card-text {
+    width: 100%;
+    margin-top: 20px; 
+  }
+
+  .card-text h3 {
+    font-size: 20px;
+  }
+
+  .card-text span {
+    font-size: 30px;
+  }
+
+  .card-text div {
+    font-size: 30px;
+  }
+
+  .card-text p {
+    font-size: 16px;
+  }
 }

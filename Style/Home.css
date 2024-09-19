@@ -1253,5 +1253,54 @@ body[lang="en"] {
     text-align: center;
   }
 
+  .a-small-word {
+    width: 60%;
+    padding: 10px 30px 10px 100px;
+    background-color: #062e4a;
+    clip-path: polygon(30% 0%, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .a-small-word p {
+    font-weight: 700;
+    font-size: 25px;
+    color: #b5cadd;
+    position: relative;
+    top: 5px;
+  }
+  
+  .a-big-word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #062e4a;
+    width: 100%;
+    min-height: 230px;
+    margin-top: -1px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .tr-two {
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: -30%;
+    right: 45%;
+    transform: translateY(50%);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: #d9a867;
+    z-index: 2;
+  }
+  .a-big-word div {
+    margin-bottom: 15px;
+  }
+  .a-big-word div p {
+    font-size: 35px;
+  }
   
 }

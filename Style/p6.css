@@ -1,4 +1,7 @@
 /*مقدمة*/
+span{
+  display: block;
+}
 
 #card-grid {
   padding: 35px 0px;
@@ -35,6 +38,7 @@
 
 /*الهيكل التنظيمي*/
 .chart-container {
+  /* background-color: #6B95BD; */
   position: relative;
   border-radius: 8px;
   width: 100%;

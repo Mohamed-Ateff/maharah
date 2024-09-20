@@ -1,7 +1,10 @@
 body {
   background-color: #ebeff8;
 }
-
+.div-for-color {
+  background-color: #ebeff8;
+  z-index: 9999 !important;
+}
 .container {
   background-color: #ebeff8 !important;
   z-index: 999;

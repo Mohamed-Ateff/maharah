@@ -12,13 +12,10 @@ body {
 body {
   background-color: #ebeff8dd !important;
   z-index: 9;
+  overflow-x: hidden;
   line-height: 1.4;
 }
-.div-for-color {
-  background-color: #ebeff8;
-  z-index: 9999 !important;
-  overflow: hidden;
-}
+
 a {
   color: #000;
   text-decoration: none;

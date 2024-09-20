@@ -146,3 +146,15 @@ input[type="checkbox"].custom-checkbox:checked {
 input[type="checkbox"] {
   accent-color: #005491;
 }
+
+body[lang="ar"] {
+  .english-item {
+    display: none;
+  }
+}
+
+body[lang="en"] {
+  .arabic-item {
+    display: none;
+  }
+}

@@ -29,7 +29,8 @@ ul li {
 }
 
 section {
-  padding-top: 100px;
+  padding-top: 260px;
+  margin-top: -170px; /* Negative margin to prevent extra space being added */
 }
 
 body[lang="en"] {

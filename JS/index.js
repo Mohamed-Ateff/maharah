@@ -54,27 +54,59 @@ $menuLinks.each(function () {
 
 // Header Ends
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent the default anchor click behavior
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the page has a hash in the URL (on load or after navigating)
+  if (window.location.hash) {
+    scrollToSection(window.location.hash);
+  }
 
-    const targetId = this.getAttribute("href").substring(1); // Get the target section ID
-    const targetElement = document.getElementById(targetId); // Find the target element by ID
+  // Add event listeners to all anchor links that reference sections
+  document
+    .querySelectorAll('a[href^="#"], a[href*=".html#"]')
+    .forEach((anchor) => {
+      anchor.addEventListener("click", function (event) {
+        const href = this.getAttribute("href");
+
+        // If it's a same-page link (e.g., #sectionId)
+        if (href.startsWith("#")) {
+          event.preventDefault();
+          scrollToSection(href); // Smooth scroll to section
+        } else if (href.includes(".html#")) {
+          // Handle cross-page links like p1.html#sectionId
+          event.preventDefault();
+          const [page, sectionId] = href.split("#"); // Extract page and section
+          window.location.href = `${page}#${sectionId}`; // Navigate to the new page
+        }
+      });
+    });
+
+  // Function to smooth scroll to a section
+  function scrollToSection(target) {
+    const targetElement = document.querySelector(target); // Find the target element by ID
 
     if (targetElement) {
-      const offset = -150; // Offset value
-      const bodyRect = document.body.getBoundingClientRect().top; // Top position of the page
-      const elementRect = targetElement.getBoundingClientRect().top; // Top position of the target section
-      const elementPosition = elementRect - bodyRect; // Actual position of the section on the page
-      const offsetPosition = elementPosition + offset; // Position with the offset applied
+      const headerOffset = 250; // Offset for the navbar or space you want at the top
+      const elementPosition =
+        targetElement.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - headerOffset; // Calculate the scroll position with offset
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth", // Smooth scrolling
+        behavior: "smooth", // Enable smooth scrolling
       });
+
+      // Add active class to the section (if needed for styling)
+      setTimeout(() => {
+        document
+          .querySelectorAll("section")
+          .forEach((sec) => sec.classList.remove("active-section"));
+        targetElement.classList.add("active-section");
+      }, 500); // Delay to allow smooth scroll before adding class
     }
-  });
+  }
 });
+
+
 
 //
 

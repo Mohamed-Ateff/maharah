@@ -30,8 +30,8 @@ ul li {
 
 section {
   padding-top: 260px;
-  margin-top: -170px; /* Negative margin to prevent extra space being added */
-}
+  margin-top: -170px !important; /* Negative margin to prevent extra space being added */
+} 
 
 body[lang="en"] {
   .delete-for-english {

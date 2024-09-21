@@ -171,7 +171,7 @@ body {
   /* background-color: red; */
   width: fit-content;
   position: absolute;
-  top: 47%;
+  top: 50%;
   right: 2.5%;
   transform: translateX(0%);
   transform: translateY(-50%) !important;
@@ -213,7 +213,8 @@ body {
 }
 
 .controls button.inactive svg {
-  fill: #162c51;
+  fill: #ffffff;
+  opacity: 0.2;
 }
 
 .wrapper .outer {

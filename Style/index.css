@@ -31,7 +31,7 @@ ul li {
 section {
   padding-top: 260px;
   margin-top: -170px !important; /* Negative margin to prevent extra space being added */
-} 
+}
 
 body[lang="en"] {
   .delete-for-english {
@@ -51,6 +51,14 @@ body[lang="en"] {
   color: #c6822a;
   font-size: 30px;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .tow-titles h1 {
+    color: #3a73a8;
+    font-size: 35px;
+    font-weight: 700;
+  }
 }
 
 /* tow-titles Ends */

@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const sectionHeaders = document.querySelectorAll(".section-header");
-  const subCheckboxes = document.querySelectorAll(".sub-checkbox");
   const downloadAllButton = document.getElementById("download-all");
   const downloadSelectedButton = document.getElementById("download-selected");
   const langButton = document.getElementById("languageToggle");
 
-  langButton.addEventListener("click", () => {
+  // Clear all checkboxes when the language toggle button is clicked
+  langButton?.addEventListener("click", () => {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     checkboxes.forEach((checkbox) => {
       checkbox.checked = false;
     });
   });
 
+  // When the section-header checkbox is clicked, it checks/unchecks all sub-checkboxes in the section
   sectionHeaders.forEach((header) => {
     header.addEventListener("change", () => {
       const section = header.closest(".section");
@@ -22,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  subCheckboxes.forEach((checkbox) => {
+  // When a sub-checkbox is clicked, check if all sub-checkboxes are checked; if so, check the section-header
+  document.querySelectorAll(".sub-checkbox").forEach((checkbox) => {
     checkbox.addEventListener("change", () => {
       const section = checkbox.closest(".section");
       const header = section.querySelector(".section-header");
@@ -33,17 +35,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Download all button functionality
   downloadAllButton.addEventListener("click", () => {
     const bodyLang = document.body.lang;
 
     if (bodyLang === "en") {
       downloadFiles(["/pdfs/Full Report.pdf"]);
     } else {
-      console.log("inside arabic full report");
       downloadFiles(["/pdfs/Full Report_Arabic.pdf"]);
     }
   });
 
+  // Download selected files based on the selected checkboxes
   downloadSelectedButton.addEventListener("click", () => {
     const bodyLang = document.body.lang;
     let selectedFiles;
@@ -52,32 +55,28 @@ document.addEventListener("DOMContentLoaded", () => {
       selectedFiles = Array.from(
         document.querySelectorAll(".english-item:checked")
       ).map((cb) => cb.dataset.file);
-      console.log("selectedFiles are ", selectedFiles);
     } else {
       selectedFiles = Array.from(
         document.querySelectorAll(".arabic-item:checked")
       ).map((cb) => cb.dataset.file);
-      console.log("selectedFiles are ", selectedFiles);
     }
 
-    downloadFiles(selectedFiles);
+    if (selectedFiles.length > 0) {
+      downloadFiles(selectedFiles);
+    } else {
+      alert("لم يتم تحديد ملفات للتنزيل.");
+    }
   });
 
+  // Helper function to download files
   function downloadFiles(files) {
-    if (files.length === 0) {
-      alert("لم يتم تحديد ملفات للتنزيل.");
-      return;
-    }
-
     files.forEach((file) => {
-      setTimeout(() => {
-        const link = document.createElement("a");
-        link.href = file;
-        link.setAttribute("download", "");
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      }, 500);
+      const link = document.createElement("a");
+      link.href = file;
+      link.setAttribute("download", "");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     });
   }
 });

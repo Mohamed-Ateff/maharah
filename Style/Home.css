@@ -90,14 +90,25 @@ body {
 }
 
 .chart-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   min-height: 400px;
   background-color: white;
   width: 59%;
+  position: relative;
 }
+
+
 .boxes-one {
   padding: 30px 50px;
   width: 39%;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .boxes-one h2 {
   text-align: center;
@@ -112,12 +123,14 @@ body {
 
 .three-boxes-m {
   margin-top: 40px;
+  width: 100%;
 }
 .one-small-box {
   clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
   margin-bottom: 15px;
   font-weight: 700;
   width: 100%;
+  min-width: 100%;
   padding: 15px;
   display: flex;
   justify-content: center;

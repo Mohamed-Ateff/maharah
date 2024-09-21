@@ -4,12 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const downloadSelectedButton = document.getElementById("download-selected");
   const langButton = document.getElementById("languageToggle");
 
+  // Disable "Download Selected" initially
+  disableDownloadSelectedButton();
+
   // Clear all checkboxes when the language toggle button is clicked
   langButton?.addEventListener("click", () => {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     checkboxes.forEach((checkbox) => {
       checkbox.checked = false;
     });
+    disableDownloadSelectedButton(); // Recheck when all checkboxes are cleared
   });
 
   // When the section-header checkbox is clicked, it checks/unchecks all sub-checkboxes in the section
@@ -20,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       checkboxes.forEach((checkbox) => {
         checkbox.checked = header.checked;
       });
+      checkDownloadSelectedButtonState(); // Check button state after section-header change
     });
   });
 
@@ -32,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         section.querySelectorAll(".sub-checkbox")
       ).every((cb) => cb.checked);
       header.checked = allChecked;
+      checkDownloadSelectedButtonState(); // Check button state after individual sub-checkbox change
     });
   });
 
@@ -78,5 +84,30 @@ document.addEventListener("DOMContentLoaded", () => {
       link.click();
       document.body.removeChild(link);
     });
+  }
+
+  // Function to disable the "Download Selected" button and apply custom CSS
+  function disableDownloadSelectedButton() {
+    downloadSelectedButton.disabled = true;
+    downloadSelectedButton.classList.add("disabled-button");
+  }
+
+  // Function to enable the "Download Selected" button and revert CSS
+  function enableDownloadSelectedButton() {
+    downloadSelectedButton.disabled = false;
+    downloadSelectedButton.classList.remove("disabled-button");
+  }
+
+  // Check if any sub-checkbox is selected
+  function checkDownloadSelectedButtonState() {
+    const anyChecked = Array.from(
+      document.querySelectorAll(".sub-checkbox")
+    ).some((checkbox) => checkbox.checked);
+
+    if (anyChecked) {
+      enableDownloadSelectedButton();
+    } else {
+      disableDownloadSelectedButton();
+    }
   }
 });

@@ -1,30 +1,4 @@
-body[lang="en"]{
-    *{
-        text-align: left;
-    }
 
-    .flex-row {
-        position: relative;
-        height: fit-content;
-        max-width: 100%;
-        margin: 30px 0 0 0px;
-        padding-left: 40px;  
-    }
-    .intersect {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        top: 25%;
-        left: 0%;
-        transform: translateY(-50%);
-        background: url(../images/Icons/arrow-for-title.png) no-repeat center;
-        background-size: 100% 100%;
-        -webkit-transform: scaleX(-1); 
-        transform: scaleX(-1);
-    }
-
-
-}
 
 /* Three cards (Name) */
 .three-cards {
@@ -171,17 +145,17 @@ body[lang="en"]{
  }
 
 .small-triangle{
-position: absolute;
+  position: absolute;
   bottom: 0;
   left: 0;
-  width: 95.37px;
+  width: 104px;
   height: 95.37px;
- background-color: #062E4A;
+  background-color: #062E4A;
 }
 .moving-number{
 position: absolute;
 bottom: 20px;
-left: 50px;
+left: 52px;
 font-weight: 700;
 font-size: 50px;
  line-height: 93.7px;
@@ -661,3 +635,57 @@ color: #666666;
 /* Four cards */
 
 
+body[lang="en"]{
+    *{
+        text-align: left;
+    }
+
+    .flex-row {
+        position: relative;
+        height: fit-content;
+        max-width: 100%;
+        margin: 30px 0 0 0px;
+        padding-left: 40px;  
+    }
+    .intersect {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 25%;
+        left: 0%;
+        transform: translateY(-50%);
+        background: url(../images/Icons/arrow-for-title.png) no-repeat center;
+        background-size: 100% 100%;
+        -webkit-transform: scaleX(-1); 
+        transform: scaleX(-1);
+    }
+
+    .text-item h3, .text-item p{
+        text-align: left;
+    }
+
+
+    .card-4{
+        clip-path: polygon(0% 0%, 0% 100%, 84% 100%, 100% 70%, 100% 98%, 100% 100%, 100% 0%)
+    }
+
+    .small-triangle { 
+        left: 84%;
+        top: 70%;
+    }
+    .moving-number, .counter{
+        right: 50px;
+        left: unset;
+    }
+
+    @media (max-width: 768px) {
+
+        .card-4{
+            height: 330px;
+        }
+        .small-triangle {
+            left: 84%;
+        top: 70%;
+        }
+    }
+}

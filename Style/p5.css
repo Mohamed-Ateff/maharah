@@ -1,3 +1,55 @@
+body[lang="en"]{
+    /* *{
+        direction: ltr;
+    } */
+
+    .logo-div{
+      display: flex;
+    flex-direction: row-reverse;
+    right: 71%;
+
+    }
+    .card h3, .card p, .card-date, .card-content{
+      text-align: left;
+    }
+    .card::before{
+      right: 94%;
+      top: 10%;
+      transform: rotateY(3.142rad);
+    }
+
+    .card2023{
+      display: flex;
+    flex-direction: row-reverse;
+    }
+
+    .footnote {
+      text-align: right;
+    }
+
+
+.revenue-table {
+  direction: ltr; 
+}
+.thBorders2 {
+  border-left: 1px solid #b5cadd;
+  border-right: none;
+}
+
+@media (max-width: 992px) {
+   .card-image{
+    margin-left: 0px;
+  }
+}
+}
+@media (max-width: 480px) {
+  .card::before{
+    right: 98%;
+  }
+ 
+
+}
+
 /* النموذج التشغيلي */
 .flex-row {
   display: flex;
@@ -89,7 +141,7 @@
   color: white;
   padding: 15px;
   text-align: center;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .thBorders {
@@ -112,7 +164,7 @@
 /* added */
 .thBorders2 p {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 40px;
 }
 
@@ -607,7 +659,6 @@
   }
 
   .logo-div {
-    top: -15px;
     right: auto;
     left: 50%;
     transform: translateX(-50%);

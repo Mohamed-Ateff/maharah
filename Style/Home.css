@@ -651,10 +651,6 @@ body[lang="en"] {
   text-align: center;
   color: white;
 }
-.card-text h3 {
-  font-size: 25px;
-  font-weight: 800 !important;
-}
 .card-text span {
   font-size: 50px;
   margin-left: 3px;
@@ -668,10 +664,149 @@ body[lang="en"] {
   font-size: 45px;
   margin: 5px 0px;
 }
-.card-text p {
-  font-size: 20px;
-  font-weight: 300;
+/* map */
+.map .header-for-map {
+  width: 100%;
+  padding: 100px 150px;
+   /* changed this to move h1 location */
+  position: relative;
 }
+
+.map-img {
+  top: -20%;
+  left: 30%;
+  transform: translate(40%, -30%);
+  /* changed this to reverse image location */
+}
+/* map Ends*/
+.four-cards {
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 105px;
+  /* background-color: red; */
+}
+.four-cards .one-title-for-four-cards {
+  width: 40%;   /*k altered width from 35 to fit content*/
+}
+
+.one-cards {
+  padding: 30px 30px 30px 80px; /*k decrease to fit content*/
+}
+.tr {
+  left: 0%;
+  transform: translateY(-50%);
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+
+}
+
+
+.one-small-card-for-map {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+}
+.one-box-for-smal-boxes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100%;
+  width: 100%;
+  margin-top: 15px;
+}
+.small-box-for-info {
+  display: flex;
+}
+.title-for-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  padding: 0px 0px;
+  height: 100%;
+}
+.title-for-box p {
+  font-weight: 700 !important;
+  transform: rotate(-90deg);
+  font-size: 12px;
+}
+.flex-locations-under {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.box-for-locations {
+  padding: 0px;
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.box-for-locations:last-child {
+  margin-bottom: 0px;
+}
+.box-for-locations p {
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.box-for-locations p:first-child {
+  color: #c6822a;
+}
+.box-for-locations p:last-child {
+  font-size: 14px;
+  color: black;
+}
+
+/* nine cards */
+.nine-cards .one-card-from-nine p {
+  margin-left: 20px;  /* changed to left */
+}
+/* nine cards ends */
+
+.a-small-word {
+  padding: 10px 100px 10px 30px;
+  clip-path: polygon(90% 0%, 0% 0%, 0% 100%, 100% 100%);
+}
+
+.a-big-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #062e4a;
+  width: 100%;
+  min-height: 230px;
+  margin-top: -1px;
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.tr-two {
+  width: 35px;
+  height: 25px;
+  position: absolute;
+  top: -22%;
+  left: 30.5%;
+  transform: translateY(50%);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background-color: #d9a867;
+  z-index: 2;
+}
+.a-big-word div {
+  margin-bottom: 15px;
+}
+.a-big-word div p {
+  font-size: 35px;
+}
+
+
   @media screen and (max-width: 992px) {
     .wrapper .outer .card {
       margin-right: 0px;

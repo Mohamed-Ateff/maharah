@@ -39,6 +39,7 @@ body[lang="en"] {
   }
 }
 
+
 @media (max-width: 768px) {
   table th {
     font-size: 12px !important;

@@ -1,7 +1,29 @@
 body[lang="en"]{
-    .card h2{
+    *{
         text-align: left;
     }
+
+    .flex-row {
+        position: relative;
+        height: fit-content;
+        max-width: 100%;
+        margin: 30px 0 0 0px;
+        padding-left: 40px;  
+    }
+    .intersect {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 25%;
+        left: 0%;
+        transform: translateY(-50%);
+        background: url(../images/Icons/arrow-for-title.png) no-repeat center;
+        background-size: 100% 100%;
+        -webkit-transform: scaleX(-1); 
+        transform: scaleX(-1);
+    }
+
+
 }
 
 /* Three cards (Name) */

@@ -579,18 +579,7 @@ body[lang="en"] {
   font-size: 28px;
   font-weight: 700;
 }
-.intersect {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 25%;
-  left: 0%;
-  transform: translateY(-50%);
-  background: url(../images/Icons/arrow-for-title.png) no-repeat center;
-  background-size: 100% 100%;
-  -webkit-transform: scaleX(-1); /* to reverse arrow */
-  transform: scaleX(-1);
-}
+
 .flex-row {
   position: relative;
   height: fit-content;
@@ -920,10 +909,291 @@ body[lang="en"] {
       margin-top: 15px;
     }
   }
-}
+    @media (max-width: 768px) {
+      .padding-top-mobile {
+        padding-top: 100px;
+      }
+  
+      /* card-phone */
+  
+      .card-phone {
+        width: 100%;
+        padding: 0px 0px 0px 200px;
+      }
+  
+      .card-text {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px
+      }
+  
+      .card-phone img {
+        height: 200px;
+        transform: translate(-300%, -50%) rotate(-45deg);
+        /* fixes img rotation */
+      } 
+      /* card-phone ends*/
+  
+      /* map */
+    
+      .map-img {
+        width: 60%;
+        height: auto;
+        top: unset;
+        left: 50%;
+        transform: translate(-50%, 0);
+        /* margin-top: 20px; */
+      }
+      /* .map .header-for-map h1:nth-child(1){
+        padding: 200px 0px 0px 0px
+      } */
+      .header-for-map {
+        margin-top: 5px;
+        padding:  0px 0px 0px 0px;
+      }
+      .one-container-for-boxes-map {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .one-small-card-for-map {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    
+      .one-box-for-smal-boxes {
+        margin-top: 10px;
+      }
+    
+      .small-box-for-info {
+        flex-direction: column;
+      }
+    
+      .title-for-box {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+      }
+    
+      .title-for-box p {
+        transform: rotate(0);
+        font-size: 14px;
+        text-align: center;
+      }
+    
+      .flex-locations-under {
+        padding: 10px;
+      }
+    
+      .box-for-locations {
+        margin-bottom: 10px;
+      }
+    
+      .box-for-locations p {
+        font-size: 14px;
+      }
+      /* map Ends*/
+  /* four cards */
+  .four-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
 
+  .four-cards .one-title-for-four-cards {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: none;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .one-cards {
+    width: 90%;
+    padding: 40px 30px;
+    margin-bottom: 20px;
+    display: flex;
+  justify-content: center;
+  }
+  /* four cards ends */
+  .tr-two {
+    left: 54%;
+  }
+
+    }
+
+    @media (max-width: 480px) {
+    
+      .boxes-one{
+        width: 100%;}
+      .chart-one {
+        width: 100%;
+      }
+    
+      .one-small-box {
+        font-size: 16px; 
+        padding: 10px; 
+        width: 100%;
+      }
+    
+      .one-small-box span:first-child {
+        font-size: 18px;
+        margin-left: 3px;
+      }
+      .cards-phone-and-text {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+      }
+    
+      .card-phone {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .card-phone img {
+        position: static;
+        height: 200px; 
+        transform: none;
+        margin-right: 10px; 
+      }
+    
+      .card-phone h3 {
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.5;
+      }
+    
+      .card-text {
+        width: 100%;
+        margin-top: 20px; 
+      }
+    
+      .card-text h3 {
+        font-size: 20px;
+      }
+    
+      .card-text span {
+        font-size: 30px;
+      }
+    
+      .card-text div {
+        font-size: 30px;
+      }
+    
+      .card-text p {
+        font-size: 16px;
+      }
+      .map {
+        margin-top: 30px;
+      }
+    
+      
+      .map .header-for-map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        
+      }
+    
+      
+      .map-img {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+        order: -1; 
+        position: relative;
+        left: unset;
+        top: unset;
+        transform: none;
+      }
+    
+      .map-img img {
+        width: 100%;
+        height: auto;
+      }
+    
+     
+      .map .header-for-map h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+    
+      .map .header-for-map h1:nth-child(1){
+        padding-top: 20px
+      }
+    
+      /* Content below the image */
+      .one-container-for-boxes-map {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+      }
+      .a-small-word {
+        width: 60%;
+        padding: 10px 50px 0px 5px;
+        background-color: #062e4a;
+        clip-path: polygon(90% 0%, 0% 0%, 0% 100%, 100% 100%);
+        position: relative;
+        z-index: 1;
+      }
+      
+      .a-small-word p {
+        font-weight: 700;
+        font-size: 25px;
+        color: #b5cadd;
+        position: relative;
+        top: 5px;
+      }
+      
+      .a-big-word {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        background-color: #062e4a;
+        width: 100%;
+        min-height: 230px;
+        margin-top: -1px;
+        position: relative;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      
+      .tr-two {
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        top: -30%;
+        left: 49%;
+        transform: translateY(50%);
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+        background-color: #d9a867;
+        z-index: 2;
+      }
+      .a-big-word div {
+        margin-bottom: 15px;
+      }
+      .a-big-word div p {
+        font-size: 35px;
+      }
+    
+     
+}
+}
 /* slider ends */
 
+/* card-phone */
 .cards-phone-and-text {
   width: 100%;
   display: flex;
@@ -995,6 +1265,7 @@ body[lang="en"] {
   font-size: 20px;
   font-weight: 300;
 }
+/* card-phone ends*/
 
 /* map */
 
@@ -1272,6 +1543,7 @@ body[lang="en"] {
     width: 100%; /* Stack below the chart */
     padding: 20px 30px;
   }
+
 }
 
                       

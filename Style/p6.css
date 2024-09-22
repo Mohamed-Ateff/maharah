@@ -1,5 +1,5 @@
 /*مقدمة*/
-span{
+span {
   display: block;
 }
 
@@ -271,6 +271,13 @@ span{
   margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+  .container-for-spe-table {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
 .revenue-table th {
   background-color: #062e4a;
   color: white;
@@ -385,6 +392,7 @@ span{
   .table-caption {
     margin: 60px 0 10px 0;
   }
+
   .revenue-table th,
   .revenue-table td {
     padding: 10px;

@@ -43,7 +43,7 @@
   .page-titles {
     background-color: red;
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     right: 0;
     width: 100%;
   }
@@ -51,13 +51,10 @@
     position: relative;
   }
   .img-and-title-for-hero h1 {
-    position: absolute;
-    bottom: -100% !important;
-    transform: translateY(-100%) !important;
     right: 3%;
     color: white;
     font-weight: 700 !important;
-    font-size: 35px;
+    font-size: 25px;
     z-index: 1;
   }
 }

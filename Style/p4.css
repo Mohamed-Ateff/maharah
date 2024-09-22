@@ -1,5 +1,10 @@
-/* Three cards (Name) */
+body[lang="en"]{
+    .card h2{
+        text-align: left;
+    }
+}
 
+/* Three cards (Name) */
 .three-cards {
     display: flex;
     justify-content: space-between;

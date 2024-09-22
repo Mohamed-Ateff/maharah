@@ -36,7 +36,7 @@ header .navbar-brand img {
 }
 
 .one-buttons-for-header {
-  padding: 9px 20px 9px 30px;
+  padding: 9px 12px 9px 30px !important;
   background-color: white;
   color: #005491;
   border: none;
@@ -112,12 +112,22 @@ header.scrolled .one-buttons-for-header:nth-child(2) .span-for-icon-button {
   }
   .one-buttons-for-header:nth-child(2) {
     transition: 0.3s ease;
-    background-color: #C6822A !important; 
+    background-color: #c6822a !important;
     color: #c6822a;
   }
   .one-buttons-for-header:nth-child(2) {
     background-color: #d9a867;
     color: white !important;
+  }
+}
+
+body[lang="en"] {
+  .one-buttons-for-header {
+    padding: 9px 30px 9px 12px !important;
+  }
+  header .one-buttons-for-header .span-for-icon-button {
+    margin-left: 0px !important;
+    margin-right: 25px;
   }
 }
 

@@ -39,7 +39,6 @@ body[lang="en"] {
   }
 }
 
-
 @media (max-width: 768px) {
   table th {
     font-size: 12px !important;
@@ -148,6 +147,20 @@ body[lang="en"] {
 @media screen and (max-width: 768px) {
   .title-with-arrow {
     font-size: 22px;
+  }
+}
+
+body[lang="en"] {
+  .flex-row {
+    padding-right: 0px;
+    padding-left: 40px;
+  }
+  .intersect {
+    top: 30%;
+    left: 0%;
+    transform: translateY(-30%);
+    -webkit-transform: scaleX(-1); /* to reverse arrow */
+    transform: scaleX(-1);
   }
 }
 

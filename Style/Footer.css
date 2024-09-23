@@ -127,3 +127,23 @@ footer {
     margin-bottom: 0px;
   }
 }
+
+body[lang="en"] {
+  .top-footer svg{
+    -webkit-transform: scaleX(-1); /* to reverse arrow */
+    transform: scaleX(-1);
+  }
+  .title-for-footer-and-next-page {
+    position: absolute;
+    top: 50%;
+    left: 11% ;
+    transform: translateY(-50%);
+  }
+  .one-buttons-for-header {
+    padding: 9px 30px 9px 12px !important;
+  }
+  .span-for-icon-button {
+    margin-left: 0px !important;
+    margin-right: 25px;
+  }
+}

@@ -167,7 +167,7 @@ li:hover .sub-menu {
     z-index: 99999999999999999999999 !important;
     margin-right: 0px;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
   }
 
@@ -175,6 +175,8 @@ li:hover .sub-menu {
     width: 20% !important;
   }
   .navbar-nav > li > a {
+    display: flex;
+    align-items: center;
     border-bottom: none;
     margin: 0 0rem;
     padding: 1.7rem 0rem 1.7rem 0rem;

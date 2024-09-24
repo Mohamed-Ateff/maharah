@@ -211,6 +211,7 @@ span {
 }
 
 /*مساهمونا*/
+
 .capital-details,
 .shareholder-details {
   width: 100%;
@@ -479,4 +480,33 @@ span {
   .total-row td {
     padding-right: 5px;
   }
+}
+
+body[lang="en"] {
+  /*مجلس الادارة*/
+  .ownersTable table {
+    direction: ltr;
+  }
+
+  .ownersTable .thBorders {
+    text-align: left;
+  }
+  /*مجلس الادارة Ends*/
+
+  /*توزيعات الارباح*/
+  .revenue-table {
+    direction: ltr;
+  }
+  .total-row td {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .total-row td:nth-child(2) {
+    text-align: left;
+    padding-left: 35px;
+  }
+  .footnote {
+    text-align: left;
+  }
+  /*توزيعات الارباح Ends*/
 }

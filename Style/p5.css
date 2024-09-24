@@ -649,6 +649,16 @@
     height: 10px;
     background-color: #3a73a8;
   }
+
+  .p1-for-div-for-numbs {
+    padding-right: 25px;
+  }
+  .p2-for-div-for-numbs {
+   padding-right: 25px;
+  }
+  .div-for-color-for-pie{
+    /* width: 30px; */
+  }
 }
 
 @media (max-width: 480px) {
@@ -677,6 +687,10 @@
 
   .card::before {
     border-right: 10px solid #c7cdd8;
+    border-top: 20px solid transparent;
+   border-bottom: 20px solid transparent;
+   border-right: 20px solid #ebeff8dd;
+    
   }
   .card-date {
     font-size: 14px;
@@ -693,6 +707,38 @@
   .padding-top-mobile {
     padding-top: 200px;
   }
+  .pie-charts{
+    width: 100%;
+  }
+  .two-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .one-card-for-pie {
+    width: 100%;
+  }
+  .p1-for-div-for-numbs {
+    padding: 0px 50px 0px 10px;
+  }
+  .p2-for-div-for-numbs {
+    padding: 0px 50px 0px 10px;
+  }
+  .div-for-data h5 {
+    padding: 0px 50px 0px 50px;
+  }
+ 
+  
+
+ 
+
+ 
+
+  
+
+  
+
+ 
 }
 
 body[lang="en"]{
@@ -740,9 +786,9 @@ body[lang="en"]{
 }
 }
 @media (max-width: 480px) {
-  .card::before{
+  /* .card::before{
     right: 98%;
-  }
+  } */
  
 
 }

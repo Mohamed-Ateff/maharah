@@ -606,14 +606,13 @@ body[lang="en"]{
   .img-and-title-for-hero h1{
     bottom: -150px !important;
     
-
   }
 
   .box-with-color{
     margin: auto 8px auto 0px;
   }
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
         .btn-final {
         width: 264px;
         height: 55px;
@@ -621,5 +620,5 @@ body[lang="en"]{
           .btn-final p {
             font-size: 14px;
           }
-  }
+  } */
 }

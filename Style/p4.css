@@ -1,96 +1,91 @@
-
-
 /* Three cards (Name) */
 .three-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: stretch;
-    background-color: #f0f4fa;
-    padding-top: 150px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: stretch;
+  background-color: #f0f4fa;
+  padding-top: 150px;
+  flex-wrap: wrap;
 }
 
 .card {
-    background-color: white;
-    padding-top: 80px; /* Adjust to give space for the icon */
-    position: relative;
-    text-align: center;
-    width: 32%;
-    flex-grow: 1; 
-    display: flex;
-    flex-direction: column;
-    transition: width 0.3s ease;
-   
+  background-color: white;
+  padding-top: 80px; /* Adjust to give space for the icon */
+  position: relative;
+  text-align: center;
+  width: 32%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
 }
 
 .card-content {
-    padding: 0 40px 40px 40px; 
-    text-align: right
+  padding: 0 40px 40px 40px;
+  text-align: right;
 }
 
 .icon-wrapper-1 {
-    position: absolute;
-    top: -50px; 
-    background-color: #3A73A8; 
-    padding: 25px;
-   
+  position: absolute;
+  top: -50px;
+  background-color: #3a73a8;
+  padding: 25px;
 }
 
 .icon-wrapper-2 {
-    position: absolute;
-    top: -50px;  
-    background-color: #062E4A; 
-    padding: 25px;
-   
+  position: absolute;
+  top: -50px;
+  background-color: #062e4a;
+  padding: 25px;
 }
 .icon-wrapper-3 {
-    position: absolute;
-    top: -50px;  /* Moves the icon upwards */
-    background-color: #D9A867; 
-    padding: 25px;
+  position: absolute;
+  top: -50px; /* Moves the icon upwards */
+  background-color: #d9a867;
+  padding: 25px;
 }
 
 .icon-wrapper-1 img {
-    width: 60px;   /* may adjust later kareem*/
-    height: 60px;
+  width: 60px; /* may adjust later kareem*/
+  height: 60px;
 }
 .icon-wrapper-2 img {
-    width: 60px;   /* may adjust later kareem*/
-    height: 60px;
+  width: 60px; /* may adjust later kareem*/
+  height: 60px;
 }
 .icon-wrapper-3 img {
-    width: 60px;   /* may adjust later kareem*/
-    height: 60px;
+  width: 60px; /* may adjust later kareem*/
+  height: 60px;
 }
 
 .card h2 {
-    font-size: 1.875rem;
-    color: #3A73A8;
-    font-weight: 700;
-    line-height: 3.514rem;
-    margin-top: 10px; 
+  font-size: 1.875rem;
+  color: #3a73a8;
+  font-weight: 700;
+  line-height: 3.514rem;
+  margin-top: 10px;
 }
 
 .card p {
-    font-size: 16px;
-    font-weight: 700;
-    color: #666;
-    margin-top: 10px;
-    line-height: 1.875rem;
-    align-items: right;
+  font-size: 16px;
+  font-weight: 700;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.875rem;
+  align-items: right;
 }
 
 .vision {
-    border-top: 10px solid #3A73A8;
+  border-top: 10px solid #3a73a8;
 }
 
 .mission {
-    border-top: 10px solid #062E4A;
+  border-top: 10px solid #062e4a;
 }
 
 .values {
-    border-top: 10px solid #D9A867;
+  border-top: 10px solid #d9a867;
 }
 
 /* Three cards */
@@ -98,263 +93,261 @@
 /* Four cards */
 
 .four-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 5px;
-    margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 30px;
 }
 
 .card-content-four {
-    width: 100%;
-    position: relative;
-    padding: 50px;
+  width: 100%;
+  position: relative;
+  padding: 50px;
 }
 
 .card-content-four h2 {
-    font-size: 1.875rem;
-    color: #3A73A8;
-    font-weight: 700;
-    line-height: 3.514rem;
-    z-index: 2; 
-    margin-bottom: 5px;
+  font-size: 1.875rem;
+  color: #3a73a8;
+  font-weight: 700;
+  line-height: 3.514rem;
+  z-index: 2;
+  margin-bottom: 5px;
 }
 
 .card-content-four ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-weight: 400;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
 }
 
 .card-content-four ul li {
-    font-size: 1rem;
-    line-height: 1.875rem;
-    list-style-type: square;
-    margin-right: 20px;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  list-style-type: square;
+  margin-right: 20px;
 }
 
-.card-4{
-    height: 306px;
-    /* width:555.24px; */
-    width:49%;
-    background-color: white;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 69%);       
-    position: relative;
-    margin-top: 10px;
- }
+.card-4 {
+  height: 306px;
+  /* width:555.24px; */
+  width: 49%;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%, 0 69%);
+  position: relative;
+  margin-top: 10px;
+}
 
-.small-triangle{
+.small-triangle {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 104px;
   height: 95.37px;
-  background-color: #062E4A;
+  background-color: #062e4a;
 }
-.moving-number{
-position: absolute;
-bottom: 20px;
-left: 52px;
-font-weight: 700;
-font-size: 50px;
- line-height: 93.7px;
- color: white;
+.moving-number {
+  position: absolute;
+  bottom: 20px;
+  left: 52px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 93.7px;
+  color: white;
 }
 
 /* Adjust Three Cards */
-.aligncenter{
-    text-align: center;
+.aligncenter {
+  text-align: center;
 }
-.diff-style{
-    font-size: 20px !important;
-    color: #333333;
-    padding-bottom: 20px;
+.diff-style {
+  font-size: 20px !important;
+  color: #333333;
+  padding-bottom: 20px;
 }
-.threeadjust{
-    padding-top: 0px;
-    margin-top: 70px;
+.threeadjust {
+  padding-top: 0px;
+  margin-top: 70px;
 }
 
 .icon-wrapper {
-    position: absolute;
-    top: -50px; 
-    background-color: #C6822A; 
-    width: 115px;
-    height: 94.3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: -50px;
+  background-color: #c6822a;
+  width: 115px;
+  height: 94.3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-wrapper p {
-    color: white;
-    font-weight: 700;
-    font-size: 3.125rem;
+  color: white;
+  font-weight: 700;
+  font-size: 3.125rem;
 }
 /* Adjust Three Cards */
 
 .new-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    background-color: #f0f4fa;
-    padding: 0px 20px;
-    border-radius: 10px;
-    height: 100%; /* Make sure the content is aligned evenly */
-    background-color: #B5CADD;
-    margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: #f0f4fa;
+  padding: 0px 20px;
+  border-radius: 10px;
+  height: 100%; /* Make sure the content is aligned evenly */
+  background-color: #b5cadd;
+  margin-top: 15px;
 }
 
-.left-side, .middle-side, .right-side {
-    width: 33.33%; /* Divide into three equal parts */
-   text-align: center;
-   
+.left-side,
+.middle-side,
+.right-side {
+  width: 33.33%; /* Divide into three equal parts */
+  text-align: center;
 }
-.middle-side{
-    text-align: right; /* Align text to the right */
-    flex-direction: column;
-    gap: 30px;
-    text-align: right;
+.middle-side {
+  text-align: right; /* Align text to the right */
+  flex-direction: column;
+  gap: 30px;
+  text-align: right;
 }
-.middle-side h2{
-    font-size: 22px;
-    color: #3A73A8;
-    font-weight: 700;
-    line-height: 41.23px;
+.middle-side h2 {
+  font-size: 22px;
+  color: #3a73a8;
+  font-weight: 700;
+  line-height: 41.23px;
 }
-.middle-side p{
-    font-size: 14px;
-    color: #666666;
-    font-weight: 700;
-    line-height: 40px;
+.middle-side p {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 700;
+  line-height: 40px;
 }
 
 .item {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px; 
-    justify-content: flex-start; 
-    margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  justify-content: flex-start;
+  margin-top: 30px;
 }
 
 .left-side h1 {
-    font-size: 60px;
-    color: #3A73A8;
-    margin: 0;
-    line-height: 72.18px;
+  font-size: 60px;
+  color: #3a73a8;
+  margin: 0;
+  line-height: 72.18px;
 }
 
 .left-side h2 {
-    font-size: 20px;
-    color:#C6822A;
-    margin-bottom: 10px;
-    line-height: 24.06px;
+  font-size: 20px;
+  color: #c6822a;
+  margin-bottom: 10px;
+  line-height: 24.06px;
 }
 
 .middle-side span {
-    font-size: 1.125rem;
-    color: #333;
-    margin-bottom: 10px;
-    display: flex;
-   
+  font-size: 1.125rem;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 .circle {
-    width: 32.65px;
-    height: 32.65px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: 10px;
+  width: 32.65px;
+  height: 32.65px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .right-side img {
-    width: 100%; 
-    max-width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
 /* nine cards */
 .nine-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
-    gap: 12px; 
-    margin-top: 50px; 
-    text-align: right; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+  gap: 12px;
+  margin-top: 50px;
+  text-align: right;
 }
 
 .nine-cards .card-9 {
-    background-color: white;
-    padding: 20px 50px;
-    text-align: right; /* Ensures text is aligned to the right */
-    height: 275px;
-    clip-path: polygon(93% 0%,100% 10%,100% 100%,0% 100%,0% 0%);
+  background-color: white;
+  padding: 20px 50px;
+  text-align: right; /* Ensures text is aligned to the right */
+  height: 275px;
+  clip-path: polygon(93% 0%, 100% 10%, 100% 100%, 0% 100%, 0% 0%);
 }
 
 .nine-cards h3 {
-    font-size: 30px;
-    color: #062E4A; 
-    font-weight: 700;
-    margin-bottom: 10px;
-    line-height: 56.22px;
+  font-size: 30px;
+  color: #062e4a;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 56.22px;
 }
 
 .nine-cards p {
-    font-size: 20px;
-    color: #333333;
-    line-height: 30px;
-    font-weight: 700;
+  font-size: 20px;
+  color: #333333;
+  line-height: 30px;
+  font-weight: 700;
 }
 /* nine cards Ends*/
 
 /* التطلعات */
 
 .container-white {
-    height: auto;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px 0px 20px;
-    box-sizing: border-box;
-    position: relative;
-    margin-top: 20px;
+  height: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 0px 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 20px;
 }
 
 .grid-layout {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    grid-gap: 20px;
-    height: 100%;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-gap: 20px;
+  height: 100%;
+  width: 100%;
 }
 
-
 .text-item {
-    padding: 0px 40px;
-    box-sizing: border-box;
-    text-align: center;
+  padding: 0px 40px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .text-item h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    line-height: 56.22px;
-    text-align: right;
+  font-size: 30px;
+  margin-bottom: 10px;
+  line-height: 56.22px;
+  text-align: right;
 }
 
 .text-item p {
-    font-size: 16px;
-    text-align: right;
-font-weight: 700;
-line-height: 30px;
-color: #666666;
+  font-size: 16px;
+  text-align: right;
+  font-weight: 700;
+  line-height: 30px;
+  color: #666666;
 }
 
-
 .image-wrapper {
-  grid-column: 3; 
-  align-self: end; 
+  grid-column: 3;
+  align-self: end;
   text-align: center;
 }
 
@@ -365,152 +358,153 @@ color: #666666;
   top: 7px;
   transform-origin: bottom;
   transform: scaleY(0);
-  transition: transform 1s ease-out; 
+  transition: transform 1s ease-out;
 }
 
 .image-wrapper.animate img {
   transform: scaleY(1);
 }
 
-
-.blue-border{
-    width: 75%;
-    height: 24.17px;
-    background-color: #3A73A8;
-    margin: auto;
+.blue-border {
+  width: 75%;
+  height: 24.17px;
+  background-color: #3a73a8;
+  margin: auto;
 }
 /* التطلعات Ends*/
 
 /* التحديات */
 
-.title-forFinal{
-    margin-top: 30px;
-    margin-bottom: 50px;
+.title-forFinal {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
-.title-forFinal p{
-    font-size: 25px;
-    color: #333333; 
-    font-weight: 700;
-    margin-bottom: 10px;
-    line-height: 40px;
+.title-forFinal p {
+  font-size: 25px;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 40px;
 }
 /*التحديات Ends*/
 
 @media (max-width: 1200px) {
-    .card {
-        width: 48%;
-        margin-bottom: 20px;
-    }
-     /* .card-four {
+  .card {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  /* .card-four {
         width: 100%;
       
     } */
 }
 @media (max-width: 768px) {
-    .card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .icon-wrapper-1 img,
-    .icon-wrapper-2 img,
-    .icon-wrapper-3 img {
-        width: 40px;
-        height: 40px;
-    }
+  .icon-wrapper-1 img,
+  .icon-wrapper-2 img,
+  .icon-wrapper-3 img {
+    width: 40px;
+    height: 40px;
+  }
 
-    .card h2 {
-        font-size: 1.5rem;
-    }
+  .card h2 {
+    font-size: 1.5rem;
+  }
 
-    .card p {
-        font-size: 0.9rem;
-    }
-/*ggdd*/
-    .card-four {
-        width: 100%;
-        height: auto;
-        padding: 1.5rem;
-    }
+  .card p {
+    font-size: 0.9rem;
+  }
+  /*ggdd*/
+  .card-four {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+  }
 
-    .card-four h2 {
-        font-size: 1.5rem;
-    }
-/*ggdd*/
-.four-cards {
+  .card-four h2 {
+    font-size: 1.5rem;
+  }
+  /*ggdd*/
+  .four-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 5px;
     margin-top: 10px;
-}
+  }
 
-.card-content-four {
+  .card-content-four {
     width: 100%;
     position: relative;
     padding: 50px;
-}
+  }
 
-.card-content-four h2 {
+  .card-content-four h2 {
     font-size: 1.875rem;
-    color: #3A73A8;
+    color: #3a73a8;
     font-weight: 700;
     line-height: 3.514rem;
-    z-index: 2; 
+    z-index: 2;
     margin-bottom: 5px;
-}
+  }
 
-.card-content-four ul {
+  .card-content-four ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     font-weight: 400;
-}
+  }
 
-.card-content-four ul li {
+  .card-content-four ul li {
     font-size: 1rem;
     line-height: 1.875rem;
     list-style-type: square;
     margin-right: 20px;
-}
+  }
 
-.card-4{
+  .card-4 {
     height: 306px;
     /* width:555.24px; */
-    width:100%;
+    width: 100%;
     background-color: white;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 16% 100%, 0 69%);       
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 16% 100%, 0 69%);
     position: relative;
     margin-top: 10px;
- }
+  }
 
-    .icon-wrapper {
-        position: absolute;
-        top: -25px;
-        background-color: #C6822A;
-        width: 74px;
-        height: 70px;
-    }
-    .icon-wrapper p {
-        color: white;
-        font-weight: 700;
-        font-size: 3rem;
-        line-height:1rem;
-    }
-    .new-section {
-        flex-direction: column;
-        text-align: center;
-    }
+  .icon-wrapper {
+    position: absolute;
+    top: -25px;
+    background-color: #c6822a;
+    width: 74px;
+    height: 70px;
+  }
+  .icon-wrapper p {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1rem;
+  }
+  .new-section {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .left-side, .middle-side, .right-side {
-        width: 100%; /* Full width on small screens */
-        text-align: center;
-    }
+  .left-side,
+  .middle-side,
+  .right-side {
+    width: 100%; /* Full width on small screens */
+    text-align: center;
+  }
 
-    .right-side img {
-        max-width: 100%;
-    }
-    .grid-layout {
+  .right-side img {
+    max-width: 100%;
+  }
+  .grid-layout {
     grid-template-columns: 1fr; /* 1 column on small screens */
   }
 
@@ -532,140 +526,147 @@ color: #666666;
     grid-column: auto; /* Align the image on small screens */
     text-align: center;
   }
-    .nine-cards {
-        grid-template-columns: 1fr; 
-      }
-      
-      .nine-cards .card-9 {
-        height: auto; 
-      }
-      .blue-border{
-        width: 100%;
-        height: 15px;
-        background-color: #3A73A8;
-        margin: auto;
-    }
-    .title-with-arrow{
-        line-height: 45px;
-    }
+  .nine-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .nine-cards .card-9 {
+    height: auto;
+  }
+  .blue-border {
+    width: 100%;
+    height: 15px;
+    background-color: #3a73a8;
+    margin: auto;
+  }
+  .title-with-arrow {
+    line-height: 45px;
+  }
 }
 
-@media (max-width:556px) {
-    .Some-p-under-each-other p{
-        margin-top: 111px;
-    }
-    .flex-row{
-        margin-bottom: 80px;
-    }
+@media (max-width: 556px) {
+  .Some-p-under-each-other p {
+    margin-top: 111px;
+  }
+  .flex-row {
+    margin-bottom: 80px;
+  }
 }
 @media (max-width: 480px) {
-    .nine-cards h3 {
-      font-size: 24px; 
-      line-height: 36px;
-    }
-  
-    .nine-cards p {
-      font-size: 18px; 
-      line-height: 24px;
-    }
-    .four-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 5px;
-        margin-top: 10px;
-    }
-    .card-content-four {
-        width: 100%;
-        position: relative;
-        padding: 20px;
-    }
-    
-    .card-content-four h2 {
-        font-size: 25px;
-        color: #3A73A8;
-        font-weight: 700;
-        line-height: 3.514rem;
-        z-index: 2; 
-        margin-bottom: 5px;
-    }
-    
-    .card-content-four ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        font-weight: 400;
-    }
-    
-    .card-content-four ul li {
-        font-size: 16px;
-        line-height: 20px;
-        list-style-type: square;
-        margin-right: 20px;
-    }
-    
-    .card-4{
-        height: 306px;
-        /* width:555.24px; */
-        width:100%;
-        background-color: white;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 23% 100%, 0 74%);       
-        position: relative;
-        margin-top: 10px;
-     }
-   
-     .small-triangle{
-        position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 80px;
-          height: 80px;
-         background-color: #062E4A;
-        }
-        .moving-number{
-        position: absolute;
-        bottom: 10px;
-        left: 45px;
-        font-weight: 700;
-        font-size: 50px;
-         line-height: 93.7px;
-         color: white;
-        }
+  .nine-cards h3 {
+    font-size: 24px;
+    line-height: 36px;
   }
+
+  .nine-cards p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .four-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  .card-content-four {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+  }
+
+  .card-content-four h2 {
+    font-size: 25px;
+    color: #3a73a8;
+    font-weight: 700;
+    line-height: 3.514rem;
+    z-index: 2;
+    margin-bottom: 5px;
+  }
+
+  .card-content-four ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  .card-content-four ul li {
+    font-size: 16px;
+    line-height: 20px;
+    list-style-type: square;
+    margin-right: 20px;
+  }
+
+  .card-4 {
+    height: 306px;
+    /* width:555.24px; */
+    width: 100%;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 23% 100%, 0 74%);
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .small-triangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: #062e4a;
+  }
+  .moving-number {
+    position: absolute;
+    bottom: 10px;
+    left: 45px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 93.7px;
+    color: white;
+  }
+}
 /* Four cards */
 
+body[lang="en"] {
+  * {
+    text-align: left;
+  }
 
-body[lang="en"]{
-    *{
-        text-align: left;
+  .text-item h3,
+  .text-item p {
+    text-align: left;
+  }
+
+  .card-4 {
+    clip-path: polygon(
+      0% 0%,
+      0% 100%,
+      84% 100%,
+      100% 70%,
+      100% 98%,
+      100% 100%,
+      100% 0%
+    );
+  }
+
+  .small-triangle {
+    left: 84%;
+    top: 70%;
+  }
+  .moving-number,
+  .counter {
+    right: 50px;
+    left: unset;
+  }
+
+  @media (max-width: 768px) {
+    .card-4 {
+      height: 330px;
     }
-
-    .text-item h3, .text-item p{
-        text-align: left;
+    .small-triangle {
+      left: 84%;
+      top: 70%;
     }
-
-
-    .card-4{
-        clip-path: polygon(0% 0%, 0% 100%, 84% 100%, 100% 70%, 100% 98%, 100% 100%, 100% 0%)
-    }
-
-    .small-triangle { 
-        left: 84%;
-        top: 70%;
-    }
-    .moving-number, .counter{
-        right: 50px;
-        left: unset;
-    }
-
-    @media (max-width: 768px) {
-
-        .card-4{
-            height: 330px;
-        }
-        .small-triangle {
-            left: 84%;
-        top: 70%;
-        }
-    }
+  }
 }

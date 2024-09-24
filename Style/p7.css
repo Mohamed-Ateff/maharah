@@ -437,7 +437,8 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
   }
   .container-Final {
     flex-direction: column; /* Stack elements vertically */
-    height: auto; /* Allow height to adjust based on content */
+    height: auto; 
+    padding: 20px 0;
   }
 
   .adjustforanimate h1 {
@@ -599,4 +600,25 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
   .padding-mobile-bottom {
     padding-bottom: 10px;
   }
+}
+
+body[lang="en"]{
+  .img-and-title-for-hero h1{
+    bottom: -150px !important;
+    
+  }
+
+  .box-with-color{
+    margin: auto 8px auto 0px;
+  }
+
+  /* @media (max-width: 768px) {
+        .btn-final {
+        width: 264px;
+        height: 55px;
+    }
+          .btn-final p {
+            font-size: 14px;
+          }
+  } */
 }

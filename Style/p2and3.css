@@ -166,14 +166,7 @@ body[lang="en"] {
     transform: rotate(0deg);
   }
 
-  .red {
-    direction:"ltr"
-  }
-  .box{
-    direction:"ltr"
-  }
   .black{
-    direction: ltr;
     padding-left: 15%;
   }
   .photo-man {

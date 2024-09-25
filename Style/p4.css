@@ -659,6 +659,10 @@ body[lang="en"] {
     right: 50px;
     left: unset;
   }
+  .card-content-four ul li {
+    margin-left: 18px;
+    padding-right: 30px;
+  }
 
   @media (max-width: 768px) {
     .card-4 {
@@ -667,6 +671,10 @@ body[lang="en"] {
     .small-triangle {
       left: 84%;
       top: 70%;
+    }
+    .card-content-four ul li {
+      margin-left: 18px;
+      padding-right: 0px;
     }
   }
   @media (max-width: 480px) {

@@ -669,4 +669,13 @@ body[lang="en"] {
       top: 70%;
     }
   }
+  @media (max-width: 480px) {
+    .card-4 {
+      height: 330px;
+    }
+    .small-triangle {
+      left: 71%;
+      top: 75%;
+    }
+  }
 }

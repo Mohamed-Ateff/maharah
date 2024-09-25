@@ -301,7 +301,7 @@ body[lang="en"] {
   display: flex;
   align-items: center;
   background-color: white;
-  padding: 15px 130px 15px 20px;
+  padding: 15px 130px 15px 130px;
 }
 .card .content .box-for-slide {
   min-height: 90px;
@@ -474,14 +474,14 @@ body[lang="en"] {
     display: flex;
     justify-content: center;
     /* align-items: flex-start; */
-    padding: 80px 0px 0px 0px !important;
+    padding: 80px 0px 0px 80px !important;
   }
   .controls {
     /* background-color: red; */
     width: fit-content;
     position: absolute;
     top: 50%;
-    right: 2.5%;
+    left: 2.5%;
     transform: translateX(0%);
     transform: translateY(-50%) !important;
     display: flex;
@@ -534,25 +534,24 @@ body[lang="en"] {
     clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
     left: 0%;
   }
-  /* @media (max-width: 1024px) {
- .card-phone img {
-    height: 200px;
-    left: 0%;
-    transform: translate(30%, -50%) rotate(-45deg);
+  .wrapper .outer .card .content {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px 20px 15px 160px;
   }
-  .map-img img {
-    width: 100%;
+  @media (max-width: 1024px) {
+    .slider-card-connect { 
+      padding: 80px 0px 0px 0px !important;
+    }
   }
-  .tr-two {
-    left: 40%; 
-  }
-  } */
 
   @media screen and (max-width: 992px) {
     .slider-card-connect {
       margin-top: 80px;
       width: 100%;
       min-height: 30vh;
+      
     }
     .controls{
     top: 45%;

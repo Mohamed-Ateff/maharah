@@ -343,6 +343,9 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
   width: 24.53px;
   height: 24.53px;
 }
+#annualBtnEn{
+  display: none;
+}
 
 /* القوائم المالية Ends  */
 
@@ -620,7 +623,12 @@ body[lang="en"]{
   .box-with-color{
     margin: auto 8px auto 0px;
   }
-
+  #annualBtnAr{
+  display: none;
+  }
+  #annualBtnEn{
+  display: flex;
+  }
    @media (max-width: 768px) { 
         /* .btn-final {
         width: 264px;

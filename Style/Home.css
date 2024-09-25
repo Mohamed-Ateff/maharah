@@ -474,7 +474,7 @@ body[lang="en"] {
     display: flex;
     justify-content: center;
     /* align-items: flex-start; */
-    padding: 80px 0px 0px 80px !important;
+    padding: 80px 0px 0px 60px !important;
   }
   .controls {
     /* background-color: red; */

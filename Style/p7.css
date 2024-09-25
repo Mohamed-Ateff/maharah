@@ -621,13 +621,13 @@ body[lang="en"]{
     margin: auto 8px auto 0px;
   }
 
-  /* @media (max-width: 768px) {
-        .btn-final {
+   @media (max-width: 768px) { 
+        /* .btn-final {
         width: 264px;
         height: 55px;
     }
           .btn-final p {
             font-size: 14px;
-          }
-  } */
+          } */
+  } 
 }

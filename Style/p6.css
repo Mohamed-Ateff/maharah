@@ -424,6 +424,34 @@ span {
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .line-left{
+    top: 16%;
+    height: 250px;
+    left: 37.5%;
+  }
+  .line-middle{
+    top: 16%;
+    height: 251px;
+    left: 65.5%;
+  }
+  .arrow-left {
+    left: 36.1%;
+  }
+  .arrow-left::before {
+    right: 10px;
+    top: -6px;
+  }
+  .arrow-right{
+    top: 18%;
+    right: 22%;
+  }
+  .line-right{
+    top: 16%;
+    left: 77.5%;
+  }
+  .arrow-middle{
+    left: 64%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -439,14 +467,49 @@ span {
 
 @media screen and (max-width: 768px) {
   .row {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column-reverse;
+    align-items: flex-end;
   }
 
-  .arrow-left,
-  .arrow-middle,
+  .arrow-left{
+top: 25%;
+left: 74%;
+width: 40px;
+  }
+  .arrow-left::before{
+    right: 35px;
+  }
+  
+  .arrow-middle {
+    width: 40px;
+    left: 74%;
+  }
+  .arrow-middle::before{
+    right: 35px;
+  }
   .arrow-right {
-    display: none;
+    height: 4px;
+    width: 60px;
+    top: 70%;
+    right: 20%;
+  }
+  .arrow-right::before {
+    content: '';
+    position: absolute;
+    right: 52px;
+    top: -6px;
+    border-top: 8px solid transparent;
+    border-right: 10px solid #3a73a8;
+    border-bottom: 8px solid transparent;
+  }
+   
+  
+  .line-left,.line-right{display: none;}
+
+  .line-middle{
+    height: 745px;
+    top: 8.5%;
+    left: 80%;
   }
 
   .card {
@@ -493,6 +556,11 @@ span {
   .total-row td {
     padding-right: 10px;
   }
+  .column {
+   width: 80%;
+   flex-direction: column-reverse;
+  }
+  
 }
 
 @media screen and (max-width: 480px) {

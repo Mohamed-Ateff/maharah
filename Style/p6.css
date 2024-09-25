@@ -138,9 +138,9 @@ span {
 }
 .arrow-left {
   position: absolute;
-  top: 50%;
-  left: 35%;
-  width: 20px;
+  top: 55%;
+  left: 35.1%;
+  width: 15px;
   height: 4px;
   background-color: #3a73a8;
 }
@@ -148,7 +148,7 @@ span {
 .arrow-left::before {
   content: '';
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: -6px;
   border-top: 8px solid transparent;
   border-right: 10px solid #3a73a8;
@@ -158,9 +158,9 @@ span {
 
 .arrow-middle {
   position: absolute;
-  top: 50%;
-  left: 65%;
-  width: 20px;
+  top: 55%;
+  left: 64.5%;
+  width: 15px;
   height: 4px;
   background-color: #3a73a8;
 }
@@ -168,7 +168,7 @@ span {
 .arrow-middle::before {
   content: '';
   position: absolute;
-  right: 20px;
+  right: 11px;
   top: -6px;
   border-top: 8px solid transparent;
   border-right: 10px solid #3a73a8;
@@ -199,18 +199,18 @@ span {
   content: '';
   position: absolute;
   top: 19%;
-  left: 36.5%;
+  left: 36.1%;
   width: 4px;
-  height: 173px;
+  height: 200px;
   background-color: #3a73a8;
 }
 .line-middle{
   content: '';
   position: absolute;
   top: 19%;
-  left: 66.5%;
+  left: 65.5%;
   width: 4px;
-  height: 173px;
+  height: 200px;
   background-color: #3a73a8;
 }
 .line-right{

@@ -472,9 +472,9 @@ span {
   }
 
   .arrow-left{
-top: 25%;
-left: 74%;
-width: 40px;
+   top: 25%;
+   left: 74%;
+   width: 40px;
   }
   .arrow-left::before{
     right: 35px;
@@ -502,15 +502,15 @@ width: 40px;
     border-right: 10px solid #3a73a8;
     border-bottom: 8px solid transparent;
   }
-   
-  
-  .line-left,.line-right{display: none;}
-
   .line-middle{
     height: 745px;
     top: 8.5%;
     left: 80%;
   }
+  
+  .line-left,.line-right{display: none;}
+
+  
 
   .card {
     width: 100%;
@@ -634,6 +634,46 @@ width: 40px;
   .total-row td {
     padding-right: 5px;
   }
+  .column {
+    width: 80%;
+    flex-direction: column-reverse;
+   }
+   .arrow-left{
+    top: 25%;
+    left: 70%;
+    width: 20px;
+   }
+   .arrow-left::before{
+     right: 20px;
+   }
+   
+   .arrow-middle {
+     width: 20px;
+     left: 70%;
+     top: 57%;
+   }
+   .arrow-middle::before{
+     right: 20px;
+   }
+   .arrow-right {
+     height: 4px;
+     width: 40px;
+     top: 74.5%;
+     right: 24%;
+   }
+   .arrow-right::before {
+    
+     right: 40px;
+     top: -6px;
+     border-top: 8px solid transparent;
+     border-right: 10px solid #3a73a8;
+     border-bottom: 8px solid transparent;
+   }
+   .line-middle{
+     height: 1002px;
+     top: 7%;
+     left: 75%;
+   }
 }
 
 body[lang="en"] {

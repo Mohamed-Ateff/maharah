@@ -669,4 +669,53 @@ body[lang="en"] {
       top: 70%;
     }
   }
+  @media (max-width: 480px) {
+    .card-4 {
+      height: 330px;
+      clip-path: polygon(
+      0% 0%,
+      0% 100%,
+      75% 100%,
+      100% 75%,
+      100% 98%,
+      100% 100%,
+      100% 0%
+    );
+    }
+    .moving-number,
+  .counter {
+    right: 45px;
+    left: unset;
+  }
+    .small-triangle {
+      left: 76%;
+      top: 75%;
+    }
+    .card-content-four h2{
+      margin-bottom: 0px;
+    }
+    .card-content-four {
+      padding: 30px 0px 0px 30px;
+    }
+    .card-content-four ul li {
+      line-height: 1.875rem;
+    }
+    .four-cards .card-4:last-child {
+      height: 510px; /* Adjust the height as needed */
+      clip-path: polygon(
+        0% 0%,
+        0% 100%,
+        75% 100%,
+        100% 85%,
+        100% 98%,
+        100% 100%,
+        100% 0%
+      );
+    }
+    .four-cards .card-4:last-child .small-triangle{
+      left: 75%;
+      top: 85%;
+    }
+
+  }
 }

@@ -621,13 +621,62 @@ body[lang="en"]{
     margin: auto 8px auto 0px;
   }
 
-  /* @media (max-width: 768px) {
-        .btn-final {
+   @media (max-width: 768px) { 
+        /* .btn-final {
         width: 264px;
         height: 55px;
     }
           .btn-final p {
             font-size: 14px;
+          } */
+          .Six-cards div:nth-child(3) {
+            padding-right: 70px; /* Shift content to the right */
+            background: radial-gradient(
+              circle at right center,
+              transparent,
+              transparent 75px,
+              #ffffff 12px,
+              #ffffff
+            );
           }
-  } */
+        
+          .Six-cards div:nth-child(4) {
+            padding-left: 70px; /* Shift content to the left */
+            background: radial-gradient(
+              circle at left center,
+              transparent,
+              transparent 75px,
+              #ffffff 12px,
+              #ffffff
+            );
+          }
+  } 
+  @media (max-width: 480px) {
+
+    .Six-cards div:nth-child(3) {
+      padding: 0px 70px 0px 30px; /* Shift content to the right */
+      background: radial-gradient(
+        circle at right center,
+        transparent,
+        transparent 55px,
+        #ffffff 12px,
+        #ffffff
+      );
+    }
+  
+    .Six-cards div:nth-child(4) {
+      padding: 0px 30px 0px 70px; /* Shift content to the left */
+      background: radial-gradient(
+        circle at left center,
+        transparent,
+        transparent 55px,
+        #ffffff 12px,
+        #ffffff
+      );
+    }
+    .btn-final p {
+      padding-bottom: 60px;
+    }
+   }
+
 }

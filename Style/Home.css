@@ -461,7 +461,7 @@ body[lang="en"] {
     padding: 0px 0px 0px 220px; /* fixes order */
   }
   .card-phone img {
-    transform: translate(-200%, -50%) rotate(-45deg);
+    transform: translate(-240%, -50%) rotate(-45deg);
   }
 
 
@@ -498,6 +498,63 @@ body[lang="en"] {
     transform: translateY(50%);
     clip-path: polygon(50% 100%, 0 0, 100% 0);
   }
+  .tr {
+    clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
+    left: 0%;
+  }
+  @media (max-width: 1024px) {
+ .card-phone img {
+    height: 200px;
+    left: 0%;
+    transform: translate(30%, -50%) rotate(-45deg);
+  }
+  .map-img img {
+    width: 100%;
+  }
+  .tr-two {
+    left: 40%; 
+  }
+  }
+  @media (max-width: 768px) {
+  .boxes-one {
+    width: 100%;
+    padding: 20px;
+  }
+  .card-phone img {
+    height: 200px;
+    left: 0%;
+  }
+  .tr-two {
+    left: 54%;   
+  }
+  .map-img { 
+    left: unset;         
+    transform: none;
+   top: unset;
+  }
+  
+     }
+        @media (max-width: 480px) {
+          .card-phone {
+            padding: 0;
+          }
+    
+          .card-phone img {
+            height: 200px;
+            left: 0%;
+            transform: translate(10%, 0%) rotate(-45deg);
+          }         
+          .one-cards { 
+            padding: 50px 50px 50px 50px;
+          }
+          .a-small-word {
+            padding: 10px 30px 10px 30px;
+            clip-path: polygon(80% 0%, 0% 0%, 0% 100%, 100% 100%);
+          }
+          .tr-two {
+            left: 49%; 
+          }
+        }
 }
 /* slider ends */
 
@@ -846,10 +903,26 @@ body[lang="en"] {
     width: 100%; /* Full width on tablets */
     min-height: 300px;
   }
-
   .boxes-one {
     width: 100%; /* Stack below the chart */
     padding: 20px 30px;
+  }
+  .card-phone img {
+    transform: translate(-0%, -50%);
+  }
+  .map-img {
+    width: 40%;
+   height: auto;
+  }
+  .map-img img {
+    width: 100%;
+    height: auto;
+  }
+  .map .header-for-map {
+    padding: 150px 100px 0px;
+  }
+  .tr-two {
+    right: 34%;
   }
 }
 

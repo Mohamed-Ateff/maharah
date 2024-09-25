@@ -485,7 +485,7 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
     width: 100px;
     height: 100px;
     top: 50%; /* Centered vertically relative to the container */
-  left: 25%;
+  left: 20%;
     transform: translate(35%, -50%);
     /* display: none; */
   }
@@ -629,7 +629,7 @@ body[lang="en"]{
   #annualBtnEn{
   display: flex;
   }
-   @media (max-width: 768px) { 
+  @media (max-width: 768px) { 
         /* .btn-final {
         width: 264px;
         height: 55px;

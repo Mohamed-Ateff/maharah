@@ -155,7 +155,7 @@ span {
   border-bottom: 8px solid transparent;
 }
 
-/* Arrow for the middle connection */
+
 .arrow-middle {
   position: absolute;
   top: 50%;
@@ -175,7 +175,7 @@ span {
   border-bottom: 8px solid transparent;
 }
 
-/* Arrow for the right connection */
+
 .arrow-right {
   position: absolute;
   top: 20%;

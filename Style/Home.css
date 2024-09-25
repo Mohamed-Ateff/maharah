@@ -474,7 +474,7 @@ body[lang="en"] {
     display: flex;
     justify-content: center;
     /* align-items: flex-start; */
-    padding: 80px 0px 0px 60px !important;
+    padding: 80px 0px 0px 0px !important;
   }
   .controls {
     /* background-color: red; */
@@ -487,6 +487,7 @@ body[lang="en"] {
     display: flex;
     flex-direction: column;
     z-index: 9;
+   
   }
 
   .card-phone {

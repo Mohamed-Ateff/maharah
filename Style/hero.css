@@ -64,14 +64,5 @@ body[lang="en"] {
     -webkit-transform: scaleX(-1); /* to reverse arrow */
     transform: scaleX(-1);
   }
-  .img-and-title-for-hero h1 {
-    position: absolute;
-    bottom: -100% !important;
-    transform: translateY(-100%) !important;
-    left: 3% !important;
-    color: white;
-    font-weight: 700 !important;
-    font-size: 65px;
-    z-index: 1;
-  }
+  
 }

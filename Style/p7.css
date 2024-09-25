@@ -319,7 +319,7 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
   border-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   border-color: white;
 }
@@ -361,10 +361,10 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
 
   /* Circle adjustments */
   .circle {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     top: 50%;
-    left: 23%; /* Adjust circle position for smaller layout */
+    left: 27.2%; /* Adjust circle position for smaller layout */
     transform: translate(50%, -50%);
   }
 
@@ -450,12 +450,12 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
     font-size: 30px; /* Reduce font size */
     line-height: 60px;
   }
-
   .btn-final {
-    width: 200px; /* Decrease button width */
-    height: 75px; /* Decrease button height */
+    background-color: #c6822a;
+    width: 355px;
+    height: 89.95px;
+    border-radius: 60px;
   }
-
   .btn-final p {
     font-size: 18px; /* Decrease font size */
   }
@@ -481,7 +481,10 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
   .circle {
     width: 100px;
     height: 100px;
+    top: 50%; /* Centered vertically relative to the container */
+  left: 25%;
     transform: translate(35%, -50%);
+    /* display: none; */
   }
 
   .circle-content {
@@ -523,9 +526,15 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
     width: 240px;
     height: 80px;
   }
-
+  .btn-final {
+    background-color: #c6822a;
+    width: 300px;
+    height: 80.95px;
+    border-radius: 60px;
+  }
   .btn-final p {
     font-size: 16px;
+    text-align: center;
   }
 
   .img-container {
@@ -553,7 +562,7 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
     background: radial-gradient(
       circle at right center,
       transparent,
-      transparent 45px,
+      transparent 55px,
       #ffffff 12px,
       #ffffff
     );

@@ -552,15 +552,26 @@ body[lang="en"] {
     transform: rotateZ(0.75turn) !important;
     }
 
-    .wrapper .outer .card .content {
-      display: block;
-      /* min-height: 200px; */
-      padding: 0px 0px 50px 0px;
-    }   
+    .wrapper .outer .card {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+ 
 
     .card .content .box-for-slide {
     min-height: 80px;
     margin-bottom: 20px;
+    }
+    .wrapper .outer .card .content {
+      display: block;
+      /* min-height: 200px; */
+      padding: 0px 0px 50px 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }  
+        .wrapper .outer .card .content .details {
+        margin-right: 20px;
+        margin-left: 20px;
     }
   }
 

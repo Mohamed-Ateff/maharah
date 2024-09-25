@@ -740,10 +740,8 @@ left: 19.7%;
 .arrow-left::before{
   left: 11px; 
   top: -6px;
-  border-top: 8px solid transparent;
   border-right: 0px solid #3a73a8;
   border-left: 10px solid #3a73a8; 
-  border-bottom: 8px solid transparent;
 }
 
 
@@ -767,10 +765,50 @@ left: 19.7%;
 }
 }
 @media screen and (max-width: 768px){
-
+.line-middle{
+    left: 20%;
+    height: 745px;
+}
+.arrow-right{
+  right: 70%;
+}
+.arrow-right::before {
+  content: '';
+  position: absolute;
+  left: 52px;
+  border-right: 0px solid #3a73a8;
+  border-left: 10px solid #3a73a8;
+}
+.arrow-middle{
+  left: 20%;
+}
+.arrow-left{
+  left: 20%;
+}
+.arrow-middle::before{
+  left: 33px;
+}
+.arrow-left::before{
+  left: 33px;
+}
 }
 @media screen and (max-width: 480px){
-
+  .line-middle{
+    left: 20%;
+    height: 985px;
+}
+.arrow-middle{
+  left: 21%;
+  width: 40px;
+}
+.arrow-left{
+  left: 21%;
+  width: 40px;
+}
+.arrow-right{
+  left: 20%;
+  width: 60px;
+}
 }
 
 }

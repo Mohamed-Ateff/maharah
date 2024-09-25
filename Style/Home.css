@@ -319,7 +319,7 @@ body[lang="en"] {
 }
 
 body[lang="ar"] {
-  @media screen and (max-width: 992px) {
+  /* @media screen and (max-width: 992px) {
     .wrapper .outer .card {
       margin-right: 0px;
       width: 95%;
@@ -332,7 +332,6 @@ body[lang="ar"] {
       transition: opacity 0.5s ease, transform 0.5s ease;
     }
     .controls {
-      /* background-color: red; */
       width: fit-content;
       position: absolute;
       top: 90%;
@@ -353,7 +352,6 @@ body[lang="ar"] {
       border-top: 2px dashed #c0c0c0;
       width: 100%;
       min-height: 70vh;
-      /* height: 70vh; */
       background-color: #162c51;
       position: relative;
       display: flex;
@@ -369,7 +367,7 @@ body[lang="ar"] {
     .outer .card {
       transform: translateY(
         0
-      ) !important; /* Ensure all cards stack correctly */
+      ) !important; 
     }
 
     .outer .card {
@@ -379,7 +377,7 @@ body[lang="ar"] {
     }
 
     .outer .card:nth-child(n + 2) {
-      display: none; /* Hide all but the first card */
+      display: none; 
     }
 
     .outer .card:first-child {
@@ -428,6 +426,31 @@ body[lang="ar"] {
       color: white;
       text-align: center;
       margin-top: 15px;
+    }
+  } */
+
+  @media screen and (max-width: 992px) {
+    .slider-card-connect {
+      margin-top: 80px;
+      width: 100%;
+      min-height: 30vh;
+    }
+    .controls{
+    top: 45%;
+    right: unset;
+    transform: rotateZ(90deg) !important;
+    /* transform: rotateZ(0.75turn); */
+    }
+
+    .wrapper .outer .card .content {
+      display: block;
+      /* min-height: 200px; */
+      padding: 0px 0px 50px 0px;
+    }   
+
+    .card .content .box-for-slide {
+    min-height: 80px;
+    margin-bottom: 20px;
     }
   }
 }
@@ -502,7 +525,7 @@ body[lang="en"] {
     clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
     left: 0%;
   }
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
  .card-phone img {
     height: 200px;
     left: 0%;
@@ -514,8 +537,34 @@ body[lang="en"] {
   .tr-two {
     left: 40%; 
   }
+  } */
+
+  @media screen and (max-width: 992px) {
+    .slider-card-connect {
+      margin-top: 80px;
+      width: 100%;
+      min-height: 30vh;
+    }
+    .controls{
+    top: 45%;
+    right: unset;
+    left: unset !important;
+    transform: rotateZ(0.75turn) !important;
+    }
+
+    .wrapper .outer .card .content {
+      display: block;
+      /* min-height: 200px; */
+      padding: 0px 0px 50px 0px;
+    }   
+
+    .card .content .box-for-slide {
+    min-height: 80px;
+    margin-bottom: 20px;
+    }
   }
-  @media (max-width: 768px) {
+
+  /* @media (max-width: 768px) {
   .boxes-one {
     width: 100%;
     padding: 20px;
@@ -554,7 +603,7 @@ body[lang="en"] {
           .tr-two {
             left: 49%; 
           }
-        }
+        } */
 }
 /* slider ends */
 

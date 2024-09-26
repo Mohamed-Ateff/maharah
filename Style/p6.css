@@ -564,17 +564,6 @@ span {
 }
 
 @media screen and (max-width: 480px) {
-  .chart-container {
-    padding: 3px;
-  }
-  .ceo-box {
-    width: 60%;
-    padding: 17px 8px;
-  }
-  .row {
-    padding: 35px 5px 25px 5px;
-    margin-top: 96px;
-  }
   .ownersTable table {
     width: 100%;
     overflow-x: auto;
@@ -649,14 +638,10 @@ span {
   .column {
     width: 80%;
     flex-direction: column-reverse;
-    padding: 0;
-   }
-   .branch-box{
-    padding: 20px;
    }
    .arrow-left{
     top: 25%;
-    left: 84%;
+    left: 70%;
     width: 20px;
    }
    .arrow-left::before{
@@ -665,7 +650,7 @@ span {
    
    .arrow-middle {
      width: 20px;
-     left: 84%;
+     left: 70%;
      top: 57%;
    }
    .arrow-middle::before{
@@ -675,7 +660,7 @@ span {
      height: 4px;
      width: 40px;
      top: 74.5%;
-     right: 10%;
+     right: 24%;
    }
    .arrow-right::before {
     
@@ -685,19 +670,46 @@ span {
      border-right: 10px solid #3a73a8;
      border-bottom: 8px solid transparent;
    }
-     .line-middle {
-        height: 1002px;
-        top: 8.5%;
-        left: 90%;
-    }
+   .line-middle{
+     height: 1002px;
+     top: 7%;
+     left: 75%;
+   }
 }
 
 body[lang="en"] {
   .card {
     clip-path: polygon(11% 0%, 0% 14%, 0% 100%, 100% 100%, 100% 0%);
   }
+  /*مجلس الادارة*/
+  .ownersTable table {
+    direction: ltr;
+  }
 
-  .column::before {
+  .ownersTable .thBorders {
+    text-align: left;
+  }
+  /*مجلس الادارة Ends*/
+
+  /*توزيعات الارباح*/
+  .revenue-table {
+    direction: ltr;
+  }
+  .total-row td {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .total-row td:nth-child(2) {
+    text-align: left;
+    padding-left: 35px;
+  }
+  .footnote {
+    text-align: left;
+  }
+  /*توزيعات الارباح Ends*/
+
+  @media screen and (max-width: 480px) {
+      .column::before {
     left: 0;
     right: unset;
   }
@@ -728,134 +740,5 @@ body[lang="en"] {
         left: unset;
     }
 
-  /*مجلس الادارة*/
-  .ownersTable table {
-    direction: ltr;
   }
-
-  .ownersTable .thBorders {
-    text-align: left;
-  }
-  /*مجلس الادارة Ends*/
-
-  /*توزيعات الارباح*/
-  .revenue-table {
-    direction: ltr;
-  }
-  .total-row td {
-    text-align: left;
-    padding-left: 20px;
-  }
-  .total-row td:nth-child(2) {
-    text-align: left;
-    padding-left: 35px;
-  }
-  .footnote {
-    text-align: left;
-  }
-  /*توزيعات الارباح Ends*/
-
-.column::before {   
-    left: 0;  
-}
-.arrow-right{
-right: 80%;
-}
-.arrow-middle{
-  left: 63.8%;
-}
-.arrow-middle::before {
- left: 11px; 
-  top: -6px;
-  border-top: 8px solid transparent;
-  border-right: 0px solid #3a73a8;
-  border-left: 10px solid #3a73a8; 
-  border-bottom: 8px solid transparent;
-}
-.line-middle{
-  left: 63.7%;
-}
-.line-right{
-left: 19.7%;
-}
-.line-left{
-  left: 33.9%;
-}
-.arrow-left{
-  left: 34%;
-}
-.arrow-left::before{
-  left: 11px; 
-  top: -6px;
-  border-right: 0px solid #3a73a8;
-  border-left: 10px solid #3a73a8; 
-}
-
-
-@media screen and (max-width: 1024px){
-.line-left{
-  left: 34.5%;
-  height: 248.5px;
-}
-.line-middle{
-  left: 62.5%;
-  height: 248.5px;
-}
-.arrow-middle{
-  left: 62.8%;
-}
-.arrow-left{
-  left: 34.8%;
-}
-.line-right{
-  left: 19.5%;
-}
-}
-@media screen and (max-width: 768px){
-.line-middle{
-    left: 20%;
-    height: 745px;
-}
-.arrow-right{
-  right: 70%;
-}
-.arrow-right::before {
-  content: '';
-  position: absolute;
-  left: 52px;
-  border-right: 0px solid #3a73a8;
-  border-left: 10px solid #3a73a8;
-}
-.arrow-middle{
-  left: 20%;
-}
-.arrow-left{
-  left: 20%;
-}
-.arrow-middle::before{
-  left: 33px;
-}
-.arrow-left::before{
-  left: 33px;
-}
-}
-@media screen and (max-width: 480px){
-  .line-middle{
-    left: 20%;
-    height: 985px;
-}
-.arrow-middle{
-  left: 21%;
-  width: 40px;
-}
-.arrow-left{
-  left: 21%;
-  width: 40px;
-}
-.arrow-right{
-  left: 20%;
-  width: 60px;
-}
-}
-
 }

@@ -475,6 +475,7 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
 }
 
 /* mobile */
+
 @media (max-width: 480px) {
   .Six-cards .card-6 {
     height: 150px;
@@ -613,7 +614,11 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
     padding-bottom: 10px;
   }
 }
-
+@media (max-width: 425px){
+  .circle { 
+    left: 23%;
+  }
+}
 body[lang="en"]{
 
 

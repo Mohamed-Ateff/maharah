@@ -724,7 +724,7 @@ body[lang="en"] {
   /*توزيعات الارباح Ends*/
 
   @media screen and (max-width: 480px) {
-      .column::before {
+    .column::before {
     left: 0;
     right: unset;
   }
@@ -733,9 +733,9 @@ body[lang="en"] {
     left: unset;
    }
    .arrow-left::before, .arrow-middle::before, .arrow-right::before{
-     left: 20px;
-     right: unset;
-     transform: rotateY(3.142rad);
+    left: 20px;
+    right: unset;
+    transform: rotateY(3.142rad);
    }
    
    .arrow-middle {

@@ -180,6 +180,11 @@ body[lang="en"] {
   .banner-for-man {
     padding: 20px 40px 20px 20px;
   }
+  @media  (max-width: 480px){
+ .tree-man{
+  margin-left: 0px;
+ }
+  }
 }
 
 body[lang="en"] {
@@ -202,7 +207,7 @@ body[lang="en"] {
   font-size: 25px;
 }
 
-@media screen (min-width: 790px) and (max-width: 1420px) {
+@media screen and (min-width: 790px) and (max-width: 1420px) {
   .a-word .container {
     flex-direction: column;
   }

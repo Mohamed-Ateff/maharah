@@ -1125,6 +1125,10 @@ body[lang="en"] {
   .flex-locations-under {
     padding: 10px;
   }
+  #riyadh-branches{
+    margin-top: -40px;
+
+  }
 
   .box-for-locations {
     margin-bottom: 10px;
@@ -1203,6 +1207,10 @@ body[lang="en"] {
     clip-path: polygon(50% 100%, 0 0, 100% 0);
     background-color: #d9a867;
     z-index: 2;
+  }
+
+  #riyadh2{
+    display: none;
   }
 }
 
@@ -1335,6 +1343,11 @@ body[lang="en"] {
 
   .flex-locations-under {
     padding: 0;
+    
+  }
+    #riyadh-branches{
+    margin-top: -20px;
+
   }
 
   .box-for-locations p {

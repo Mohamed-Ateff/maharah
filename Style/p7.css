@@ -615,10 +615,7 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
 }
 
 body[lang="en"]{
-  .img-and-title-for-hero h1{
-    bottom: -150px !important;
-    
-  }
+
 
   .box-with-color{
     margin: auto 8px auto 0px;

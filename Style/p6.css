@@ -750,4 +750,108 @@ body[lang="en"] {
     text-align: left;
   }
   /*توزيعات الارباح Ends*/
+
+.column::before {   
+    left: 0;  
+}
+.arrow-right{
+right: 80%;
+}
+.arrow-middle{
+  left: 63.8%;
+}
+.arrow-middle::before {
+ left: 11px; 
+  top: -6px;
+  border-top: 8px solid transparent;
+  border-right: 0px solid #3a73a8;
+  border-left: 10px solid #3a73a8; 
+  border-bottom: 8px solid transparent;
+}
+.line-middle{
+  left: 63.7%;
+}
+.line-right{
+left: 19.7%;
+}
+.line-left{
+  left: 33.9%;
+}
+.arrow-left{
+  left: 34%;
+}
+.arrow-left::before{
+  left: 11px; 
+  top: -6px;
+  border-right: 0px solid #3a73a8;
+  border-left: 10px solid #3a73a8; 
+}
+
+
+@media screen and (max-width: 1024px){
+.line-left{
+  left: 34.5%;
+  height: 248.5px;
+}
+.line-middle{
+  left: 62.5%;
+  height: 248.5px;
+}
+.arrow-middle{
+  left: 62.8%;
+}
+.arrow-left{
+  left: 34.8%;
+}
+.line-right{
+  left: 19.5%;
+}
+}
+@media screen and (max-width: 768px){
+.line-middle{
+    left: 20%;
+    height: 745px;
+}
+.arrow-right{
+  right: 70%;
+}
+.arrow-right::before {
+  content: '';
+  position: absolute;
+  left: 52px;
+  border-right: 0px solid #3a73a8;
+  border-left: 10px solid #3a73a8;
+}
+.arrow-middle{
+  left: 20%;
+}
+.arrow-left{
+  left: 20%;
+}
+.arrow-middle::before{
+  left: 33px;
+}
+.arrow-left::before{
+  left: 33px;
+}
+}
+@media screen and (max-width: 480px){
+  .line-middle{
+    left: 20%;
+    height: 985px;
+}
+.arrow-middle{
+  left: 21%;
+  width: 40px;
+}
+.arrow-left{
+  left: 21%;
+  width: 40px;
+}
+.arrow-right{
+  left: 20%;
+  width: 60px;
+}
+}
+
 }

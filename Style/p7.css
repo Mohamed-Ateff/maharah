@@ -485,7 +485,7 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
     width: 100px;
     height: 100px;
     top: 50%; /* Centered vertically relative to the container */
-  left: 20%;
+    left: 20%;
     transform: translate(35%, -50%);
     /* display: none; */
   }

@@ -584,7 +584,7 @@ body[lang="en"] {
     }
   }
 
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
   .boxes-one {
     width: 100%;
     padding: 20px;
@@ -611,7 +611,7 @@ body[lang="en"] {
           .card-phone img {
             height: 200px;
             left: 0%;
-            transform: translate(10%, 0%) rotate(-45deg);
+            transform: translate(0%, 0%) rotate(-45deg);
           }         
           .one-cards { 
             padding: 50px 50px 50px 50px;
@@ -623,7 +623,7 @@ body[lang="en"] {
           .tr-two {
             left: 49%; 
           }
-        } */
+        }
 }
 /* slider ends */
 
@@ -1232,7 +1232,7 @@ body[lang="en"] {
     width: 100%;
     padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -1240,7 +1240,7 @@ body[lang="en"] {
   .card-phone img {
     position: static;
     height: 200px;
-    transform: none;
+    transform: translate(1%, 0%);
     margin-right: 10px;
   }
 
@@ -1248,6 +1248,8 @@ body[lang="en"] {
     font-size: 18px;
     text-align: center;
     line-height: 1.5;
+    padding-top: 0px;
+    /* width: 100%; */
   }
 
   .card-text {

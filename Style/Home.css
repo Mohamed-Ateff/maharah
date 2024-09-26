@@ -1249,21 +1249,23 @@ body[lang="en"] {
   .card-phone img {
     position: static;
     height: 200px;
-    transform: translate(1%, 0%);
-    margin-right: 10px;
+    transform: translate(20%, 0%);
+    margin-right: 30px;
+    padding-top: 25px;
   }
 
   .card-phone h3 {
     font-size: 18px;
     text-align: center;
     line-height: 1.5;
-    padding-top: 0px;
+    padding-bottom: 20px;
     /* width: 100%; */
   }
 
   .card-text {
     width: 100%;
     margin-top: 20px;
+    padding: 25px 0px 25px 0px;
   }
 
   .card-text h3 {

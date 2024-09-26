@@ -564,6 +564,17 @@ span {
 }
 
 @media screen and (max-width: 480px) {
+    .ceo-box {
+    width: 60%;
+    padding: 17px 8px;
+  }
+  .chart-container {
+    padding: 3px;
+  }
+  .row {
+    padding: 35px 5px 25px 5px;
+    margin-top: 96px;
+  }
   .ownersTable table {
     width: 100%;
     overflow-x: auto;
@@ -638,10 +649,14 @@ span {
   .column {
     width: 80%;
     flex-direction: column-reverse;
+    padding: 0;
+   }
+   .branch-box{
+    padding: 20px;
    }
    .arrow-left{
     top: 25%;
-    left: 70%;
+    left: 84%;
     width: 20px;
    }
    .arrow-left::before{
@@ -650,7 +665,7 @@ span {
    
    .arrow-middle {
      width: 20px;
-     left: 70%;
+     left: 84%;
      top: 57%;
    }
    .arrow-middle::before{
@@ -660,7 +675,7 @@ span {
      height: 4px;
      width: 40px;
      top: 74.5%;
-     right: 24%;
+     right: 10%;
    }
    .arrow-right::before {
     
@@ -670,11 +685,11 @@ span {
      border-right: 10px solid #3a73a8;
      border-bottom: 8px solid transparent;
    }
-   .line-middle{
-     height: 1002px;
-     top: 7%;
-     left: 75%;
-   }
+     .line-middle {
+        height: 1002px;
+        top: 8.5%;
+        left: 90%;
+    }
 }
 
 body[lang="en"] {
@@ -709,7 +724,7 @@ body[lang="en"] {
   /*توزيعات الارباح Ends*/
 
   @media screen and (max-width: 480px) {
-      .column::before {
+    .column::before {
     left: 0;
     right: unset;
   }
@@ -718,9 +733,9 @@ body[lang="en"] {
     left: unset;
    }
    .arrow-left::before, .arrow-middle::before, .arrow-right::before{
-     left: 20px;
-     right: unset;
-     transform: rotateY(3.142rad);
+    left: 20px;
+    right: unset;
+    transform: rotateY(3.142rad);
    }
    
    .arrow-middle {

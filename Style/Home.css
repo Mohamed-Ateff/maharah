@@ -621,7 +621,8 @@ body[lang="en"] {
             clip-path: polygon(80% 0%, 0% 0%, 0% 100%, 100% 100%);
           }
           .tr-two {
-            left: 49%; 
+            top: -30%;
+        left: 46%; 
           }
         }
 }
@@ -1423,7 +1424,7 @@ body[lang="en"] {
   .a-big-word div {
     margin-bottom: 15px;
   }
-  .a-big-word div p {
-    font-size: 35px;
-  }
+      .a-big-word div p {
+        font-size: 29px;
+    }
 }

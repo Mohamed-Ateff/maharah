@@ -1325,6 +1325,11 @@ body[lang="en"] {
   .title-for-box {
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .small-box-for-info{
+    width: 100%;
   }
 
   .flex-locations-under {

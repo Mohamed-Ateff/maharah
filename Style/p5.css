@@ -317,6 +317,90 @@
 
 /* pie Ends */
 
+/* Table and chart */
+.table-and-chart{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.table-section{
+  width: 100%;
+}
+
+.chart-section{
+width: 100%;
+}
+
+.table-caption {
+  margin: 20px 5px 10px 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #c6822a;
+  padding: 70px 0px 30px 0px;
+}
+
+.shareholder-details th,
+.shareholder-details td {
+  padding: 15px;
+  border: 1px solid #b5cadd;
+  text-align: center;
+  font-weight: 700;
+}
+
+.shareholder-details th {
+  background-color: #062e4a;
+  color: white;
+  padding: 25px 0;
+  font-size: 22px;
+}
+
+.shareholder-details td {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 4px solid #ebeff8dd;
+}
+.shareholder-details td:first-child {
+  width: 100px;
+}
+
+.shareholder-details th {
+  width: 20%;
+}
+
+#shareholder-details2 th {
+  padding: 35px 0;
+}
+#shareholder-details3 th {
+  width: fit-content;
+}
+
+.title-for-chart {
+  text-align: center;
+  position: relative;
+  /* top: 55px; */
+  z-index: 11;
+}
+.title-for-chart h2 {
+  color: #333333;
+  margin-bottom: 7px;
+  padding-top: 30px;
+}
+.title-for-chart p {
+  color: #163029;
+}
+
+.chart-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 150px;
+  background-color: white;
+  /* width: 59%; */
+  position: relative;
+}
+/* Table and chart Ends*/
+
 /*الموارد البشرية*/
 
 .gender {

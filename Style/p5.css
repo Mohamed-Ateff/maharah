@@ -338,7 +338,9 @@ width: 100%;
   color: #c6822a;
   padding: 70px 0px 30px 0px;
 }
-
+.shareholder-details{
+  width: 100%;
+}
 .shareholder-details th,
 .shareholder-details td {
   padding: 15px;
@@ -350,13 +352,16 @@ width: 100%;
 .shareholder-details th {
   background-color: #062e4a;
   color: white;
-  padding: 25px 0;
+  padding: 30px 20px 20px 20px;
   font-size: 22px;
+}
+.shareholder-details th:first-child {
+  padding: 25px 20px 0px 20px;
 }
 
 .shareholder-details td {
   background-color: #fff;
-  padding: 20px 0;
+  padding: 35px 0;
   border-bottom: 4px solid #ebeff8dd;
 }
 .shareholder-details td:first-child {
@@ -366,9 +371,21 @@ width: 100%;
 .shareholder-details th {
   width: 20%;
 }
+.shareholder-details th:nth-child(2) {
+  width: 40%;
+}
+.shareholder-details th:nth-child(3) {
+  width: 40%;
+}
 
-#shareholder-details2 th {
-  padding: 35px 0;
+#shareholder-details2 th:nth-child(1) {
+  padding: 35px ;
+}
+#shareholder-details2 th:nth-child(2) {
+  padding: 35px 70px 35px 70px;
+}
+#shareholder-details2 th:nth-child(3) {
+  padding: 35px 70px 35px 70px;
 }
 #shareholder-details3 th {
   width: fit-content;
@@ -389,16 +406,7 @@ width: 100%;
   color: #163029;
 }
 
-.chart-one {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 150px;
-  background-color: white;
-  /* width: 59%; */
-  position: relative;
-}
+
 /* Table and chart Ends*/
 
 /*الموارد البشرية*/
@@ -472,14 +480,28 @@ width: 100%;
   text-align: center;
   background-color: #fff;
   padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 530px;
+  background-color: white;
+  /* width: 59%; */
+  position: relative;
 }
 .saudiChart h3 {
-  color: #062e4a;
+  color: #333333;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 40px;
 }
 
 .saudiChart p {
-  color: #3a73a8;
+  color: #333333;
   margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .bars {
@@ -487,19 +509,21 @@ width: 100%;
   justify-content: space-between;
   align-items: flex-end;
   flex-direction: row-reverse;
-  width: 300px;
-  height: 200px;
+  width: 450px;
+  height: 350px;
 }
 
 .bar {
   background-color: #062e4a;
-  width: 50px;
+  width: 70px;
   height: 0;
   margin: 0 10px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  margin-bottom: 10px;
+
 }
 
 .bar:after {
@@ -514,7 +538,8 @@ width: 100%;
   content: attr(data-year);
   position: absolute;
   bottom: -30px;
-  color: #062e4a;
+  color: #3A73A8;
+  font-weight: 700;
 }
 
 .bar[data-year="2020"] {
@@ -523,6 +548,7 @@ width: 100%;
 
 .bar[data-year="2021"] {
   --height: 55%;
+  
 }
 
 .bar[data-year="2022"] {
@@ -534,7 +560,7 @@ width: 100%;
 }
 
 .bar {
-  animation: grow 1s ease-in-out forwards;
+  animation: grow 3s ease-in-out forwards;
 }
 
 @keyframes grow {
@@ -721,6 +747,10 @@ width: 100%;
     align-items: center;
     gap: 20px;
   }
+  .table-and-chart{
+    flex-direction: column;
+  }
+
   .genderCharts > div {
     width: 100%;
     max-width: 400px;
@@ -747,6 +777,7 @@ width: 100%;
   .div-for-color-for-pie{
     /* width: 30px; */
   }
+    
 }
 
 @media (max-width: 480px) {
@@ -816,7 +847,25 @@ width: 100%;
     padding: 0px 50px 0px 50px;
   }
  
-  
+  .saudiChart{
+    padding-top: 20px;
+  }
+  .bars {
+    width: 270px;
+    height: 250px;
+  }
+  .bar{
+    align-items: center;
+  }
+  #shareholder-details2 th:nth-child(1) {
+    padding: 35px 0px ;
+  }
+  #shareholder-details2 th:nth-child(2) {
+    padding: 35px 0px;
+  }
+  #shareholder-details2 th:nth-child(3) {
+    padding: 0px;
+  }
 
  
 }

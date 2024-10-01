@@ -62,7 +62,7 @@
   position: relative;
 }
 .text-for-page p {
-  font-size: 22px;
+  font-size: 25px;
   display: inline-block; /* Allow text to wrap beside the image */
   line-height: 40px;
   text-align: justify;

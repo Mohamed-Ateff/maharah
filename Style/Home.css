@@ -170,6 +170,9 @@ body[lang="en"] {
   margin-left: 10px;
   font-weight: 800;
 }
+.chart-container svg{
+  width: 102% !important;
+}
 
 body[lang="en"] {
   .one-small-box span:first-child {
@@ -1212,6 +1215,7 @@ body[lang="en"] {
   #riyadh2{
     display: none;
   }
+
 }
 
 /*Mobile*/
@@ -1440,4 +1444,7 @@ body[lang="en"] {
       .a-big-word div p {
         font-size: 29px;
     }
+      .beBlock{
+    display: block;
+  }
 }

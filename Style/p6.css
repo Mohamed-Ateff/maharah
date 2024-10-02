@@ -721,13 +721,95 @@ body[lang="en"] {
   .footnote {
     text-align: left;
   }
-  /*توزيعات الارباح Ends*/
-
-  @media screen and (max-width: 480px) {
-    .column::before {
+  .column::before {
     left: 0;
     right: unset;
   }
+  /*توزيعات الارباح Ends*/
+/* arrows */
+.line-left{
+  left: 34%;
+}
+.line-middle{
+  left: 64%;
+}
+.line-right{
+  left: 20%;
+}
+.arrow-left{
+  left: 34%;
+}
+.arrow-left::before{
+  border-right: 0px;
+  border-left: 10px solid #3a73a8;
+  left: 10px;
+}
+.arrow-middle{
+  left: 64%;
+}
+.arrow-middle::before{
+  border-right: 0px;
+  border-left: 10px solid #3a73a8;
+  left: 10px;
+}
+.arrow-right{
+  right: 79.66%;
+}
+/* arrows ends */
+
+@media (max-width: 1024px){
+  .line-left{
+    left: 34%;
+  }
+  .line-middle{
+    left: 62%;
+  }
+  .line-right{
+    left: 22%;
+  }
+  .arrow-left{
+    left: 34.5%;
+    top: 55.3%;
+  }
+  .arrow-right{
+    right: 77.51%;
+  }
+  .arrow-middle{
+    left: 62.5%;
+    top: 55.4%;
+  }
+}  
+
+  @media (max-width: 768px){
+.line-middle{
+  left: 20%;
+}
+.arrow-left{
+  top: 25%;
+  left: 20%;
+}
+.arrow-left::before{
+  left: 35px;
+}
+.arrow-middle{
+  top: 52%;
+  left: 20%;
+}
+.arrow-middle::before{
+  left: 35px;
+}
+.arrow-right{
+right: 71.5%;
+width: 50px;
+}
+.arrow-right::before{
+ border-right: 0px;
+  border-left: 10px solid #3a73a8;
+  left: 50px;
+}
+  }
+
+  @media screen and (max-width: 480px) {
    .arrow-left{
     right: 84%;
     left: unset;
@@ -735,25 +817,36 @@ body[lang="en"] {
    .arrow-left::before, .arrow-middle::before, .arrow-right::before{
     left: 20px;
     right: unset;
-    transform: rotateY(3.142rad);
+    /* transform: rotateY(3.142rad); */
    }
    
    .arrow-middle {
      right: 84%;
      left: unset;
+     top: 54%;
    }
    .arrow-right {
      left: 10%;
      right: unset;
+     top: 73%;
    }
    .arrow-right::before {
-     left: 40px;
+     left: 44px;
      right: unset;   
    }
      .line-middle {
-        right: 90%;
+        right: 89%;
         left: unset;
+        height: 768px;
     }
 
+  }
+  @media screen and (max-width: 425px){
+    .line-middle {
+      height: 773px;
+  }
+  .arrow-left,.arrow-middle{
+    right: 83%;
+  }
   }
 }

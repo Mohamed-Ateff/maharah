@@ -666,7 +666,7 @@ span {
    .arrow-middle {
      width: 20px;
      left: 84%;
-     top: 57%;
+     top: 54%;
    }
    .arrow-middle::before{
      right: 20px;
@@ -674,7 +674,7 @@ span {
    .arrow-right {
      height: 4px;
      width: 40px;
-     top: 74.5%;
+     top: 72.5%;
      right: 10%;
    }
    .arrow-right::before {
@@ -686,9 +686,14 @@ span {
      border-bottom: 8px solid transparent;
    }
      .line-middle {
-        height: 1002px;
+        height: 758px;
         top: 8.5%;
         left: 90%;
+    }
+    @media screen and (max-width: 425px){
+      .line-middle {
+        height: 762px;   
+    }
     }
 }
 

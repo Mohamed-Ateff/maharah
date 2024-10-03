@@ -245,7 +245,7 @@ span {
 
 .ownersTable td {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #B5CADD;
   border-top: 3px solid #ebeff8dd;
   border-bottom: 3px solid #ebeff8dd;
   font-weight: 700;
@@ -253,6 +253,9 @@ span {
 }
 .ownersTable td:first-child {
   text-align: center;
+}
+.ownersTable td:last-child {
+  width: 9.5%;
 }
 .ownersTable .thin {
   font-weight: lighter;

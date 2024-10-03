@@ -105,7 +105,9 @@
   padding-bottom: 20px;
 }
 
-
+.padding-adj{
+  padding: 0px 80px 0px 80px;
+}
 
 /* Six Cards Ends*/
 
@@ -216,7 +218,26 @@ body[lang="en"] {
   stroke-dasharray: 1000;
   fill: none; /* Ensure the line is not filled */
 }
+/* code change */
+.foreign-object {
+  transform: translateY(400px); /* Start from below the chart */
+  opacity: 0; /* Initially hidden */
+  transition: transform 3s ease, opacity 1s ease-in-out;
+}
 
+/* When the chart is in view, animate the text upwards */
+.chart-container.animate-bars .foreign-object {
+  transform: translateY(0); /* Move the numbers up to their final position */
+  opacity: 1; /* Fade in */
+}
+
+.foreign-object p{
+  color: white;
+  font-size: 16px;
+  font-weight: 650;
+  font-family: Cairo;
+  }
+/* code change */
 /* Line chart drawing effect for LTR (English) */
 body[lang="en"] .line-chart {
   stroke-dashoffset: 1000; /* Start from the left */
@@ -262,7 +283,11 @@ body[lang="ar"] .chart-container.animate-line .line-chart {
   font-weight: 800;
   font-size: 15px;
 }
-
+@media (max-width: 1024px) {
+  .padding-adj {
+    padding: 0px 0px 0px 0px;
+  }
+}
 @media (max-width: 768px) {
   .under-chart {
     padding: 17px 0px 0px 0px;
@@ -630,6 +655,13 @@ body[lang="en"]{
   }
   #annualBtnEn{
   display: flex;
+  }
+  .bar-chart{
+    position: relative;
+  }
+  .foreign-object p{
+    position: absolute;
+    left: 57%;
   }
   @media (max-width: 768px) { 
         /* .btn-final {
